@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import AboutMe from './components/AboutMe'
+import MyProjects from './components/MyProjects'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,12 +23,8 @@ function App() {
       </div>
       <h1>Alex Portfolio</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+       <AboutMe />
+       <MyProjects />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
