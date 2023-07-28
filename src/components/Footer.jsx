@@ -1,11 +1,11 @@
 import React from 'react'
-import ContactLinks from './ContactLinks'
+
 
 const Footer = () => {
   return (
-    <div>
-      <ContactLinks />
-    </div>
+    <footer>
+        <p>Nåt simpelt - footer</p>
+    </footer>
   )
 }
 

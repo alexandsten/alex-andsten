@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactLinks = () => {
   return (
-    <div>
+    <div id='contact'>
       <p>Länk till github</p>
       <p>Länk till Linkedin</p>
       <p>Mailaddress</p>

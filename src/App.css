@@ -5,18 +5,30 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#aboutMe {
+  background-color: blue;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+#contact {
+  background-color: blueviolet;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+#myProjects {
+  background-color: bisque;
 }
+
+header {
+  background-color: aquamarine;
+}
+
+footer {
+  background-color: aquamarine;
+}
+
+h1 {
+  font-size: 32px;
+}
+
 
 @keyframes logo-spin {
   from {
