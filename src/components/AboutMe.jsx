@@ -3,7 +3,7 @@ import al3 from '../img/alex1.jpg'
 
 const AboutMe = () => {
   return (
-    <div>
+    <div id='aboutMe'>
       <p>About me</p>
       <p>Mina färdigheter - javascript osv</p>
       <img src={al3} alt="Alex" />

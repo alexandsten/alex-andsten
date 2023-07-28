@@ -3,10 +3,10 @@ import MenuNav from './MenuNav'
 
 const Header = () => {
   return (
-    <div>
+    <header>
       <p>Header</p>
       <MenuNav />
-    </div>
+    </header>
   )
 }
 
