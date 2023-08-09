@@ -3,10 +3,8 @@ import React from 'react'
 const ContactLinks = () => {
   return (
     <div id='contact'>
-      <p>Länk till github</p>
-      <p>Länk till Linkedin</p>
-      <p>Mailaddress</p>
-      <p>Öppna / ladda ner CV? kanske onödig</p>
+     <a href="mailto:alex.andsten@hotmail.com">alex.andsten@hotmail.com</a>
+     <p>076-260 82 27</p>
     </div>
   )
 }

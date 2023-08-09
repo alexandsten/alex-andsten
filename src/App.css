@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 #aboutMe {
   background-color: blue;
 }
@@ -17,8 +18,16 @@
   background-color: bisque;
 }
 
-#mainMenu {
+#mainLinks {
+  font-family: 'Hanalei Fill', cursive;
   background-color: blueviolet;
+  list-style: none;
+
+}
+
+#mainLinks li {
+    display: inline-block; 
+    padding: 5px;
 }
 
 header {
