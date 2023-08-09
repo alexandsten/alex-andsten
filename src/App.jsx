@@ -15,13 +15,9 @@ function App() {
   return (
     <>
     <Header />
-      
-      
         <AboutMe />
         <MyProjects />
         <MenuNav />
-        <ContactLinks />
-      
       <Footer />
     </>
   )

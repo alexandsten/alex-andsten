@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <div id='aboutMe'>
       <p>About me</p>
-      <p>Mina färdigheter - javascript osv</p>
       <img src={al3} alt="Alex" />
+      <p>Mina färdigheter - javascript osv</p>
     </div>
   )
 }

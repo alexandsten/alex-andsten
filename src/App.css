@@ -8,6 +8,7 @@
 
 #aboutMe {
   font-family: 'Tajawal', sans-serif;
+  border-bottom: 2px solid rgba(239, 239, 239, 0.963);
 
 }
 
@@ -16,21 +17,26 @@
 
 #myProjects {
   font-family: 'Tajawal', sans-serif;
+  border-bottom: 2px solid rgba(239, 239, 239, 0.963);
 
 }
 
 #mainLinks {
   font-family: 'Tajawal', sans-serif;
   list-style: none;
+  border-bottom: 2px solid rgba(239, 239, 239, 0.963);
 
 }
 
 #mainLinks li {
+    cursor: pointer;
+    text-decoration: underline;
     display: inline-block; 
     padding: 5px;
 }
 
 header {
+  border-bottom: 2px solid;
 }
 
 footer {
