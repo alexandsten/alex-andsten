@@ -15,13 +15,13 @@ function App() {
   return (
     <>
     <Header />
-      <h1>Alex Andstén Portfolio</h1>
-      <div>
+      
+      
         <AboutMe />
         <MyProjects />
         <MenuNav />
         <ContactLinks />
-      </div>
+      
       <Footer />
     </>
   )
