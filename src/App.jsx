@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <Header />
-      <h1>Alex Portfolio</h1>
+      <h1>Alex Andstén Portfolio</h1>
       <div>
         <AboutMe />
         <MyProjects />

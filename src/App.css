@@ -7,20 +7,20 @@
 
 
 #aboutMe {
-  background-color: blue;
+  font-family: 'Tajawal', sans-serif;
+
 }
 
 #contact {
-  background-color: blueviolet;
 }
 
 #myProjects {
-  background-color: bisque;
+  font-family: 'Tajawal', sans-serif;
+
 }
 
 #mainLinks {
-  font-family: 'Hanalei Fill', cursive;
-  background-color: blueviolet;
+  font-family: 'Tajawal', sans-serif;
   list-style: none;
 
 }
@@ -31,14 +31,14 @@
 }
 
 header {
-  background-color: aquamarine;
 }
 
 footer {
-  background-color: aquamarine;
 }
 
 h1 {
+  font-family: 'Golos Text', sans-serif;
+  font-family: 'Tajawal', sans-serif;
   font-size: 32px;
 }
 
