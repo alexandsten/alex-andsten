@@ -6,22 +6,22 @@ const AboutMe = () => {
     <div id='aboutMe' className='para'>
       <img src={al3} alt="Alex" />
       <h2>Utbildning och kunskaper</h2>
+      <b>Frontendutvecklare, JENSEN yrkeshögskola</b>
     <p>
-      Frontendutvecklare, JENSEN yrkeshögskola
       2022-pågående
       - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
       arbete med API’er, grundläggande UX, testning, agilt projektmetodik
     </p>
+    <b>Interaktiva medier och webbteknologier, Linnéuniversitetet</b>
 
     <p>
-      Interaktiva medier och webbteknologier, Linnéuniversitetet
       2020-2021
       - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
       phpMyAdmin, SQL, MySQL
     </p>
+    <b>3-årig IT/media gymnasieutbildning, John Bauer</b>
 
     <p>
-      3-årig IT/media gymnasieutbildning, John Bauer
       2008-2011
       -HTML, CSS, Adobe paketet, bild retuschering
     </p>
