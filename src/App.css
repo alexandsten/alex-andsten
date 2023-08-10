@@ -20,6 +20,12 @@
   width: 50%;
 }
 
+.para b {
+  font-family: 'Golos Text', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
 #mainNav {
   margin: auto;
   margin-top: 20px;
@@ -62,6 +68,12 @@ h1 {
   font-family: 'Golos Text', sans-serif;
   font-family: 'Tajawal', sans-serif;
   font-size: 32px;
+}
+
+h2 {
+  font-family: 'Golos Text', sans-serif;
+  font-size: 24;
+  font-weight: 300;
 }
 
 
