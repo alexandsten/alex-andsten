@@ -12,6 +12,19 @@
 
 }
 
+.para {
+  margin: auto;
+  width: 50%;
+}
+
+#mainNav {
+  margin: auto;
+  margin-top: 20px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between; 
+}
+
 #contact {
 }
 
