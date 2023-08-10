@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link, Element } from 'react-scroll';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -15,8 +16,20 @@ function App() {
   return (
     <>
     <Header />
+      {/* Smooth scrolling links */}
+      <div>
+        <Link to="section1" smooth={true} duration={500}>Go to Section 1</Link>
+        <Link to="section2" smooth={true} duration={500}>Go to Section 2</Link>
+      </div>
+  
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <Element name="section1">
         <AboutMe />
+      </Element>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <Element name="section2">
         <MyProjects />
+      </Element>
         <MenuNav />
       <Footer />
     </>
