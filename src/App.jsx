@@ -22,6 +22,7 @@ function App() {
         <Link to="section2" smooth={true} duration={500}>Mina projekt</Link>
       </div>
       <div className='para'>
+        <h2>Söker nu praktik</h2>
       <p>Jag är en student på Jensen Yrkeshögskola som studerar frontendutveckling. Jag söker
     efter en praktikplats som frontendutvecklare.
     Under min utbildning har jag lärt mig att skapa användarvänliga och estetiskt tilltalande
@@ -44,9 +45,11 @@ function App() {
       <Element name="section1">
         <AboutMe />
       </Element>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      
       <Element name="section2">
+     
         <MyProjects />
+        <br />
       </Element>
         <MenuNav />
       <Footer />

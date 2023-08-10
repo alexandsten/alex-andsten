@@ -8,11 +8,14 @@
 
 #aboutMe {
   font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
   border-bottom: 2px solid rgba(239, 239, 239, 0.963);
 
 }
 
 .para {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 18px;
   margin: auto;
   width: 50%;
 }
