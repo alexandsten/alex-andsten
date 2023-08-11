@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe'
 import MyProjects from './components/MyProjects'
 import ContactLinks from './components/ContactLinks'
 import MenuNav from './components/Links'
+import al3 from './img/alex1.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,7 +38,7 @@ function App() {
     användarvänliga gränssnitt och webbapplikationer skulle göra mig till en värdefull
     tillgång för teamet. Jag ser fram emot att diskutera hur jag kan bidra till företaget under
     min praktikperiod.</p>
-    
+    <img src={al3} alt="Alex" />
 
       </div>
   
