@@ -1,10 +1,8 @@
 import React from 'react'
-import al3 from '../img/alex1.jpg'
 
 const AboutMe = () => {
   return (
     <div id='aboutMe' className='para'>
-      <img src={al3} alt="Alex" />
       <h2>Utbildning och kunskaper</h2>
       <b>Frontendutvecklare, JENSEN yrkeshögskola</b>
     <p>
