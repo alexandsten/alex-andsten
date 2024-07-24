@@ -5,7 +5,6 @@ const Header = () => {
   return (
     <header>
       <h1>Alex Andstén</h1>
-     
     </header>
   )
 }
