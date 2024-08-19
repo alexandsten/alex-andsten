@@ -16,16 +16,17 @@ const ContactLinks = () => {
         <Stack justifyContent={'center'} alignItems={'center'}>
           <h3>Linkedin och github</h3>
           <ul id='mainLinks'>
-            <li onClick={() => openWindow("https://www.linkedin.com/in/alex-andstén-47937116b")}>
+            <a href="https://linkedin.com/in/alex-andstén-47937116b" target='_blank'>
               <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>
-                Linkedin
+                  Linkedin
               </Typography>
-            </li>
-            <li onClick={() => openWindow("https://github.com/alexandsten")}>
+            </a>
+                
+            <a href="https://github.com/alexandsten" target='_blank'>
               <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>
-                Github
+              Github
               </Typography>
-            </li>
+            </a>
           </ul>
         </Stack>
       </Stack>
