@@ -31,7 +31,7 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack height={'100vh'} width={'99vw'} sx={{ backgroundColor: '#fcfcf2'}}
+      <Stack height={'100vh'} width={'99vw'} sx={{ backgroundColor: 'white'}}
         justifyContent={'center'} alignItems={'center'}
       >
 
@@ -64,7 +64,7 @@ const MyProjects = () => {
 
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid white', borderRadius: '15px'}}
+              sx={{ border: '3px solid black', borderRadius: '15px'}}
             >
               <Grid container>
                 <Grid item md={6} sm={12}>
@@ -87,7 +87,7 @@ const MyProjects = () => {
 
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid white', borderRadius: '15px'}}
+              sx={{ border: '3px solid black', borderRadius: '15px'}}
             >
               <Grid container>
                 <Grid item md={6} sm={12}>

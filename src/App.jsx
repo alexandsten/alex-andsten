@@ -32,7 +32,7 @@ function App() {
           }
         }}
       />
-    <Stack width={'100%'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: '#fcfcf2'}}>
+    <Stack width={'100%'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white'}}>
 
     <Stack p={5} height={'20vh'}>
       <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
