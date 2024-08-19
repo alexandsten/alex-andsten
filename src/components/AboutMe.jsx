@@ -12,19 +12,19 @@ const AboutMe = () => {
   `;
   return (
    
-      <Stack id='aboutMe'  width={'99vw'} sx={{ background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)', minHeight: '100vh'
+      <Stack id='aboutMe'  width={'100vw'} sx={{ background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)', minHeight: '100vh'
       }}
-      justifyContent={'center'} pt={5}
+      justifyContent={'center'} alignItems={'center'} pt={5}
       >
         
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
             <h3>Utbildning och kunskaper</h3>
         </Stack>
-        <Stack width={'100%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
+        <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
         <Grid container>
           <Grid item sm={12} md={6}>
             
-              <Stack justifyContent={'center'} alignItems={'center'} p={5}>
+              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5}>
                 <h3>Kunskaper</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
@@ -65,7 +65,7 @@ const AboutMe = () => {
             
           </Grid>
           <Grid item sm={12} md={6}>
-             <Stack justifyContent={'center'} alignItems={'center'} p={5}>
+             <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5}>
                 <h3>Utbildning / erfarenhet</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
