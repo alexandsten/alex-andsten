@@ -1,4 +1,4 @@
-import { Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 import React from 'react'
 import Slider from "react-slick";
 import styled, { keyframes } from 'styled-components';
@@ -33,42 +33,71 @@ const MyProjects = () => {
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
               sx={{ border: '3px solid white', borderRadius: '15px'}}
             >
-              <Stack justifyContent={'center'} alignItems={'center'}>
-                <Typography >Nostradamage</Typography> 
-                <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
-              </Stack>
-              <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                <Typography >Predictions startup for MMA</Typography> 
-               <PulseDiv>
-                <Typography >Läs mer</Typography> 
-               </PulseDiv>
-              </Stack>
+              <Grid container>
+                <Grid item md={6} sm={12}>
+                  <Stack justifyContent={'center'} alignItems={'center'}>
+                    <Typography >Nostradamage</Typography> 
+                    <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
+                  </Stack>
+                </Grid>
+                <Grid item md={6} sm={12}>
+                  <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+                    <Typography >Predictions startup for MMA</Typography> 
+                    <PulseDiv>
+                      <Typography >Läs mer</Typography> 
+                    </PulseDiv>
+                  </Stack>
+                </Grid>
+              </Grid>
             </Stack>
-            
           </Stack>
+
           <Stack>
-            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}>
-              <a href="https://dapper-longma-6212ba.netlify.app/" target='_blank'>Nobel Light Week</a>
-              <Stack flexDirection={'column'}>
-                <Typography >Predictions startup for MMA</Typography> 
-               <PulseDiv>
-                <Typography >Läs mer</Typography> 
-               </PulseDiv>
-              </Stack>
+            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+              sx={{ border: '3px solid white', borderRadius: '15px'}}
+            >
+              <Grid container>
+                <Grid item md={6} sm={12}>
+                  <Stack justifyContent={'center'} alignItems={'center'}>
+                    <Typography >Nostradamage</Typography> 
+                    <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
+                  </Stack>
+                </Grid>
+                <Grid item md={6} sm={12}>
+                  <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+                    <Typography >Predictions startup for MMA</Typography> 
+                    <PulseDiv>
+                      <Typography >Läs mer</Typography> 
+                    </PulseDiv>
+                  </Stack>
+                </Grid>
+              </Grid>
             </Stack>
           </Stack>
+
           <Stack>
-            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}>
-              <a href="https://dapper-longma-6212ba.netlify.app/" target='_blank'>hitRact</a>
-              <Stack flexDirection={'column'}>
-                <Typography >Predictions startup for MMA</Typography> 
-               <PulseDiv>
-                <Typography >Läs mer</Typography> 
-               </PulseDiv>
-              </Stack>
-              
+            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+              sx={{ border: '3px solid white', borderRadius: '15px'}}
+            >
+              <Grid container>
+                <Grid item md={6} sm={12}>
+                  <Stack justifyContent={'center'} alignItems={'center'}>
+                    <Typography >Nostradamage</Typography> 
+                    <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
+                  </Stack>
+                </Grid>
+                <Grid item md={6} sm={12}>
+                  <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+                    <Typography >Predictions startup for MMA</Typography> 
+                    <PulseDiv>
+                      <Typography >Läs mer</Typography> 
+                    </PulseDiv>
+                  </Stack>
+                </Grid>
+              </Grid>
             </Stack>
           </Stack>
+          
         </Slider> 
         </Stack>
         
