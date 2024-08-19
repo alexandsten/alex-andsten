@@ -1,6 +1,8 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
 import Slider from "react-slick";
+import styled, { keyframes } from 'styled-components';
+import pulse from 'react-animations/lib/pulse';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -12,6 +14,11 @@ const MyProjects = () => {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
+    const pulseAnimation = keyframes`${pulse}`;
+
+    const PulseDiv = styled.div`
+      animation: 2s ${pulseAnimation} infinite;
+    `;
   return (
     <>
       <Stack height={'100vh'} width={'99vw'} sx={{ backgroundColor: 'pink'}}
@@ -25,20 +32,36 @@ const MyProjects = () => {
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}>
               <a href="https://storied-sundae-b1d64e.netlify.app/" target='_blank'>Nostradamage</a> 
-              <Typography >Predictions startup for MMA</Typography>
+              <Stack flexDirection={'column'}>
+                <Typography >Predictions startup for MMA</Typography> 
+               <PulseDiv>
+                <Typography >Läs mer</Typography> 
+               </PulseDiv>
+              </Stack>
             </Stack>
             
           </Stack>
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}>
               <a href="https://dapper-longma-6212ba.netlify.app/" target='_blank'>Nobel Light Week</a>
-              <Typography >Predictions startup for MMA</Typography>
+              <Stack flexDirection={'column'}>
+                <Typography >Predictions startup for MMA</Typography> 
+               <PulseDiv>
+                <Typography >Läs mer</Typography> 
+               </PulseDiv>
+              </Stack>
             </Stack>
           </Stack>
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}>
               <a href="https://dapper-longma-6212ba.netlify.app/" target='_blank'>hitRact</a>
-              <Typography >Predictions startup for MMA</Typography>
+              <Stack flexDirection={'column'}>
+                <Typography >Predictions startup for MMA</Typography> 
+               <PulseDiv>
+                <Typography >Läs mer</Typography> 
+               </PulseDiv>
+              </Stack>
+              
             </Stack>
           </Stack>
         </Slider> 

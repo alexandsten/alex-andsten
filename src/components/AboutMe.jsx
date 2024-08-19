@@ -16,9 +16,7 @@ const AboutMe = () => {
       justifyContent={'center'} pt={5}
       >
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-          <PulseDiv>
             <h2>Utbildning och kunskaper</h2>
-          </PulseDiv>
         </Stack>
 
         <Stack width={'100%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
