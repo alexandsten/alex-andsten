@@ -11,6 +11,7 @@ import ContactLinks from './components/ContactLinks'
 import al3 from './img/alex1.jpg'
 import { Stack, Typography, GlobalStyles } from '@mui/material';
 
+
 function App() {
 
   return (
@@ -34,7 +35,7 @@ function App() {
     <Stack width={'100%'} justifyContent={'center'} alignItems={'center'}>
 
     <Stack p={5} height={'20vh'}>
-      <Typography sx={{ fontSize: '3em'}}>
+      <Typography sx={{ fontSize: '3em', fontFamily: "'Press Start 2P', cursive, sans-serif" }}>
         Alex Andstén - Frontendutvecklare
       </Typography>
     </Stack>

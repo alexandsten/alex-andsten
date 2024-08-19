@@ -1,25 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Comic+Neue:wght@300&display=swap');
+
+
 #root {
   padding: 0;
   margin: 0;
 }
 
-
 #aboutMe {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-size: 18px;
   border-bottom: 2px solid rgba(239, 239, 239, 0.963);
   border-top: 2px solid rgba(239, 239, 239, 0.963);
 }
 
 .para {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-size: 18px;
   margin: auto;
   width: 50%;
 }
 
 .para b {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-size: 18px;
   font-weight: 400;
 }
@@ -36,24 +38,21 @@
 }
 
 #myProjects {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Comic Neue', cursive;
   box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
-
 }
 
 #mainLinks {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Pacifico', cursive;
   list-style: none;
- 
-
 }
 
 #mainLinks li {
-    cursor: pointer;
-    text-decoration: underline;
-    display: inline-block; 
-    padding: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block; 
+  padding: 5px;
 }
 
 header {
@@ -65,23 +64,21 @@ footer {
 }
 
 h1 {
-  font-family: 'Golos Text', sans-serif;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-size: 32px;
 }
 
 h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-size: 26px;
   font-weight: 400;
 }
 
 h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Comic Neue', cursive;
   font-size: 18px;
   font-weight: 400;
 }
-
 
 @keyframes logo-spin {
   from {
