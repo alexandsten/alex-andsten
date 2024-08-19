@@ -13,7 +13,7 @@ const AboutMe = () => {
   return (
    
       <Stack id='aboutMe'  width={'99vw'}  height={'100vh'} sx={{ backgroundColor: 'teal'}}
-      justifyContent={'center'}
+      justifyContent={'center'} pt={5}
       >
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
           <PulseDiv>
@@ -21,8 +21,8 @@ const AboutMe = () => {
           </PulseDiv>
         </Stack>
 
-        <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
-          <Stack>
+        <Stack width={'100%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
+          <Stack justifyContent={'center'} alignItems={'center'} p={5}>
             <Typography>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
@@ -57,7 +57,7 @@ const AboutMe = () => {
               Mina färdigheter - javascript osv
             </Typography>
           </Stack>
-          <Stack>
+          <Stack justifyContent={'center'} alignItems={'center'} p={5}>
             <Typography>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
