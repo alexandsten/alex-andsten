@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 import AboutMe from './components/AboutMe'
 import MyProjects from './components/MyProjects'
 import ContactLinks from './components/ContactLinks'
-import MenuNav from './components/Links'
 import al3 from './img/alex1.jpg'
 import { Stack, Typography, GlobalStyles } from '@mui/material';
 
@@ -78,7 +77,7 @@ function App() {
         <Element name="section2">
           <MyProjects />
         </Element>
-          <MenuNav />
+          
         <Footer /> 
       </Stack>
     </>
