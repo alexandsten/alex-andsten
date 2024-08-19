@@ -16,81 +16,81 @@ const AboutMe = () => {
       justifyContent={'center'} pt={5}
       >
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-            <h2>Utbildning och kunskaper</h2>
+            <h3>Utbildning och kunskaper</h3>
         </Stack>
 
         <Stack width={'100%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
           <Stack justifyContent={'center'} alignItems={'center'} p={5}>
-            <h2>Kunskaper</h2>
+            <h3>Kunskaper</h3>
 
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
 
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               2022-pågående
             - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
             arbete med API’er, grundläggande UX, testning, agilt projektmetodik
             </Typography>
           
         
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               Interaktiva medier och webbteknologier, Linnéuniversitetet
             </Typography>
           
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               2020-2021
               - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
               phpMyAdmin, SQL, MySQL
             </Typography>
             
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
             3-årig IT/media gymnasieutbildning, John Bauer
             </Typography>
         
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               2008-2011
             -HTML, CSS, Adobe paketet, bild retuschering
             </Typography>
 
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               Mina färdigheter - javascript osv
             </Typography>
           </Stack>
           <Stack justifyContent={'center'} alignItems={'center'} p={5}>
-            <h2>Utbildning / erfarenhet</h2>
+            <h3>Utbildning / erfarenhet</h3>
 
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
 
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               2022-pågående
             - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
             arbete med API’er, grundläggande UX, testning, agilt projektmetodik
             </Typography>
           
         
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               Interaktiva medier och webbteknologier, Linnéuniversitetet
             </Typography>
           
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               2020-2021
               - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
               phpMyAdmin, SQL, MySQL
             </Typography>
             
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
             3-årig IT/media gymnasieutbildning, John Bauer
             </Typography>
         
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               2008-2011
             -HTML, CSS, Adobe paketet, bild retuschering
             </Typography>
 
-            <Typography sx={{ fontFamily: "Gotu" }}>
+            <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
               Mina färdigheter - javascript osv
             </Typography>
           </Stack>

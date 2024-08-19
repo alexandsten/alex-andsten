@@ -30,9 +30,14 @@ const MyProjects = () => {
         <Stack width={'75%'} mt={5}>
          <Slider {...settings} >
           <Stack>
-            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}>
-              <a href="https://storied-sundae-b1d64e.netlify.app/" target='_blank'>Nostradamage</a> 
-              <Stack flexDirection={'column'}>
+            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+              sx={{ border: '3px solid white', borderRadius: '15px'}}
+            >
+              <Stack justifyContent={'center'} alignItems={'center'}>
+                <Typography >Nostradamage</Typography> 
+                <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
+              </Stack>
+              <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
                 <Typography >Predictions startup for MMA</Typography> 
                <PulseDiv>
                 <Typography >Läs mer</Typography> 
