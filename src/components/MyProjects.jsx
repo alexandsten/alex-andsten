@@ -19,19 +19,29 @@ const MyProjects = () => {
     const PulseDiv = styled.div`
       animation: 2s ${pulseAnimation} infinite;
     `;
+
+    const CustomSlider = styled(Slider)`
+      .slick-prev:before {
+        z-index: 1;
+        color: black; 
+      }
+      .slick-next:before {
+        color: black; 
+      }
+    `;
   return (
     <>
-      <Stack height={'100vh'} width={'99vw'} sx={{ backgroundColor: 'pink'}}
+      <Stack height={'100vh'} width={'99vw'} sx={{ backgroundColor: '#fcfcf2'}}
         justifyContent={'center'} alignItems={'center'}
       >
 
         <h2>Mina projekt</h2>
 
         <Stack width={'75%'} mt={5}>
-         <Slider {...settings} >
+         <CustomSlider {...settings} >
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid white', borderRadius: '15px'}}
+              sx={{ border: '3px solid black', borderRadius: '15px'}}
             >
               <Grid container>
                 <Grid item md={6} sm={12}>
@@ -97,8 +107,8 @@ const MyProjects = () => {
               </Grid>
             </Stack>
           </Stack>
-          
-        </Slider> 
+
+        </CustomSlider> 
         </Stack>
         
       </Stack>
