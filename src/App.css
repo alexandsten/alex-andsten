@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Comic+Neue:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Major+Mono+Display&display=swap');
 
 #root {
   padding: 0;
@@ -14,14 +15,14 @@
 }
 
 .para {
-  font-family: 'Comic Neue', cursive;
+  font-family: "Gotu", sans-serif;
   font-size: 18px;
   margin: auto;
   width: 50%;
 }
 
 .para b {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Gotu", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -38,13 +39,13 @@
 }
 
 #myProjects {
-  font-family: 'Comic Neue', cursive;
+  font-family: "Gotu", sans-serif;
   box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
 }
 
 #mainLinks {
-  font-family: 'Pacifico', cursive;
+  font-family: "Gotu", sans-serif;
   list-style: none;
 }
 
@@ -69,13 +70,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Major Mono Display", monospace;
   font-size: 26px;
   font-weight: 400;
 }
 
 h3 {
-  font-family: 'Comic Neue', cursive;
+  font-family: "Major Mono Display", monospace;
   font-size: 18px;
   font-weight: 400;
 }

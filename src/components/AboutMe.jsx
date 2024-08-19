@@ -25,74 +25,74 @@ const AboutMe = () => {
           <Stack justifyContent={'center'} alignItems={'center'} p={5}>
             <h2>Kunskaper</h2>
 
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
 
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               2022-pågående
             - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
             arbete med API’er, grundläggande UX, testning, agilt projektmetodik
             </Typography>
           
         
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               Interaktiva medier och webbteknologier, Linnéuniversitetet
             </Typography>
           
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               2020-2021
               - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
               phpMyAdmin, SQL, MySQL
             </Typography>
             
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
             3-årig IT/media gymnasieutbildning, John Bauer
             </Typography>
         
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               2008-2011
             -HTML, CSS, Adobe paketet, bild retuschering
             </Typography>
 
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               Mina färdigheter - javascript osv
             </Typography>
           </Stack>
           <Stack justifyContent={'center'} alignItems={'center'} p={5}>
             <h2>Utbildning / erfarenhet</h2>
 
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
 
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               2022-pågående
             - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
             arbete med API’er, grundläggande UX, testning, agilt projektmetodik
             </Typography>
           
         
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               Interaktiva medier och webbteknologier, Linnéuniversitetet
             </Typography>
           
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               2020-2021
               - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
               phpMyAdmin, SQL, MySQL
             </Typography>
             
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
             3-årig IT/media gymnasieutbildning, John Bauer
             </Typography>
         
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               2008-2011
             -HTML, CSS, Adobe paketet, bild retuschering
             </Typography>
 
-            <Typography>
+            <Typography sx={{ fontFamily: "Gotu" }}>
               Mina färdigheter - javascript osv
             </Typography>
           </Stack>

@@ -35,14 +35,22 @@ function App() {
     <Stack width={'100%'} justifyContent={'center'} alignItems={'center'}>
 
     <Stack p={5} height={'20vh'}>
-      <Typography sx={{ fontSize: '3em', fontFamily: "'Press Start 2P', cursive, sans-serif" }}>
+      <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
         Alex Andstén - Frontendutvecklare
       </Typography>
     </Stack>
      
         <Stack width={'50vw'} p={5}>
-          <Link to="section1" smooth={true} duration={500}>Mina kunskaper</Link>
-          <Link to="section2" smooth={true} duration={500}>Mina projekt</Link>
+          <Link to="section1" smooth={true} duration={500}>
+            <Typography sx={{ fontFamily: "Gotu" }}>
+               Mina kunskaper
+            </Typography>
+          </Link>
+          <Link to="section2" smooth={true} duration={500}>
+            <Typography sx={{ fontFamily: "Gotu" }}>
+              Mina projekt
+            </Typography>
+          </Link>
         </Stack>
       
         
@@ -51,11 +59,11 @@ function App() {
 
         <h2>Frontendutvecklare</h2>
 
-        <Typography>
+        <Typography sx={{ fontFamily: "Gotu" }}>
           Kreativ och nyfiken. Alltid öppen för roliga projekt.
         </Typography>
 
-        <Typography>
+        <Typography sx={{ fontFamily: "Gotu" }}>
           Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
           på en spännande och innovativ praktikplats. Jag är också beredd att lära mig nya
           teknologier och arbetssätt för att fortsätta utvecklas som frontendutvecklare.
