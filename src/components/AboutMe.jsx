@@ -23,6 +23,8 @@ const AboutMe = () => {
 
         <Stack width={'100%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
           <Stack justifyContent={'center'} alignItems={'center'} p={5}>
+            <h2>Kunskaper</h2>
+
             <Typography>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
@@ -58,6 +60,8 @@ const AboutMe = () => {
             </Typography>
           </Stack>
           <Stack justifyContent={'center'} alignItems={'center'} p={5}>
+            <h2>Utbildning / erfarenhet</h2>
+
             <Typography>
               Frontendutvecklare, JENSEN yrkeshögskola
             </Typography>
