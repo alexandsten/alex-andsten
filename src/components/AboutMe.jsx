@@ -12,7 +12,8 @@ const AboutMe = () => {
   `;
   return (
    
-      <Stack id='aboutMe'  width={'99vw'}  height={'100vh'} sx={{ backgroundColor: 'teal'}}
+      <Stack id='aboutMe'  width={'99vw'}  height={'100vh'} sx={{ background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)'
+      }}
       justifyContent={'center'} pt={5}
       >
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
