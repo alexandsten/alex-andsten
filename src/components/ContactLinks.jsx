@@ -14,7 +14,7 @@ const ContactLinks = () => {
               076-260 82 27
           </Typography>
         <Stack justifyContent={'center'} alignItems={'center'}>
-          <h3>Linkedin och github</h3>
+          {/* <h3>Linkedin och github</h3> */}
           <ul id='mainLinks'>
             <a href="https://linkedin.com/in/alex-andstén-47937116b" target='_blank'>
               <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>

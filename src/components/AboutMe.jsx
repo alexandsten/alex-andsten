@@ -24,48 +24,35 @@ const AboutMe = () => {
         <Grid container>
           <Grid item sm={12} md={6}>
             
-              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5}>
+              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
                 <h3>Kunskaper</h3>
-
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Frontendutvecklare, JENSEN yrkeshögskola
+                  TypeScript
                 </Typography>
-
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  2022-pågående
-                - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
-                arbete med API’er, grundläggande UX, testning, agilt projektmetodik
+                  JavaScript
                 </Typography>
-              
-            
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Interaktiva medier och webbteknologier, Linnéuniversitetet
+                  React
                 </Typography>
-              
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  2020-2021
-                  - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
-                  phpMyAdmin, SQL, MySQL
+                  HTML
                 </Typography>
-                
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                3-årig IT/media gymnasieutbildning, John Bauer
+                  CSS
                 </Typography>
-            
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  2008-2011
-                -HTML, CSS, Adobe paketet, bild retuschering
+                  Node.js 
                 </Typography>
-
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Mina färdigheter - javascript osv
+                  Firebase
                 </Typography>
               </Stack>
              
             
           </Grid>
           <Grid item sm={12} md={6}>
-             <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5}>
+             <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
                 <h3>Utbildning / erfarenhet</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>

@@ -33,17 +33,24 @@ function App() {
         }}
       />
     <Stack width={'100%'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white'}}>
-
-    <Stack p={5} height={'20vh'}>
-      <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-        Alex Andstén - Frontendutvecklare
-      </Typography>
-    </Stack>
-     
-        <Stack width={'50vw'} p={5}>
+      
+      <Stack width={'100%'} flexDirection={'row-reverse'}>
+        
+        <Stack p={5} flexDirection={'column'} height={'20vh'}>
+          <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
+            Alex Andstén
+          </Typography>
+          <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
+            Frontendutvecklare
+          </Typography>
+        </Stack>
+      
+        
+      </Stack>  
+      <Stack width={'50vw'} p={5}>
           <Link to="section1" smooth={true} duration={500}>
             <Typography sx={{ fontFamily: "Gotu" }}>
-               Mina kunskaper
+                Mina kunskaper
             </Typography>
           </Link>
           <Link to="section2" smooth={true} duration={500}>
@@ -51,13 +58,11 @@ function App() {
               Mina projekt
             </Typography>
           </Link>
-        </Stack>
-      
-        
+        </Stack>  
 
         <Stack className='para'>
 
-        <h2>Frontendutvecklare</h2>
+        {/* <h2>Frontendutvecklare</h2> */}
 
         <Typography sx={{ fontFamily: "Gotu" }}>
           Kreativ och nyfiken. Alltid öppen för roliga projekt.
@@ -73,7 +78,7 @@ function App() {
           min praktikperiod.
         </Typography>
 
-      <Stack justifyContent={'center'} alignItems={'center'} sx={{ width: '100%'}}>
+      <Stack flexDirection={'flex-start'} justifyContent={'flex-start'} alignItems={'flex-start'} sx={{ width: '100%'}}>
         <img src={al3} alt="Alex" style={{width: '50%', height: '50%'}} />
       </Stack>
 
