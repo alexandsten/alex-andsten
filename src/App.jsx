@@ -22,6 +22,14 @@ function App() {
     },
   }));
 
+  const Line = styled('div')({
+    width: '100%',
+    height: '3px', 
+    backgroundColor: 'black',
+    marginTop: '-5em',
+    marginBottom: '5em'
+  });
+
   return (
     <>
     <GlobalStyles
@@ -73,7 +81,7 @@ function App() {
         </Grid>
       </Grid> 
       </Stack>  
-  
+      <Line />
       <Stack className='para'>
         <Stack width={'100%'} >
             <Grid container>
