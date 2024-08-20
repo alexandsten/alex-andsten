@@ -49,14 +49,14 @@ function App() {
           }
         }}
       />
-    <Stack width={'100vw'}  justifyContent={'center'} alignItems={'center'} >
+    <Stack minWidth={'100vw'}  justifyContent={'center'} alignItems={'center'} >
       
-      <Stack width={'100%'}  minHeight={'100vh'} sx={{ backgroundColor: 'white'}}>
+      <Stack width={'100%'}  sx={{ backgroundColor: 'white'}}>
         
         <Stack >
           <Grid container >
             <Grid item sm={12} md={7}>
-                <Stack flexDirection={'column'} p={1}>
+                <Stack flexDirection={'column'} ml={2}>
                   <Typography sx={{ fontSize: isSmallScreen ? '1.5em' : '3em', fontFamily: "Major Mono Display" }}>
                     Alex Andstén
                   </Typography>
@@ -66,15 +66,15 @@ function App() {
                 </Stack>
               </Grid>
               <Grid item sm={12} md={5}>
-                <Stack width={'30vw'} mt={10} flexDirection={'row-reverse'}>
-                  <Stack flexDirection={'column'}>
+                <Stack flexDirection={'row-reverse'}>
+                  <Stack flexDirection={'column'} m={4}>
                     <Link to="section1" smooth={true} duration={500}>
-                      <Typography sx={{ fontFamily: "Gotu" }}>
+                      <Typography sx={{ fontFamily: "Gotu", fontSize: '18px' }}>
                           Mina kunskaper
                       </Typography>
                     </Link>
                     <Link to="section2" smooth={true} duration={500}>
-                      <Typography sx={{ fontFamily: "Gotu" }}>
+                      <Typography sx={{ fontFamily: "Gotu", fontSize: '18px' }}>
                         Mina projekt
                       </Typography>
                     </Link>
