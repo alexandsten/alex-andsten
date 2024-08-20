@@ -36,6 +36,9 @@ const AboutMe = () => {
                   React
                 </Typography>
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                  React Native
+                </Typography>
+                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   HTML
                 </Typography>
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>

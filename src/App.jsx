@@ -9,7 +9,7 @@ import AboutMe from './components/AboutMe'
 import MyProjects from './components/MyProjects'
 import ContactLinks from './components/ContactLinks'
 import al3 from './img/alex1.jpg'
-import { Stack, Typography, GlobalStyles } from '@mui/material';
+import { Stack, Typography, GlobalStyles, Grid } from '@mui/material';
 
 
 function App() {
@@ -32,33 +32,43 @@ function App() {
           }
         }}
       />
-    <Stack width={'100%'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white'}}>
+    <Stack width={'100vw'}  justifyContent={'center'} alignItems={'center'} >
       
-      <Stack width={'100%'} flexDirection={'row-reverse'}>
+      <Stack width={'100%'} flexDirection={'row-reverse'} minHeight={'40vh'} sx={{ backgroundColor: 'white'}}>
         
-        <Stack p={5} flexDirection={'column'} height={'20vh'}>
-          <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-            Alex Andstén
-          </Typography>
-          <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-            Frontendutvecklare
-          </Typography>
-        </Stack>
-      
+      <Grid container>
+        <Grid item sm={12} md={5}>
+          <Stack width={'30vw'} mt={10} flexDirection={'row-reverse'}>
+            <Stack flexDirection={'column'}>
+              <Link to="section1" smooth={true} duration={500}>
+                <Typography sx={{ fontFamily: "Gotu" }}>
+                    Mina kunskaper
+                </Typography>
+              </Link>
+              <Link to="section2" smooth={true} duration={500}>
+                <Typography sx={{ fontFamily: "Gotu" }}>
+                  Mina projekt
+                </Typography>
+              </Link>
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item sm={12} md={7}>
+          <Stack flexDirection={'column'}>
+            <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
+              Alex Andstén
+            </Typography>
+            <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
+              Frontendutvecklare
+            </Typography>
+          </Stack>
+        </Grid>
+      </Grid>
+
+        
         
       </Stack>  
-      <Stack width={'50vw'} p={5}>
-          <Link to="section1" smooth={true} duration={500}>
-            <Typography sx={{ fontFamily: "Gotu" }}>
-                Mina kunskaper
-            </Typography>
-          </Link>
-          <Link to="section2" smooth={true} duration={500}>
-            <Typography sx={{ fontFamily: "Gotu" }}>
-              Mina projekt
-            </Typography>
-          </Link>
-        </Stack>  
+  
 
         <Stack className='para'>
 
@@ -68,20 +78,19 @@ function App() {
           Kreativ och nyfiken. Alltid öppen för roliga projekt.
         </Typography>
 
-        <Typography sx={{ fontFamily: "Gotu" }}>
-          Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-          på en spännande och innovativ praktikplats. Jag är också beredd att lära mig nya
-          teknologier och arbetssätt för att fortsätta utvecklas som frontendutvecklare.
-          Jag tror att min passion för teknologi och mitt engagemang för att skapa
-          användarvänliga gränssnitt och webbapplikationer skulle göra mig till en värdefull
-          tillgång för teamet. Jag ser fram emot att diskutera hur jag kan bidra till företaget under
-          min praktikperiod.
-        </Typography>
-
-      <Stack flexDirection={'flex-start'} justifyContent={'flex-start'} alignItems={'flex-start'} sx={{ width: '100%'}}>
-        <img src={al3} alt="Alex" style={{width: '50%', height: '50%'}} />
-      </Stack>
-
+        <Stack width={'100%'} >
+            <Grid container>
+              <Grid item sm={12} md={6}>
+                <Typography sx={{ fontFamily: "Gotu" }}>
+                  Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
+                  på en spännande och innovativ praktikplats. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nostrum delectus, laudantium iusto non excepturi consequuntur repudiandae ut consectetur, asperiores cum quas ducimus incidunt maiores eveniet temporibus quidem deleniti consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat odit illum delectus et ut in maxime dignissimos libero hic repudiandae assumenda, numquam eaque iure totam, explicabo velit magnam. Soluta, repellat. lorem
+                </Typography>
+              </Grid>
+              <Grid item sm={12} md={6} sx={{ marginBottom: '-1em'}}>
+                  <img src={al3} alt="Alex" style={{width: '540px', height: '425px'}} />
+              </Grid>
+            </Grid>
+        </Stack>
       </Stack>
         
         <Element name="section1">
