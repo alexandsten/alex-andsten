@@ -18,7 +18,7 @@ const AboutMe = () => {
       >
         
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-            <h3>Utbildning och kunskaper</h3>
+            <h3>Erfarenhet & kunskaper</h3>
         </Stack>
         <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
         <Grid container>
@@ -56,41 +56,32 @@ const AboutMe = () => {
           </Grid>
           <Grid item sm={12} md={6}>
              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-                <h3>Utbildning / erfarenhet</h3>
+                <h3>Erfarenhet</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Frontendutvecklare, JENSEN yrkeshögskola
+                  Nostra / Nostradamage. 2024 - pågående
                 </Typography>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  2022-pågående
-                - Javascript, HTML, CSS, ramverk, react, react native, jsx, databashantering,
-                arbete med API’er, grundläggande UX, testning, agilt projektmetodik
+                  Nobel Light Week mobilapplikation. 2024 - pågående
+                </Typography>
+
+                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                  hitRact internship. 2023 - 2024
+                </Typography>
+
+                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                  Frontendutvecklare, JENSEN yrkeshögskola. 2022 - 2024
                 </Typography>
               
-            
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Interaktiva medier och webbteknologier, Linnéuniversitetet
+                  Interaktiva medier och webbteknologier, Linnéuniversitetet. 2020-2021
                 </Typography>
               
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  2020-2021
-                  - Javascript, HTML, CSS, PHP, lärande av klient - server - databas,
-                  phpMyAdmin, SQL, MySQL
-                </Typography>
-                
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                3-årig IT/media gymnasieutbildning, John Bauer
+                3-årig IT/media gymnasieutbildning, John Bauer. 2008-2011
                 </Typography>
             
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  2008-2011
-                -HTML, CSS, Adobe paketet, bild retuschering
-                </Typography>
-
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Mina färdigheter - javascript osv
-                </Typography>
               </Stack>
           </Grid>
         </Grid>
