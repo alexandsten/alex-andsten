@@ -63,7 +63,7 @@ const AboutMe = () => {
                 </Typography>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Nobel Light Week mobilapplikation. 2024 - pågående
+                  Nobel Week Lights mobilapplikation. 2024 - pågående
                 </Typography>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
