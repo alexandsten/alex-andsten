@@ -50,58 +50,75 @@ function App() {
       />
     <Stack width={'100vw'}  justifyContent={'center'} alignItems={'center'} >
       
-      <Stack width={'100%'} flexDirection={'row-reverse'} minHeight={'45vh'} sx={{ backgroundColor: 'white'}}>
+      <Stack width={'100%'}  minHeight={'100vh'} sx={{ backgroundColor: 'white'}}>
         
-      <Grid container>
-        <Grid item sm={12} md={5}>
-          <Stack width={'30vw'} mt={10} flexDirection={'row-reverse'}>
-            <Stack flexDirection={'column'}>
-              <Link to="section1" smooth={true} duration={500}>
-                <Typography sx={{ fontFamily: "Gotu" }}>
-                    Mina kunskaper
+        <Stack flexDirection={'row-reverse'}>
+          <Grid container>
+            <Grid item sm={12} md={5}>
+              <Stack width={'30vw'} mt={10} flexDirection={'row-reverse'}>
+                <Stack flexDirection={'column'}>
+                  <Link to="section1" smooth={true} duration={500}>
+                    <Typography sx={{ fontFamily: "Gotu" }}>
+                        Mina kunskaper
+                    </Typography>
+                  </Link>
+                  <Link to="section2" smooth={true} duration={500}>
+                    <Typography sx={{ fontFamily: "Gotu" }}>
+                      Mina projekt
+                    </Typography>
+                  </Link>
+                </Stack>
+              </Stack>
+            </Grid>
+            <Grid item sm={12} md={7}>
+              <Stack flexDirection={'column'}>
+                <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
+                  Alex Andstén
                 </Typography>
-              </Link>
-              <Link to="section2" smooth={true} duration={500}>
-                <Typography sx={{ fontFamily: "Gotu" }}>
-                  Mina projekt
+                <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
+                  Frontendutvecklare
                 </Typography>
-              </Link>
-            </Stack>
-          </Stack>
-        </Grid>
-        <Grid item sm={12} md={7}>
-          <Stack flexDirection={'column'}>
-            <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-              Alex Andstén
-            </Typography>
-            <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-              Frontendutvecklare
-            </Typography>
-          </Stack>
-        </Grid>
-      </Grid> 
-      </Stack>  
+              </Stack>
+            </Grid>
+          </Grid>
+        </Stack> 
+       
       <Line />
-      <Stack className='para'>
-        <Stack width={'100%'} >
+      <Stack className='para' width={'100%'} height={'100%'} >
+        <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} justifyContent={'flex-end'}>
             <Grid container>
-              <Grid item sm={12} md={6} gap={3}>
-              <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                Kreativ och nyfiken. Alltid öppen för roliga projekt.
-              </CustomTypography>
+              <Grid item sm={12} md={6} gap={3} p={5}>
                 <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                  Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-                  på en spännande och innovativ praktikplats. 
+                  Kreativ och nyfiken. Alltid öppen för roliga projekt.
                 </CustomTypography>
-                <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
+                    på en spännande och innovativ praktikplats. 
+                  </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                  </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                  Kreativ och nyfiken. Alltid öppen för roliga projekt.
+                </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
+                    på en spännande och innovativ praktikplats. 
+                  </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                  </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                  Kreativ och nyfiken. Alltid öppen för roliga projekt.
                 </CustomTypography>
               </Grid>
-              <Grid item sm={12} md={6} sx={{ marginBottom: '-1em'}}>
-                  <img src={al3} alt="Alex" style={{width: '540px', height: '425px'}} />
+              <Grid item sm={12} md={6} sx={{ marginBottom: '-1em', width: '100%'}}>
+                  {/* <img src={al3} alt="Alex" style={{width: '540px', height: '425px'}} /> */}
+                  <img src={al3} alt="Alex" style={{width: '100%', height: '100%'}} />
               </Grid>
             </Grid>
-        </Stack>
+          </Stack>
+        </Stack> 
       </Stack>
         
         <Element name="section1">

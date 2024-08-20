@@ -12,7 +12,7 @@ const AboutMe = () => {
   `;
   return (
    
-      <Stack id='aboutMe'  width={'100vw'} sx={{ background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)', minHeight: '100vh'
+      <Stack id='aboutMe'  minWidth={'100vw'} sx={{ background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)', minHeight: '100vh'
       }}
       justifyContent={'center'} alignItems={'center'} pt={5}
       >
