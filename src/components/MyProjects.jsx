@@ -31,7 +31,7 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack height={'100vh'} width={'99vw'} sx={{ backgroundColor: 'white'}}
+      <Stack height={'100vh'} width={'90vw'} sx={{ backgroundColor: 'white'}}
         justifyContent={'center'} alignItems={'center'}
       >
 

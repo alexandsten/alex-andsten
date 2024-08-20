@@ -38,7 +38,8 @@ function App() {
           body: {
             margin: 0,
             padding: 0,
-            overflowX: 'hidden'
+            overflowX: 'hidden',
+            maxWidth: '100vw'
             // background: 'radial-gradient(circle, rgba(255,185,0,1) 0%, #ed652b 60%)',
             // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(${texture2})`,
             // backgroundSize: 'cover',
@@ -49,23 +50,23 @@ function App() {
           }
         }}
       />
-    <Stack minWidth={'100vw'}   justifyContent={'center'} alignItems={'center'} >
+    <Stack maxWidth={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white' }}>
       
-      <Stack width={'100%'} minHeight={'100vh'}  sx={{ backgroundColor: 'white'}}>
+      <Stack  minHeight={'100vh'} maxWidth={'100vw'} >
         
         <Stack >
           <Grid container >
-            <Grid item xs={12} md={7}>
+            <Grid item xs={12} md={6}>
                 <Stack flexDirection={'column'} ml={2}>
                   <Typography sx={{ fontSize: isSmallScreen ? '1.5em' : '3em', fontFamily: "Major Mono Display" }}>
                     Alex Andstén
                   </Typography>
-                  <Typography sx={{ fontSize: isSmallScreen ? '1.3em' : '2.5em', fontFamily: "Major Mono Display" }}>
+                  {/* <Typography sx={{ fontSize: isSmallScreen ? '1.3em' : '2.5em', fontFamily: "Major Mono Display" }}>
                     Frontendutvecklare
-                  </Typography>
+                  </Typography> */}
                 </Stack>
               </Grid>
-              <Grid item sm={12} md={5}>
+              <Grid item sm={12} md={6}>
                 <Stack flexDirection={'row-reverse'}>
                   <Stack flexDirection={'column'} m={4}>
                     <Link to="section1" smooth={true} duration={500}>
@@ -87,9 +88,11 @@ function App() {
        
       <Line />
       <Stack className='para' width={'80%'} height={'100%'} >
-        <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} justifyContent={'flex-end'}>
+        <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} 
+        justifyContent={'flex-end'}
+        >
             <Grid container>
-              <Grid item minWidth={12} lg={5} gap={3} p={5} sx={{ zIndex: 5}}>
+              <Grid item md={12} lg={5} gap={3} sx={{ zIndex: 5}}>
                 <Stack width={isLargeScreen? '100%' : '150%'} spacing={1}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '28px',
                     fontWeight: 'bold' }}
@@ -115,10 +118,9 @@ function App() {
                     </CustomTypography>
                 </Stack>
               </Grid>
-              <Grid item md={12} lg={7} sx={{ marginBottom: '-1em', width: '100%'}}>
-                <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
-                  {/* <img src={al3} alt="Alex" style={{width: '100%', height: '100%'}} /> */}
-              </Grid>
+              <Grid container item md={12} lg={7} justifyContent={'flex-end'} alignItems={'flex-end'} sx={{ width: isSmallScreen ? '95%' : '100%', height: '100%' }}>
+  <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
+</Grid>
             </Grid>
           </Stack>
         </Stack> 
