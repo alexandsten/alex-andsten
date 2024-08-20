@@ -49,13 +49,13 @@ function App() {
           }
         }}
       />
-    <Stack minWidth={'100vw'}  justifyContent={'center'} alignItems={'center'} >
+    <Stack minWidth={'100vw'}   justifyContent={'center'} alignItems={'center'} >
       
-      <Stack width={'100%'}  sx={{ backgroundColor: 'white'}}>
+      <Stack width={'100%'} minHeight={'100vh'}  sx={{ backgroundColor: 'white'}}>
         
         <Stack >
           <Grid container >
-            <Grid item sm={12} md={7}>
+            <Grid item xs={12} md={7}>
                 <Stack flexDirection={'column'} ml={2}>
                   <Typography sx={{ fontSize: isSmallScreen ? '1.5em' : '3em', fontFamily: "Major Mono Display" }}>
                     Alex Andstén
@@ -86,10 +86,10 @@ function App() {
         </Stack> 
        
       <Line />
-      <Stack className='para' width={'100%'} height={'100%'} >
+      <Stack className='para' width={'80%'} height={'100%'} >
         <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} justifyContent={'flex-end'}>
             <Grid container>
-              <Grid item minWidth={12} lg={6} gap={3} p={5} sx={{ zIndex: 5}}>
+              <Grid item minWidth={12} lg={5} gap={3} p={5} sx={{ zIndex: 5}}>
                 <Stack width={isLargeScreen? '100%' : '150%'} spacing={1}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '28px',
                     fontWeight: 'bold' }}
@@ -113,15 +113,9 @@ function App() {
                       Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
                       på en spännande och innovativ praktikplats. 
                     </CustomTypography>
-                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
-                    </CustomTypography>
-                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Kreativ och nyfiken. Alltid öppen för roliga projekt.
-                  </CustomTypography>
                 </Stack>
               </Grid>
-              <Grid item md={12} lg={6} sx={{ marginBottom: '-1em', width: '100%'}}>
+              <Grid item md={12} lg={7} sx={{ marginBottom: '-1em', width: '100%'}}>
                 <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
                   {/* <img src={al3} alt="Alex" style={{width: '100%', height: '100%'}} /> */}
               </Grid>
