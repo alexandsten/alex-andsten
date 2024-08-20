@@ -26,8 +26,6 @@ function App() {
     width: '100%',
     height: '3px', 
     backgroundColor: 'black',
-    marginTop: '-5em',
-    marginBottom: '5em'
   });
 
   const isSmallScreen = useMediaQuery('(max-width:1200px)');
@@ -55,34 +53,35 @@ function App() {
       
       <Stack width={'100%'}  minHeight={'100vh'} sx={{ backgroundColor: 'white'}}>
         
-        <Stack flexDirection={'row-reverse'}>
-          <Grid container>
-            <Grid item sm={12} md={5}>
-              <Stack width={'30vw'} mt={10} flexDirection={'row-reverse'}>
-                <Stack flexDirection={'column'}>
-                  <Link to="section1" smooth={true} duration={500}>
-                    <Typography sx={{ fontFamily: "Gotu" }}>
-                        Mina kunskaper
-                    </Typography>
-                  </Link>
-                  <Link to="section2" smooth={true} duration={500}>
-                    <Typography sx={{ fontFamily: "Gotu" }}>
-                      Mina projekt
-                    </Typography>
-                  </Link>
-                </Stack>
-              </Stack>
-            </Grid>
+        <Stack >
+          <Grid container >
             <Grid item sm={12} md={7}>
-              <Stack flexDirection={'column'}>
-                <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-                  Alex Andstén
-                </Typography>
-                <Typography sx={{ fontSize: '3em', fontFamily: "Major Mono Display" }}>
-                  Frontendutvecklare
-                </Typography>
-              </Stack>
-            </Grid>
+                <Stack flexDirection={'column'} p={1}>
+                  <Typography sx={{ fontSize: isSmallScreen ? '1.5em' : '3em', fontFamily: "Major Mono Display" }}>
+                    Alex Andstén
+                  </Typography>
+                  <Typography sx={{ fontSize: isSmallScreen ? '1.3em' : '3em', fontFamily: "Major Mono Display" }}>
+                    Frontendutvecklare
+                  </Typography>
+                </Stack>
+              </Grid>
+              <Grid item sm={12} md={5}>
+                <Stack width={'30vw'} mt={10} flexDirection={'row-reverse'}>
+                  <Stack flexDirection={'column'}>
+                    <Link to="section1" smooth={true} duration={500}>
+                      <Typography sx={{ fontFamily: "Gotu" }}>
+                          Mina kunskaper
+                      </Typography>
+                    </Link>
+                    <Link to="section2" smooth={true} duration={500}>
+                      <Typography sx={{ fontFamily: "Gotu" }}>
+                        Mina projekt
+                      </Typography>
+                    </Link>
+                  </Stack>
+                </Stack>
+              </Grid>
+           
           </Grid>
         </Stack> 
        
@@ -91,7 +90,7 @@ function App() {
         <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} justifyContent={'flex-end'}>
             <Grid container>
               <Grid item minWidth={12} lg={6} gap={3} p={5} sx={{ zIndex: 5}}>
-                <Stack width={isSmallScreen? '100%' : '150%'} spacing={1}>
+                <Stack width={isLargeScreen? '100%' : '150%'} spacing={1}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '28px',
                     fontWeight: 'bold' }}
                     >
