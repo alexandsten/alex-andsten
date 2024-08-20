@@ -21,6 +21,9 @@ const MyProjects = () => {
     `;
 
     const CustomSlider = styled(Slider)`
+        .slick-list {
+          overflow: hidden;  
+        }
       .slick-prev:before {
         z-index: 1;
         color: black; 
@@ -31,7 +34,7 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack height={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white'}}
+      <Stack height={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white', overflowX: 'hidden'}}
         justifyContent={'center'} alignItems={'center'}
       >
 

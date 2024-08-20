@@ -52,7 +52,7 @@ function App() {
       />
     <Stack maxWidth={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white' }}>
       
-      <Stack  minHeight={'100vh'} maxWidth={'100vw'} >
+      <Stack  minHeight={'100vh'}  >
         
         <Stack >
           <Grid container >
