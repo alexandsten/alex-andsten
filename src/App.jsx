@@ -10,9 +10,17 @@ import MyProjects from './components/MyProjects'
 import ContactLinks from './components/ContactLinks'
 import al3 from './img/alex1.jpg'
 import { Stack, Typography, GlobalStyles, Grid } from '@mui/material';
+import { styled } from '@mui/system';
 
 
 function App() {
+
+  const CustomTypography = styled(Typography)(({ theme }) => ({
+    '&::first-letter': {
+      fontSize: '24px',
+      fontWeight: 'bold',
+    },
+  }));
 
   return (
     <>
@@ -34,7 +42,7 @@ function App() {
       />
     <Stack width={'100vw'}  justifyContent={'center'} alignItems={'center'} >
       
-      <Stack width={'100%'} flexDirection={'row-reverse'} minHeight={'40vh'} sx={{ backgroundColor: 'white'}}>
+      <Stack width={'100%'} flexDirection={'row-reverse'} minHeight={'45vh'} sx={{ backgroundColor: 'white'}}>
         
       <Grid container>
         <Grid item sm={12} md={5}>
@@ -63,28 +71,23 @@ function App() {
             </Typography>
           </Stack>
         </Grid>
-      </Grid>
-
-        
-        
+      </Grid> 
       </Stack>  
   
-
-        <Stack className='para'>
-
-        {/* <h2>Frontendutvecklare</h2> */}
-
-        <Typography sx={{ fontFamily: "Gotu" }}>
-          Kreativ och nyfiken. Alltid öppen för roliga projekt.
-        </Typography>
-
+      <Stack className='para'>
         <Stack width={'100%'} >
             <Grid container>
-              <Grid item sm={12} md={6}>
-                <Typography sx={{ fontFamily: "Gotu" }}>
+              <Grid item sm={12} md={6} gap={3}>
+              <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                Kreativ och nyfiken. Alltid öppen för roliga projekt.
+              </CustomTypography>
+                <CustomTypography sx={{ fontFamily: "Gotu" }}>
                   Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-                  på en spännande och innovativ praktikplats. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nostrum delectus, laudantium iusto non excepturi consequuntur repudiandae ut consectetur, asperiores cum quas ducimus incidunt maiores eveniet temporibus quidem deleniti consequatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat odit illum delectus et ut in maxime dignissimos libero hic repudiandae assumenda, numquam eaque iure totam, explicabo velit magnam. Soluta, repellat. lorem
-                </Typography>
+                  på en spännande och innovativ praktikplats. 
+                </CustomTypography>
+                <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                </CustomTypography>
               </Grid>
               <Grid item sm={12} md={6} sx={{ marginBottom: '-1em'}}>
                   <img src={al3} alt="Alex" style={{width: '540px', height: '425px'}} />
