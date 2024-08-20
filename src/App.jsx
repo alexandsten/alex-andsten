@@ -57,7 +57,7 @@ function App() {
         <Stack >
           <Grid container >
             <Grid item xs={12} md={6}>
-                <Stack flexDirection={'column'} ml={2}>
+                <Stack flexDirection={'column'} ml={2} pt={3}>
                   <Typography sx={{ fontSize: isSmallScreen ? '1.5em' : '3em', fontFamily: "Major Mono Display" }}>
                     Alex Andstén
                   </Typography>
@@ -93,7 +93,7 @@ function App() {
         >
             <Grid container>
               <Grid item md={12} lg={5} gap={3} sx={{ zIndex: 5}}>
-                <Stack width={isLargeScreen? '100%' : '150%'} spacing={1}>
+                <Stack width={isLargeScreen? '100%' : '140%'} spacing={1} pt={5}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '28px',
                     fontWeight: 'bold' }}
                     >
@@ -119,8 +119,8 @@ function App() {
                 </Stack>
               </Grid>
               <Grid container item md={12} lg={7} justifyContent={'flex-end'} alignItems={'flex-end'} 
-              sx={{ width: isSmallScreen ? '95%' : '100%', height: '100%' }}>
-              <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
+              sx={{ width: isSmallScreen ? '95%' : '100%', height: '100%', marginBottom: '-20px' }}>
+              <img src={al3} alt="Alex" style={{ width: '105%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
             </Grid>
             </Grid>
           </Stack>
