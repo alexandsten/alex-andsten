@@ -118,9 +118,10 @@ function App() {
                     </CustomTypography>
                 </Stack>
               </Grid>
-              <Grid container item md={12} lg={7} justifyContent={'flex-end'} alignItems={'flex-end'} sx={{ width: isSmallScreen ? '95%' : '100%', height: '100%' }}>
-  <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
-</Grid>
+              <Grid container item md={12} lg={7} justifyContent={'flex-end'} alignItems={'flex-end'} 
+              sx={{ width: isSmallScreen ? '95%' : '100%', height: '100%' }}>
+              <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
+            </Grid>
             </Grid>
           </Stack>
         </Stack> 
