@@ -11,7 +11,7 @@ import ContactLinks from './components/ContactLinks'
 import al3 from './img/alex1.jpg'
 import { Stack, Typography, GlobalStyles, Grid } from '@mui/material';
 import { styled } from '@mui/system';
-
+import { useMediaQuery} from '@mui/material';
 
 function App() {
 
@@ -29,6 +29,9 @@ function App() {
     marginTop: '-5em',
     marginBottom: '5em'
   });
+
+  const isSmallScreen = useMediaQuery('(max-width:1200px)');
+  const isLargeScreen = useMediaQuery('(max-width:1400px)');
 
   return (
     <>
@@ -87,34 +90,41 @@ function App() {
       <Stack className='para' width={'100%'} height={'100%'} >
         <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} justifyContent={'flex-end'}>
             <Grid container>
-              <Grid item sm={12} md={6} gap={3} p={5}>
-                <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                  Kreativ och nyfiken. Alltid öppen för roliga projekt.
-                </CustomTypography>
+              <Grid item minWidth={12} lg={6} gap={3} p={5} sx={{ zIndex: 5}}>
+                <Stack width={isSmallScreen? '100%' : '150%'} spacing={1}>
+                  <Typography sx={{ fontFamily: "Gotu", fontSize: '28px',
+                    fontWeight: 'bold' }}
+                    >
+                      Frontendutvecklare bosatt i Stockholm
+                  </Typography>
                   <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-                    på en spännande och innovativ praktikplats. 
+                    Kreativ och nyfiken. Alltid öppen för roliga projekt.
                   </CustomTypography>
-                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                      Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
+                      på en spännande och innovativ praktikplats. 
+                    </CustomTypography>
+                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                    </CustomTypography>
+                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Kreativ och nyfiken. Alltid öppen för roliga projekt.
                   </CustomTypography>
-                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                  Kreativ och nyfiken. Alltid öppen för roliga projekt.
-                </CustomTypography>
-                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-                    på en spännande och innovativ praktikplats. 
+                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                      Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
+                      på en spännande och innovativ praktikplats. 
+                    </CustomTypography>
+                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
+                    </CustomTypography>
+                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Kreativ och nyfiken. Alltid öppen för roliga projekt.
                   </CustomTypography>
-                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
-                  </CustomTypography>
-                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                  Kreativ och nyfiken. Alltid öppen för roliga projekt.
-                </CustomTypography>
+                </Stack>
               </Grid>
-              <Grid item sm={12} md={6} sx={{ marginBottom: '-1em', width: '100%'}}>
-                  {/* <img src={al3} alt="Alex" style={{width: '540px', height: '425px'}} /> */}
-                  <img src={al3} alt="Alex" style={{width: '100%', height: '100%'}} />
+              <Grid item md={12} lg={6} sx={{ marginBottom: '-1em', width: '100%'}}>
+                <img src={al3} alt="Alex" style={{ width: '100%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }} />
+                  {/* <img src={al3} alt="Alex" style={{width: '100%', height: '100%'}} /> */}
               </Grid>
             </Grid>
           </Stack>
