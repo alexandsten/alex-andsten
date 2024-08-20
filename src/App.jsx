@@ -60,7 +60,7 @@ function App() {
                   <Typography sx={{ fontSize: isSmallScreen ? '1.5em' : '3em', fontFamily: "Major Mono Display" }}>
                     Alex Andstén
                   </Typography>
-                  <Typography sx={{ fontSize: isSmallScreen ? '1.3em' : '3em', fontFamily: "Major Mono Display" }}>
+                  <Typography sx={{ fontSize: isSmallScreen ? '1.3em' : '2.5em', fontFamily: "Major Mono Display" }}>
                     Frontendutvecklare
                   </Typography>
                 </Stack>
