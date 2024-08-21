@@ -38,7 +38,7 @@ const MyProjects = () => {
         justifyContent={'center'} alignItems={'center'}
       >
 
-        <h2>Mina projekt</h2>
+        <h2>Arbete & projekt</h2>
 
         <Stack width={'75%'} mt={5}>
          <CustomSlider {...settings} >

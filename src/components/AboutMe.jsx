@@ -22,8 +22,7 @@ const AboutMe = () => {
         </Stack>
         <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
         <Grid container>
-          <Grid item sm={12} md={6}>
-            
+          <Grid item sm={12} md={4}>
               <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
                 <h3>Kunskaper</h3>
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
@@ -51,12 +50,10 @@ const AboutMe = () => {
                   Firebase
                 </Typography>
               </Stack>
-             
-            
           </Grid>
-          <Grid item sm={12} md={6}>
+          <Grid item sm={12} md={4}>
              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-                <h3>Erfarenhet</h3>
+                <h3>Arbete / Projekt</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   Nostra / Nostradamage. 2024 - pågående
@@ -69,6 +66,12 @@ const AboutMe = () => {
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   hitRact internship. 2023 - 2024
                 </Typography>
+            
+              </Stack>
+          </Grid>
+          <Grid item sm={12} md={4}>
+             <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
+                <h3>Utbildning</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   Frontendutvecklare, JENSEN yrkeshögskola. 2022 - 2024
