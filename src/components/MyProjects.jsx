@@ -35,87 +35,109 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack height={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white', overflowX: 'hidden'}}
-        justifyContent={'center'} alignItems={'center'}
-      >
+      <Stack height={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white', overflowX: 'hidden' }}
+  justifyContent={'center'} alignItems={'center'}
+>
+  <h2>Arbete & projekt</h2>
 
-        <h2>Arbete & projekt</h2>
-
-        <Stack width={'75%'} mt={5}>
-         <CustomSlider {...settings} >
-          <Stack>
-            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid black', borderRadius: '15px', backgroundImage: `url(${nostraPic1})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
-            >
-              <Grid container>
-                <Grid item md={6} sm={12}>
-                  <Stack justifyContent={'center'} alignItems={'center'}>
-                    <Typography >Nostradamage</Typography> 
-                    <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
-                  </Stack>
-                </Grid>
-                <Grid item md={6} sm={12}>
-                  <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                    <Typography >Predictions startup for MMA</Typography> 
-                    <PulseDiv>
-                      <Typography >Läs mer</Typography> 
-                    </PulseDiv>
-                  </Stack>
-                </Grid>
-              </Grid>
-            </Stack>
-          </Stack>
-
-          <Stack>
-            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid black', borderRadius: '15px'}}
-            >
-              <Grid container>
-                <Grid item md={6} sm={12}>
-                  <Stack justifyContent={'center'} alignItems={'center'}>
-                    <Typography >Nostradamage</Typography> 
-                    <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
-                  </Stack>
-                </Grid>
-                <Grid item md={6} sm={12}>
-                  <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                    <Typography >Predictions startup for MMA</Typography> 
-                    <PulseDiv>
-                      <Typography >Läs mer</Typography> 
-                    </PulseDiv>
-                  </Stack>
-                </Grid>
-              </Grid>
-            </Stack>
-          </Stack>
-
-          <Stack>
-            <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid black', borderRadius: '15px'}}
-            >
-              <Grid container>
-                <Grid item md={6} sm={12}>
-                  <Stack justifyContent={'center'} alignItems={'center'}>
-                    <Typography >Nostradamage</Typography> 
-                    <a href="https://nostradamage.netlify.app/" target='_blank'>Besök webbplats</a> 
-                  </Stack>
-                </Grid>
-                <Grid item md={6} sm={12}>
-                  <Stack flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                    <Typography >Predictions startup for MMA</Typography> 
-                    <PulseDiv>
-                      <Typography >Läs mer</Typography> 
-                    </PulseDiv>
-                  </Stack>
-                </Grid>
-              </Grid>
-            </Stack>
-          </Stack>
-
-        </CustomSlider> 
+  <Stack width={'75%'} mt={5}>
+    <CustomSlider {...settings}>
+      
+      {/* First Slide */}
+      <Stack>
+        <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+          sx={{ border: '3px solid black', borderRadius: '15px' }}
+        >
+          <Grid container sx={{ height: '100%'}}>
+            <Grid item md={6} sm={12} sx={{
+              backgroundImage: `url(${nostraPic1})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '15px',
+              borderBottomLeftRadius: '15px',
+            }}>
+              {/* The left side with the background image */}
+            </Grid>
+            <Grid item md={6} sm={12}>
+              <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
+                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
+              >
+                <Typography>Predictions startup for MMA</Typography>
+                <Typography>Nostradamage</Typography>
+                <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">Besök webbplats</a>
+                <PulseDiv>
+                  <Typography>Läs mer</Typography>
+                </PulseDiv>
+              </Stack>
+            </Grid>
+          </Grid>
         </Stack>
-        
       </Stack>
+
+      {/* Second Slide */}
+      <Stack>
+        <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+          sx={{ border: '3px solid black', borderRadius: '15px' }}
+        >
+          <Grid container>
+            <Grid item md={6} sm={12} sx={{
+              backgroundImage: `url(${nostraPic1})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '15px',
+              borderBottomLeftRadius: '15px',
+            }}>
+              {/* The left side with the background image */}
+            </Grid>
+            <Grid item md={6} sm={12}>
+              <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
+                sx={{ backgroundColor: 'white', borderRadius: '15px', borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
+              >
+                <Typography>Nostradamage</Typography>
+                <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">Besök webbplats</a>
+                <PulseDiv>
+                  <Typography>Läs mer</Typography>
+                </PulseDiv>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Stack>
+      </Stack>
+
+      {/* Third Slide */}
+      <Stack>
+        <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+          sx={{ border: '3px solid black', borderRadius: '15px' }}
+        >
+          <Grid container>
+            <Grid item md={6} sm={12} sx={{
+              backgroundImage: `url(${nostraPic1})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '15px',
+              borderBottomLeftRadius: '15px',
+            }}>
+              {/* The left side with the background image */}
+            </Grid>
+            <Grid item md={6} sm={12}>
+              <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
+                sx={{ backgroundColor: 'white', borderRadius: '15px', borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
+              >
+                <Typography>Nostradamage</Typography>
+                <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">Besök webbplats</a>
+                <PulseDiv>
+                  <Typography>Läs mer</Typography>
+                </PulseDiv>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Stack>
+      </Stack>
+
+    </CustomSlider>
+  </Stack>
+</Stack>
+
     </>
   )
 }
