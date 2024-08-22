@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import styled, { keyframes } from 'styled-components';
 import pulse from 'react-animations/lib/pulse';
 import nostraPic1 from '../img/nostra1.png'
+import hitractPic1 from '../img/hitract1.png'
+import nobelPic1 from '../img/nobel1.png'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -79,9 +81,9 @@ const MyProjects = () => {
         <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
           sx={{ border: '3px solid black', borderRadius: '15px' }}
         >
-          <Grid container>
+          <Grid container sx={{ height: '100%'}}>
             <Grid item md={6} sm={12} sx={{
-              backgroundImage: `url(${nostraPic1})`,
+              backgroundImage: `url(${nobelPic1})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderTopLeftRadius: '15px',
@@ -91,8 +93,9 @@ const MyProjects = () => {
             </Grid>
             <Grid item md={6} sm={12}>
               <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
-                sx={{ backgroundColor: 'white', borderRadius: '15px', borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
+                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
               >
+                <Typography>Predictions startup for MMA</Typography>
                 <Typography>Nostradamage</Typography>
                 <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">Besök webbplats</a>
                 <PulseDiv>
@@ -109,20 +112,22 @@ const MyProjects = () => {
         <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
           sx={{ border: '3px solid black', borderRadius: '15px' }}
         >
-          <Grid container>
+          <Grid container sx={{ height: '100%'}}>
             <Grid item md={6} sm={12} sx={{
-              backgroundImage: `url(${nostraPic1})`,
+              backgroundImage: `url(${hitractPic1})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderTopLeftRadius: '15px',
               borderBottomLeftRadius: '15px',
+              border: 'solid black 1px'
             }}>
               {/* The left side with the background image */}
             </Grid>
             <Grid item md={6} sm={12}>
               <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
-                sx={{ backgroundColor: 'white', borderRadius: '15px', borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
+                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
               >
+                <Typography>Predictions startup for MMA</Typography>
                 <Typography>Nostradamage</Typography>
                 <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">Besök webbplats</a>
                 <PulseDiv>
