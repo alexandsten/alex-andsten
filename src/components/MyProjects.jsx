@@ -3,6 +3,7 @@ import React from 'react'
 import Slider from "react-slick";
 import styled, { keyframes } from 'styled-components';
 import pulse from 'react-animations/lib/pulse';
+import nostraPic1 from '../img/nostra1.png'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -44,7 +45,7 @@ const MyProjects = () => {
          <CustomSlider {...settings} >
           <Stack>
             <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-              sx={{ border: '3px solid black', borderRadius: '15px'}}
+              sx={{ border: '3px solid black', borderRadius: '15px', backgroundImage: `url(${nostraPic1})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
             >
               <Grid container>
                 <Grid item md={6} sm={12}>
