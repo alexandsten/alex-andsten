@@ -119,7 +119,7 @@ const MyProjects = () => {
               backgroundPosition: 'center',
               borderTopLeftRadius: '15px',
               borderBottomLeftRadius: '15px',
-              border: 'solid black 1px'
+              borderRight: 'solid black 1px'
             }}>
               {/* The left side with the background image */}
             </Grid>
