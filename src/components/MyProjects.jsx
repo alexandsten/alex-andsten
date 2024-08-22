@@ -61,7 +61,7 @@ const MyProjects = () => {
               {/* The left side with the background image */}
             </Grid>
             <Grid item md={6} sm={12}>
-              <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
+              <Stack height={'100%'} justifyContent={'space-between'} alignItems={'center'} p={3}
                 sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
               >
                 <Typography>Predictions startup for MMA</Typography>
@@ -92,7 +92,7 @@ const MyProjects = () => {
               {/* The left side with the background image */}
             </Grid>
             <Grid item md={6} sm={12}>
-              <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
+              <Stack height={'100%'} justifyContent={'space-between'} alignItems={'center'} p={3}
                 sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
               >
                 <Typography>Predictions startup for MMA</Typography>
@@ -109,22 +109,22 @@ const MyProjects = () => {
 
       {/* Third Slide */}
       <Stack>
-        <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+        <Stack height={'75vh'} justifyContent={'space-between'} alignItems={'center'} flexDirection={'row'} gap={3}
           sx={{ border: '3px solid black', borderRadius: '15px' }}
         >
-          <Grid container sx={{ height: '100%'}}>
+          <Grid container sx={{ height: '100%' }}>
             <Grid item md={6} sm={12} sx={{
               backgroundImage: `url(${hitractPic1})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderTopLeftRadius: '15px',
               borderBottomLeftRadius: '15px',
-              borderRight: 'solid black 1px'
+              borderRight: 'solid black 1px',
             }}>
               {/* The left side with the background image */}
             </Grid>
             <Grid item md={6} sm={12}>
-              <Stack height={'100%'} justifyContent={'center'} alignItems={'center'} p={3}
+              <Stack height={'100%'} justifyContent={'space-between'} alignItems={'center'} p={3}
                 sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px' }}
               >
                 <Typography>Predictions startup for MMA</Typography>
@@ -138,6 +138,7 @@ const MyProjects = () => {
           </Grid>
         </Stack>
       </Stack>
+
 
     </CustomSlider>
   </Stack>
