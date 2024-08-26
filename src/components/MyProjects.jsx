@@ -49,7 +49,7 @@ const MyProjects = () => {
       {/* First Slide */}
       <Stack>
         <Stack minHeight={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-          sx={{ border: '3px solid black', borderRadius: '15px', }}
+          sx={{ border: '3px solid black', borderRadius: '20px', }}
         >
           <Grid container sx={{ height: '100%', width: '100%'}}>
             <Grid item md={6} sm={12} sx={{
@@ -65,7 +65,7 @@ const MyProjects = () => {
             </Grid>
             <Grid item md={6} sm={12}>
               <Stack height={'100%'} width={'100%'} justifyContent={'space-between'} alignItems={'center'} 
-                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px', backgroundImage: `url(${paperBgPic1})`,
+                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px', backgroundImage: `linear-gradient(rgba(0, 0, 10, 0.9), rgba(0, 0, 0, 0.7)), url(${paperBgPic1})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center', }}
               >
