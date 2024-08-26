@@ -38,7 +38,7 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack height={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white', overflowX: 'hidden' }}
+      <Stack minHeight={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white', overflowX: 'hidden' }}
   justifyContent={'center'} alignItems={'center'}
 >
   <h2>Arbete & projekt</h2>
@@ -48,7 +48,7 @@ const MyProjects = () => {
       
       {/* First Slide */}
       <Stack>
-        <Stack height={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
+        <Stack minHeight={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
           sx={{ border: '3px solid black', borderRadius: '15px' }}
         >
           <Grid container sx={{ height: '100%', width: '100%'}}>
@@ -69,21 +69,42 @@ const MyProjects = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center', }}
               >
-                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'}}>
-                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>Nobel Week Lights</Typography>
+                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', overflowY: 'auto',  }}>
+                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>
+                    Nostra / Nostradamage
+                  </Typography>
                 </Stack>
-                <Stack p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ backgroundColor: 'white',  borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'}}>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae error cupiditate dolorem eaque, nostrum ipsam ea exercitationem provident tempora veniam aliquid harum, facere, consectetur voluptate veritatis nihil porro necessitatibus.</Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae error cupiditate dolorem eaque, nostrum ipsam ea exercitationem provident tempora veniam aliquid harum, facere, consectetur voluptate veritatis nihil porro necessitatibus.</Typography>
+                <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
+                      backgroundColor: 'white',  
+                      borderRadius: '15px', 
+                      boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                      maxHeight: '300px', 
+                      overflowY: 'auto',  
+                  }}>
+                  <Typography sx={{ fontFamily: "Gotu"}}>Sedan tidigt 2024 har jag tillsammans med en vän startat produktionen av en produkt som vi planerar att ha en release för preliminärt Q4 2025.
+                  </Typography>
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage är en produkt som med hjälp av maskininlärning och algoritmer läser av tidigare resultat av MMA matcher och förutspår de mest trovärdiga resultaten. 
+                  </Typography>
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage kommer vara en del av Nostra, som kommer producera flera liknande produkter inom andra sporter, men utföra samma syfte.
+                  </Typography>
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage utvecklas dagligen och dess koncept och resultat tar regelbunden stora kliv framåt.
+                  </Typography>
+                  <Typography sx={{ fontFamily: "Gotu"}}>Min roll i detta projekt är både frontend och backendutvecklare.
+                  </Typography>
+                  
+                </Stack>
+                <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
+                      borderRadius: '15px', 
+                      boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
                   <PulseDiv>
-                  <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <Typography sx={{ fontFamily: "Gotu"}}>
-                      Läs mer
-                    </Typography>
-                  </a>
-                </PulseDiv>
+                    <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">
+                      <Typography sx={{ fontFamily: "Gotu"}}>
+                        Visa prototyp
+                      </Typography>
+                    </a>
+                  </PulseDiv>
                 </Stack>
-               
+                
               </Stack>
             </Grid>
           </Grid>
