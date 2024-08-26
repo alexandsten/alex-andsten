@@ -38,7 +38,7 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack minHeight={'100vh'} width={'100vw'} sx={{ backgroundColor: 'white', overflowX: 'hidden' }}
+      <Stack minHeight={'100vh'} width={'100vw'} pb={10} sx={{ backgroundColor: 'white', overflowX: 'hidden', overflowY: 'hidden' }}
   justifyContent={'center'} alignItems={'center'}
 >
   <h2>Arbete & projekt</h2>
@@ -49,7 +49,7 @@ const MyProjects = () => {
       {/* First Slide */}
       <Stack>
         <Stack minHeight={'75vh'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'} gap={3}
-          sx={{ border: '3px solid black', borderRadius: '15px' }}
+          sx={{ border: '3px solid black', borderRadius: '15px', }}
         >
           <Grid container sx={{ height: '100%', width: '100%'}}>
             <Grid item md={6} sm={12} sx={{
