@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components';
 import pulse from 'react-animations/lib/pulse';
 import nostraPic1 from '../img/nostraPic2.png'
 import hitractPic1 from '../img/hitract1.png'
-import nobelPic1 from '../img/nobel1.png'
+import nobelPic1 from '../img/nobelPic2.png'
 import paperBgPic1 from '../img/paperbackground1.jpg'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -121,6 +121,7 @@ const MyProjects = () => {
           <Grid container sx={{ height: '100%', width: '100%'}}>
             <Grid item md={6} sm={12} sx={{
               backgroundImage: `url(${nobelPic1})`,
+              backgroundColor: 'black',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderTopLeftRadius: '15px',
