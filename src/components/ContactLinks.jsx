@@ -3,7 +3,10 @@ import React from 'react'
 
 const ContactLinks = () => {
   return (
-      <Stack height={'75vh'} width={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'black'}}>
+      <Stack height={'75vh'} width={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'black'}} gap={5}>
+          <Typography sx={{ color: 'white', fontFamily: "Gotu", fontWeight: 'bold' }}>
+              Låt oss arbeta ihop!
+          </Typography>
           <h3>Kontakta mig</h3>
           <a href="mailto:alex.andsten@hotmail.com">
               <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>
@@ -13,9 +16,9 @@ const ContactLinks = () => {
           <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>
               076-260 82 27
           </Typography>
-        <Stack justifyContent={'center'} alignItems={'center'}>
+      
           {/* <h3>Linkedin och github</h3> */}
-          <ul id='mainLinks'>
+         
             <a href="https://linkedin.com/in/alex-andstén-47937116b" target='_blank'>
               <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>
                   Linkedin
@@ -27,8 +30,6 @@ const ContactLinks = () => {
               Github
               </Typography>
             </a>
-          </ul>
-        </Stack>
       </Stack>
   )
 }
