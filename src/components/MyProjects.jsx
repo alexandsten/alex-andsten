@@ -6,6 +6,7 @@ import pulse from 'react-animations/lib/pulse';
 import nostraPic1 from '../img/nostra1.png'
 import hitractPic1 from '../img/hitract1.png'
 import nobelPic1 from '../img/nobel1.png'
+import paperBgPic1 from '../img/paperbackground1.jpg'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -61,22 +62,26 @@ const MyProjects = () => {
               {/* The left side with the background image */}
             </Grid>
             <Grid item md={6} sm={12}>
-              <Stack height={'91%'} width={'91%'} justifyContent={'space-between'} alignItems={'center'} p={3}
-                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px', backgroundColor: '#f4f7e9' }}
+              <Stack height={'100%'} width={'100%'} justifyContent={'space-between'} alignItems={'center'} 
+                sx={{ borderTopRightRadius: '15px', borderBottomRightRadius: '15px', backgroundImage: `url(${paperBgPic1})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center', }}
               >
-                <Stack p={3} mr={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'}}>
+                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'}}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>Nobel Week Lights</Typography>
                 </Stack>
-                <Stack p={3} mr={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white',  borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'}}>
+                <Stack p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ backgroundColor: 'white',  borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'}}>
                   <Typography sx={{ fontFamily: "Gotu"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae error cupiditate dolorem eaque, nostrum ipsam ea exercitationem provident tempora veniam aliquid harum, facere, consectetur voluptate veritatis nihil porro necessitatibus.</Typography>
-                </Stack>
-                <PulseDiv>
+                  <Typography sx={{ fontFamily: "Gotu"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae error cupiditate dolorem eaque, nostrum ipsam ea exercitationem provident tempora veniam aliquid harum, facere, consectetur voluptate veritatis nihil porro necessitatibus.</Typography>
+                  <PulseDiv>
                   <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <Typography sx={{ fontFamily: "Gotu"}}>
                       Läs mer
                     </Typography>
                   </a>
                 </PulseDiv>
+                </Stack>
+               
               </Stack>
             </Grid>
           </Grid>
