@@ -3,7 +3,7 @@ import React from 'react'
 import Slider from "react-slick";
 import styled, { keyframes } from 'styled-components';
 import pulse from 'react-animations/lib/pulse';
-import nostraPic1 from '../img/nostra1.png'
+import nostraPic1 from '../img/nostraPic2.png'
 import hitractPic1 from '../img/hitract1.png'
 import nobelPic1 from '../img/nobel1.png'
 import paperBgPic1 from '../img/paperbackground1.jpg'
@@ -93,17 +93,19 @@ const MyProjects = () => {
                   </Typography>
                   
                 </Stack>
-                <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
-                      borderRadius: '15px', 
-                      boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                  <PulseDiv>
-                    <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer">
-                      <Typography sx={{ fontFamily: "Gotu"}}>
-                        Visa prototyp
-                      </Typography>
-                    </a>
-                  </PulseDiv>
-                </Stack>
+
+                <PulseDiv>
+                  <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
+                        borderRadius: '15px', 
+                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
+                      <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                      style={{ textDecoration: "none" }}>
+                        <Typography sx={{ fontFamily: "Gotu"}}>
+                          Visa prototyp
+                        </Typography>
+                      </a>
+                  </Stack>
+                </PulseDiv>
                 
               </Stack>
             </Grid>
