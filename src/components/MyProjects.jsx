@@ -54,8 +54,10 @@ const MyProjects = () => {
           <Grid container sx={{ height: '100%', width: '100%'}}>
             <Grid item md={6} sm={12} sx={{
               backgroundImage: `url(${nostraPic1})`,
-              backgroundSize: 'cover',
+              backgroundSize: '100%',
               backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundColor: 'black',
               borderTopLeftRadius: '15px',
               borderBottomLeftRadius: '15px',
             }}>
