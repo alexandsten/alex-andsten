@@ -41,7 +41,7 @@ const MyProjects = () => {
       <Stack minHeight={'100vh'} width={'100vw'} pb={10} sx={{ backgroundColor: 'white', overflowX: 'hidden', overflowY: 'hidden' }}
   justifyContent={'center'} alignItems={'center'}
 >
-  <h2>Arbete & projekt</h2>
+  <h2>Work & projects</h2>
 
   <Stack width={'75%'} mt={5}>
     <CustomSlider {...settings}>
@@ -151,15 +151,15 @@ const MyProjects = () => {
                       maxHeight: '300px', 
                       overflowY: 'auto',  
                   }}>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Sedan tidigt 2024 har jag tillsammans med en vän startat produktionen av en produkt som vi planerar att ha en release för preliminärt Q4 2025.
+                  <Typography sx={{ fontFamily: "Gotu"}}>Early 2024 I was given the task to develop an app for Nobel Lights Week on IOS and android.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage är en produkt som med hjälp av maskininlärning och algoritmer läser av tidigare resultat av MMA matcher och förutspår de mest trovärdiga resultaten. 
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nobel Week Lights is a festival that occurs in Stockholm once per year. During this week there are light-based art works all around the town.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage kommer vara en del av Nostra, som kommer producera flera liknande produkter inom andra sporter, men utföra samma syfte.
+                  <Typography sx={{ fontFamily: "Gotu"}}>The app I'm developing will show the user where all the art works are located on a map. The user will also be able to read about all the works and their creators.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage utvecklas dagligen och dess koncept och resultat tar regelbunden stora kliv framåt.
+                  <Typography sx={{ fontFamily: "Gotu"}}>The first iteration of the app will be quite basic, but it will add additional features annually.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Min roll i detta projekt är både frontend och backendutvecklare.
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nobel Week Lights app is not yet in appstore or in google play, it will be released in december.
                   </Typography>
                   
                 </Stack>
@@ -223,7 +223,7 @@ const MyProjects = () => {
                       maxHeight: '300px', 
                       overflowY: 'auto',  
                   }}>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Sedan tidigt 2024 har jag tillsammans med en vän startat produktionen av en produkt som vi planerar att ha en release för preliminärt Q4 2025.
+                  <Typography sx={{ fontFamily: "Gotu"}}>From late 2023 to early 2024 I was an frontend intern for the company hitRact.
                   </Typography>
                   <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage är en produkt som med hjälp av maskininlärning och algoritmer läser av tidigare resultat av MMA matcher och förutspår de mest trovärdiga resultaten. 
                   </Typography>
