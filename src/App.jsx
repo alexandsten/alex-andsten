@@ -93,29 +93,25 @@ function App() {
         >
             <Grid container>
               <Grid item md={12} lg={5} gap={3} sx={{ zIndex: 5}}>
-                <Stack width={isLargeScreen? '100%' : '140%'} spacing={1} pt={5}>
-                  <Typography sx={{ fontFamily: "Gotu", fontSize: '28px',
-                    fontWeight: 'bold' }}
-                    >
-                      Frontendutvecklare bosatt i Stockholm
+                <Stack width={isLargeScreen ? '100%' : '140%'} spacing={1} pt={5}>
+                  <Typography sx={{ fontFamily: "Gotu", fontSize: '28px', fontWeight: 'bold' }}>
+                    Hello and welcome!
                   </Typography>
                   <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Kreativ och nyfiken. Alltid öppen för roliga projekt.
+                    I'm a frontend developer based in Stockholm, constantly exploring new projects and expanding my skill set.
                   </CustomTypography>
-                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                      Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-                      på en spännande och innovativ praktikplats. 
-                    </CustomTypography>
-                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda possimus sint. Saepe commodi error ullam tempora? Modi soluta consequuntur quaerat eum explicabo eaque quidem rem vitae. Libero, magnam ullam?
-                    </CustomTypography>
-                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                    Kreativ och nyfiken. Alltid öppen för roliga projekt.
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    While I specialize in frontend development, particularly with frameworks like React, I'm also diving into backend technologies and database management.
                   </CustomTypography>
-                    <CustomTypography sx={{ fontFamily: "Gotu" }}>
-                      Jag är entusiastisk över att få möjligheten att tillämpa mina färdigheter och kunskaper
-                      på en spännande och innovativ praktikplats. 
-                    </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    I’m passionate about creativity and problem-solving, always eager to learn and discover new ways to innovate through code.
+                  </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    With a background in programming and hands-on experience in various projects, I’m excited to share my journey with you.
+                  </CustomTypography>
+                  <CustomTypography sx={{ fontFamily: "Gotu" }}>
+                    Feel free to explore my work and learn more about what I do!
+                  </CustomTypography>
                 </Stack>
               </Grid>
               <Grid container item md={12} lg={7} justifyContent={'flex-end'} alignItems={'flex-end'} 
