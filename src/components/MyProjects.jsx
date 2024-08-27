@@ -225,13 +225,13 @@ const MyProjects = () => {
                   }}>
                   <Typography sx={{ fontFamily: "Gotu"}}>From late 2023 to early 2024 I was an frontend intern for the company hitRact.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage är en produkt som med hjälp av maskininlärning och algoritmer läser av tidigare resultat av MMA matcher och förutspår de mest trovärdiga resultaten. 
+                  <Typography sx={{ fontFamily: "Gotu"}}>I was working with search functions, adding search filters and fetching data from backend.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage kommer vara en del av Nostra, som kommer producera flera liknande produkter inom andra sporter, men utföra samma syfte.
+                  <Typography sx={{ fontFamily: "Gotu"}}>I was using React ,Next.js and MUI. During my time as an intern I was closely following a Figma prototype of the website we were creating.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage utvecklas dagligen och dess koncept och resultat tar regelbunden stora kliv framåt.
+                  <Typography sx={{ fontFamily: "Gotu"}}>The website I was working on is not yet live. It will be live once everything is done.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Min roll i detta projekt är både frontend och backendutvecklare.
+                  <Typography sx={{ fontFamily: "Gotu"}}>Until hitRact web 2.0 is done, there is a placeholder website that can be visited.
                   </Typography>
                   
                 </Stack>
