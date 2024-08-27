@@ -91,10 +91,12 @@ const MyProjects = () => {
                   </Typography>
                   <Typography sx={{ fontFamily: "Gotu"}}>My role in this project is both frontend and backend developer.
                   </Typography>
-
-                  
                 </Stack>
-
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                    Product is in an early stage of development.
+                  </Typography>
+                </Stack>
                 <PulseDiv>
                   <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
                         borderRadius: '15px', 
@@ -102,7 +104,7 @@ const MyProjects = () => {
                       <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}>
                         <Typography sx={{ fontFamily: "Gotu"}}>
-                          Prototype website
+                          Visit website
                         </Typography>
                       </a>
                   </Stack>
@@ -161,7 +163,12 @@ const MyProjects = () => {
                   </Typography>
                   
                 </Stack>
-
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                    Product is in an early stage of development.
+                  </Typography>
+                </Stack>
+                
                 <PulseDiv>
                   <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
                         borderRadius: '15px', 
@@ -228,7 +235,12 @@ const MyProjects = () => {
                   </Typography>
                   
                 </Stack>
-
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                    The new version of hitracts website is not yet live.
+                  </Typography>
+                </Stack>
+                
                 <PulseDiv>
                   <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
                         borderRadius: '15px', 
@@ -236,7 +248,7 @@ const MyProjects = () => {
                       <a href="https://hitract.se/" target="_blank" rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}>
                         <Typography sx={{ fontFamily: "Gotu"}}>
-                          Website
+                          Visit old website
                         </Typography>
                       </a>
                   </Stack>
