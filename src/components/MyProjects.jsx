@@ -81,16 +81,17 @@ const MyProjects = () => {
                       maxHeight: '300px', 
                       overflowY: 'auto',  
                   }}>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Sedan tidigt 2024 har jag tillsammans med en vän startat produktionen av en produkt som vi planerar att ha en release för preliminärt Q4 2025.
+                  <Typography sx={{ fontFamily: "Gotu"}}>Since early 2024, together with a friend, I have started the production of a product that we plan to release preliminarily in Q4 2025.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage är en produkt som med hjälp av maskininlärning och algoritmer läser av tidigare resultat av MMA matcher och förutspår de mest trovärdiga resultaten. 
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage is a product that uses machine learning and algorithms to analyze past MMA match results and predict the most likely outcomes.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage kommer vara en del av Nostra, som kommer producera flera liknande produkter inom andra sporter, men utföra samma syfte.
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage will be part of Nostra, which will produce several similar products in other sports, serving the same purpose.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage utvecklas dagligen och dess koncept och resultat tar regelbunden stora kliv framåt.
+                  <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage is being developed daily, and its concept and results are making significant progress regularly.
                   </Typography>
-                  <Typography sx={{ fontFamily: "Gotu"}}>Min roll i detta projekt är både frontend och backendutvecklare.
+                  <Typography sx={{ fontFamily: "Gotu"}}>My role in this project is both frontend and backend developer.
                   </Typography>
+
                   
                 </Stack>
 
@@ -101,7 +102,7 @@ const MyProjects = () => {
                       <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}>
                         <Typography sx={{ fontFamily: "Gotu"}}>
-                          Visa prototyp
+                          Prototype website
                         </Typography>
                       </a>
                   </Stack>
@@ -165,10 +166,10 @@ const MyProjects = () => {
                   <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
                         borderRadius: '15px', 
                         boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                      <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                      <a href="https://github.com/alexandsten/lightFestival/" target="_blank" rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}>
                         <Typography sx={{ fontFamily: "Gotu"}}>
-                          Visa prototyp
+                          Github
                         </Typography>
                       </a>
                   </Stack>
@@ -232,10 +233,10 @@ const MyProjects = () => {
                   <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
                         borderRadius: '15px', 
                         boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                      <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                      <a href="https://hitract.se/" target="_blank" rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}>
                         <Typography sx={{ fontFamily: "Gotu"}}>
-                          Visa prototyp
+                          Website
                         </Typography>
                       </a>
                   </Stack>
