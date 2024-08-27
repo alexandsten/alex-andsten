@@ -95,7 +95,7 @@ function App() {
               <Grid item md={12} lg={5} gap={3} sx={{ zIndex: 5}}>
                 <Stack width={isLargeScreen ? '100%' : '140%'} spacing={1} pt={5}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '28px', fontWeight: 'bold' }}>
-                    Hello and welcome!
+                    Frontend developer
                   </Typography>
                   <CustomTypography sx={{ fontFamily: "Gotu" }}>
                     I'm a frontend developer based in Stockholm, constantly exploring new projects and expanding my skill set.
