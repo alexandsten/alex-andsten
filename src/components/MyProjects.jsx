@@ -74,6 +74,11 @@ const MyProjects = () => {
                     Nostra / Nostradamage
                   </Typography>
                 </Stack>
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                    React, JavaScript, MUI, Firebase, Realtime Database
+                  </Typography>
+                </Stack>
                 <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
                       backgroundColor: 'white',  
                       borderRadius: '15px', 
@@ -142,6 +147,11 @@ const MyProjects = () => {
                 <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>
                     Nobel Week Lights App
+                  </Typography>
+                </Stack>
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                    React Native, Wordpress Database, Mapbox
                   </Typography>
                 </Stack>
                 <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
@@ -214,6 +224,11 @@ const MyProjects = () => {
                 <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
                   <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>
                     hitRact
+                  </Typography>
+                </Stack>
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                    React, TypeScript, MUI
                   </Typography>
                 </Stack>
                 <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
