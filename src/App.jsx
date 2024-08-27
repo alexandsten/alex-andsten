@@ -71,12 +71,12 @@ function App() {
                   <Stack flexDirection={'column'} m={4}>
                     <Link to="section1" smooth={true} duration={500}>
                       <Typography sx={{ fontFamily: "Gotu", fontSize: '18px' }}>
-                          Erfarenhet & kunskaper
+                          Experience & knowledge
                       </Typography>
                     </Link>
                     <Link to="section2" smooth={true} duration={500}>
                       <Typography sx={{ fontFamily: "Gotu", fontSize: '18px' }}>
-                        Arbete & projekt
+                        Work & projects
                       </Typography>
                     </Link>
                   </Stack>

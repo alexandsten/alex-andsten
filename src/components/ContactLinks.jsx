@@ -4,10 +4,10 @@ import React from 'react'
 const ContactLinks = () => {
   return (
       <Stack height={'75vh'} width={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'black'}} gap={5}>
-          <Typography sx={{ color: 'white', fontFamily: "Gotu", fontWeight: 'bold' }}>
-              Låt oss arbeta ihop!
+          <Typography sx={{ color: 'white', fontFamily: "Gotu", fontWeight: 'bold', fontSize: '20px' }}>
+              Lets get in touch!
           </Typography>
-          <h3>Kontakta mig</h3>
+          <h3>Contact me</h3>
           <a href="mailto:alex.andsten@hotmail.com">
               <Typography sx={{ color: 'white', fontFamily: "Gotu" }}>
                 alex.andsten@hotmail.com

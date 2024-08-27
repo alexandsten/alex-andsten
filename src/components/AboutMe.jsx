@@ -18,13 +18,13 @@ const AboutMe = () => {
       >
         
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-            <h3>Erfarenhet & kunskaper</h3>
+            <h3>Experience & knowledge</h3>
         </Stack>
         <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
         <Grid container>
           <Grid item sm={12} md={4}>
               <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-                <h3>Kunskaper</h3>
+                <h3>Knowledge</h3>
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   TypeScript
                 </Typography>
@@ -53,38 +53,59 @@ const AboutMe = () => {
           </Grid>
           <Grid item sm={12} md={4}>
              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-                <h3>Arbete / Projekt</h3>
+                <h3>Experience</h3>
 
+                <Stack>
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Nostra / Nostradamage. 2024 - pågående
+                  Nostra / Nostradamage. 2024 - ongoing
                 </Typography>
+                <Stack width={'80%'}>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white', fontSize: '14px'}}>
+                    - React, JavaScript, MUI, Firebase, Realtime Database
+                  </Typography>
+                </Stack>
+                </Stack>
+                
+                <Stack>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                    Nobel Week Lights mobilapplikation. 2024 - ongoing
+                  </Typography>
+                  <Stack width={'80%'}>
+                    <Typography sx={{ fontFamily: "Gotu", color: 'white', fontSize: '14'}}>
+                      - React Native, Wordpress Database, Mapbox
+                    </Typography>
+                  </Stack>
+                </Stack>
 
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Nobel Week Lights mobilapplikation. 2024 - pågående
-                </Typography>
+                <Stack>
+                  <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                    hitRact internship. 2023 - 2024
+                  </Typography>
+                  <Stack width={'80%'}>
+                    <Typography sx={{ fontFamily: "Gotu", color: 'white', fontSize: '14px'}}>
+                     - React, TypeScript, MUI
+                    </Typography>
+                  </Stack>
+                </Stack>
 
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  hitRact internship. 2023 - 2024
-                </Typography>
-            
               </Stack>
           </Grid>
           <Grid item sm={12} md={4}>
              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-                <h3>Utbildning</h3>
+                <h3>Education</h3>
 
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Frontendutvecklare, JENSEN yrkeshögskola. 2022 - 2024
+                  Frontend Developer, JENSEN Vocational School. 2022 - 2024
                 </Typography>
-              
+
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Interaktiva medier och webbteknologier, Linnéuniversitetet. 2020-2021
+                  Interactive Media and Web Technologies, Linnaeus University. 2020-2021
                 </Typography>
-              
+
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                3-årig IT/media gymnasieutbildning, John Bauer. 2008-2011
+                  3-year IT/Media High School Education, John Bauer. 2008-2011
                 </Typography>
-            
+                
               </Stack>
           </Grid>
         </Grid>
