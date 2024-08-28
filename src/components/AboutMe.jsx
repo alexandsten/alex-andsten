@@ -18,13 +18,13 @@ const AboutMe = () => {
       >
         
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-            <h3>Experience & knowledge</h3>
+            <h3>Experience & skills</h3>
         </Stack>
         <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
         <Grid container>
           <Grid item sm={12} md={4}>
               <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-                <h3>Knowledge</h3>
+                <h3>Skills</h3>
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   TypeScript
                 </Typography>
@@ -105,7 +105,7 @@ const AboutMe = () => {
                 <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
                   3-year IT/Media High School Education, John Bauer. 2008-2011
                 </Typography>
-                
+
               </Stack>
           </Grid>
         </Grid>
