@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, Element } from 'react-scroll';
+import CV from './assets/AlexAndstenCV.pdf';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -79,6 +80,12 @@ function App() {
                         Work & projects
                       </Typography>
                     </Link>
+                    <a href={CV} target="_blank" rel="noopener noreferrer" 
+                      >
+                        <Typography sx={{ fontFamily: "Gotu", fontSize: '18px'}}>
+                          CV
+                        </Typography>
+                    </a>
                   </Stack>
                 </Stack>
               </Grid>
