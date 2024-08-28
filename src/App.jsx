@@ -83,7 +83,7 @@ function App() {
                     <a href={CV} target="_blank" rel="noopener noreferrer" 
                       >
                         <Typography sx={{ fontFamily: "Gotu", fontSize: '18px'}}>
-                          CV
+                          CV in Swedish
                         </Typography>
                     </a>
                   </Stack>
