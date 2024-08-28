@@ -25,30 +25,52 @@ const AboutMe = () => {
           <Grid item sm={12} md={4}>
               <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
                 <h3>Skills</h3>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  TypeScript
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  JavaScript
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  React
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  React Native
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  HTML
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  CSS
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Node.js 
-                </Typography>
-                <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
-                  Firebase
-                </Typography>
+                  <Stack flexDirection={'row'} gap={5}>
+                    <Stack flexDirection={'column'} gap={2}>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        TypeScript
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        JavaScript
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        React
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        React Native
+                      </Typography>
+                      
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        HTML
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        CSS
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        Tailwind
+                      </Typography>
+                    </Stack>
+                    <Stack flexDirection={'column'} gap={2}>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        REST API
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        Axios
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        Node.js 
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        Firebase
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        Git
+                      </Typography>
+                      <Typography sx={{ fontFamily: "Gotu", color: 'white' }}>
+                        Jest
+                      </Typography>
+                    </Stack>
+                  </Stack>
               </Stack>
           </Grid>
           <Grid item sm={12} md={4}>

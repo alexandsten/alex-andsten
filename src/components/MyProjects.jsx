@@ -228,7 +228,7 @@ const MyProjects = () => {
                 </Stack>
                 <Stack width={'80%'}>
                   <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
-                    React, TypeScript, MUI
+                    React, TypeScript, MUI, Axios
                   </Typography>
                 </Stack>
                 <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
