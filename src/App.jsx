@@ -80,6 +80,11 @@ function App() {
                         Work & projects
                       </Typography>
                     </Link>
+                    <Link to="section3" smooth={true} duration={500}>
+                      <Typography sx={{ fontFamily: "Gotu", fontSize: '18px' }}>
+                        Contact
+                      </Typography>
+                    </Link>
                     <a href={CV} target="_blank" rel="noopener noreferrer" 
                       >
                         <Typography sx={{ fontFamily: "Gotu", fontSize: '18px'}}>
@@ -137,8 +142,10 @@ function App() {
         <Element name="section2">
           <MyProjects />
         </Element>
-          
-        <Footer /> 
+        
+        <Element name="section3">
+          <Footer /> 
+        </Element>
       </Stack>
     </>
   )
