@@ -102,18 +102,33 @@ const MyProjects = () => {
                     Product is in an early stage of development.
                   </Typography>
                 </Stack>
-                <PulseDiv>
-                  <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
-                        borderRadius: '15px', 
-                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                      <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
-                      style={{ textDecoration: "none" }}>
-                        <Typography sx={{ fontFamily: "Gotu"}}>
-                          Visit website
-                        </Typography>
-                      </a>
-                  </Stack>
-                </PulseDiv>
+                <Stack flexDirection={'row'}>
+                  <PulseDiv>
+                    <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
+                          borderRadius: '15px', 
+                          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
+                        <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                        style={{ textDecoration: "none" }}>
+                          <Typography sx={{ fontFamily: "Gotu"}}>
+                            Visit website
+                          </Typography>
+                        </a>
+                    </Stack>
+                  </PulseDiv>
+                  <PulseDiv>
+                    <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
+                          borderRadius: '15px', 
+                          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
+                        <a href="https://github.com/alexandsten/nostradamage/" target="_blank" rel="noopener noreferrer" 
+                        style={{ textDecoration: "none" }}>
+                          <Typography sx={{ fontFamily: "Gotu"}}>
+                            Github
+                          </Typography>
+                        </a>
+                    </Stack>
+                  </PulseDiv>
+                </Stack>
+               
                 
               </Stack>
             </Grid>
