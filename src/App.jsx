@@ -104,7 +104,7 @@ function App() {
           </Grid>
         </Stack> 
        
-      <Line />
+      {/* <Line /> */}
       <Stack className='para' width={'80%'} height={'100%'} >
         <Stack width={'100%'} height={'100%'} flexDirection={'column'} alignItems={'flex-end'} 
         justifyContent={'flex-end'}
