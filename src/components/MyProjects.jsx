@@ -38,12 +38,12 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack minHeight={'100vh'} width={'100vw'} pb={10} sx={{ backgroundColor: 'white', overflowX: 'hidden', overflowY: 'hidden' }}
+      <Stack minHeight={'100vh'} width={'100vw'} pb={5} sx={{ backgroundColor: 'white', overflowX: 'hidden', overflowY: 'hidden' }}
   justifyContent={'center'} alignItems={'center'}
 >
   <h2>Work & projects</h2>
 
-  <Stack width={'75%'} mt={5}>
+  <Stack width={'75%'} >
     <CustomSlider {...settings}>
       
       {/* First Slide */}
