@@ -9,7 +9,8 @@ import Footer from './components/Footer'
 import AboutMe from './components/AboutMe'
 import MyProjects from './components/MyProjects'
 import ContactLinks from './components/ContactLinks'
-import al3 from './img/alex1.jpg'
+import al3 from './img/alexTransparent.png'
+import whiteBg from './img/whiteBg.jpg'
 import { Stack, Typography, GlobalStyles, Grid } from '@mui/material';
 import { styled } from '@mui/system';
 import { useMediaQuery} from '@mui/material';
@@ -51,7 +52,12 @@ function App() {
           }
         }}
       />
-    <Stack maxWidth={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white' }}>
+    <Stack maxWidth={'100vw'} justifyContent={'center'} alignItems={'center'} sx={{ 
+       backgroundImage:  `url(${whiteBg})` ,
+      backgroundSize: 'contain', 
+      backgroundPosition: 'center top',
+      backgroundRepeat: 'no-repeat', 
+    }}>
       
       <Stack  minHeight={'100vh'}  >
         
