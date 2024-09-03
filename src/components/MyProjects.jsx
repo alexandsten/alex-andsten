@@ -69,8 +69,8 @@ const MyProjects = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center', }}
               >
-                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>
+                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
+                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold', color: 'white'}}>
                     Nostra / Nostradamage
                   </Typography>
                 </Stack>
@@ -159,8 +159,8 @@ const MyProjects = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center', }}
               >
-                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>
+                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
+                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold', color: 'white'}}>
                     Nobel Week Lights App
                   </Typography>
                 </Stack>
@@ -236,8 +236,8 @@ const MyProjects = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center', }}
               >
-                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{ backgroundColor: 'white', height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold'}}>
+                <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
+                  <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold', color: 'white'}}>
                     hitRact
                   </Typography>
                 </Stack>
@@ -278,7 +278,7 @@ const MyProjects = () => {
                       <a href="https://hitract.se/" target="_blank" rel="noopener noreferrer" 
                       style={{ textDecoration: "none" }}>
                         <Typography sx={{ fontFamily: "Gotu"}}>
-                          Visit old website
+                          Visit current website
                         </Typography>
                       </a>
                   </Stack>
