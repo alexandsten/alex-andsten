@@ -83,7 +83,7 @@ const AboutMe = () => {
                 </Typography>
                 <Stack width={'80%'}>
                   <Typography sx={{ fontFamily: "Gotu", color: 'white', fontSize: '14px'}}>
-                    - React, JavaScript, MUI, Firebase, Realtime Database
+                    - React, JavaScript, MUI, Firebase, NoSQL Database
                   </Typography>
                 </Stack>
                 </Stack>

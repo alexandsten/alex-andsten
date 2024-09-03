@@ -76,7 +76,7 @@ const MyProjects = () => {
                 </Stack>
                 <Stack width={'80%'}>
                   <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
-                    React, JavaScript, MUI, Firebase, Realtime Database
+                    React, JavaScript, MUI, Firebase, NoSQL Database
                   </Typography>
                 </Stack>
                 <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
