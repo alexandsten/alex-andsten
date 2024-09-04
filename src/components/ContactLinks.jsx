@@ -30,6 +30,11 @@ const ContactLinks = () => {
               Github
               </Typography>
             </a>
+
+            <Typography sx={{ color: 'white', fontFamily: "Gotu", fontSize: '8px' }}>
+              Background images Designed by Freepik
+            </Typography>
+            
       </Stack>
   )
 }
