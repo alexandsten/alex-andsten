@@ -18,7 +18,6 @@ a {
   font-weight: 500;
   color: #000002;
   cursor: pointer;
-  text-decoration: underline;
 }
 a:hover {
   color: #000000;

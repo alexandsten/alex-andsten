@@ -80,7 +80,7 @@ function App() {
               </Grid>
               <Grid item sm={12} md={6}>
                 <Stack flexDirection={'row-reverse'}>
-                  <Stack flexDirection={'column'} m={4}>
+                  <Stack flexDirection={'column'} m={4} gap={1}>
                     <Link to="section1" smooth={true} duration={500}>
                       <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
                         Experience & skills
@@ -96,7 +96,7 @@ function App() {
                         Contact
                       </Typography>
                     </Link>
-                    <a href={CV} target="_blank" rel="noopener noreferrer">
+                    <a href={CV} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}>
                       <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
                         CV in Swedish
                       </Typography>
