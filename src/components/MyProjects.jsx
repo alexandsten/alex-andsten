@@ -6,6 +6,7 @@ import pulse from 'react-animations/lib/pulse';
 import nostraPic1 from '../img/nostraPic2.png'
 import hitractPic1 from '../img/hitract1.png'
 import nobelPic1 from '../img/nobelPic2.png'
+import whiteBg from '../img/whiteBg2.jpg';
 import paperBgPic1 from '../img/paperbackground1.jpg'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -38,12 +39,18 @@ const MyProjects = () => {
     `;
   return (
     <>
-      <Stack minHeight={'100vh'} width={'100vw'} pb={5} sx={{ backgroundColor: 'white', overflowX: 'hidden', overflowY: 'hidden' }}
-  justifyContent={'center'} alignItems={'center'}
->
+      <Stack minHeight={'100vh'} width={'100vw'} pb={5} sx={{ overflowX: 'hidden', overflowY: 'hidden', backgroundImage: `url(${whiteBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat', }}
+          justifyContent={'center'} alignItems={'center'}
+      >
   <h2>Work & projects</h2>
 
-  <Stack width={'75%'} >
+  <Stack width={'75%'} sx={{ backgroundImage: `url(${whiteBg})`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',}} >
     <CustomSlider {...settings}>
       
       {/* First Slide */}
