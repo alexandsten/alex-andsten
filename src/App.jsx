@@ -58,7 +58,7 @@ function App() {
         alignItems={'center'}
         sx={{
           backgroundImage: `url(${whiteBg})`,
-          backgroundSize: 'contain',
+          backgroundSize: isSmallScreen ? 'stretch' : 'contain',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
         }}

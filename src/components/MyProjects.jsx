@@ -110,33 +110,44 @@ const MyProjects = () => {
                   </Typography>
                 </Stack>
                 <Stack flexDirection={'row'}>
-                  <PulseDiv>
-                    <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
-                          borderRadius: '15px', 
-                          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                        <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
-                        style={{ textDecoration: "none" }}>
-                          <Typography sx={{ fontFamily: "Gotu"}}>
-                            Visit website
-                          </Typography>
-                        </a>
-                    </Stack>
-                  </PulseDiv>
-                  <PulseDiv>
-                    <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
-                          borderRadius: '15px', 
-                          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                        <a href="https://github.com/alexandsten/nostradamage/" target="_blank" rel="noopener noreferrer" 
-                        style={{ textDecoration: "none" }}>
-                          <Typography sx={{ fontFamily: "Gotu"}}>
-                            Github
-                          </Typography>
-                        </a>
-                    </Stack>
-                  </PulseDiv>
-                </Stack>
-               
                 
+                    <a href="https://nostradamage.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                    style={{ textDecoration: "none" }}>
+                      <Stack p={2} m={3} sx={{ 
+                            backgroundColor: 'black',  
+                            borderRadius: '15px', 
+                            border: 'solid white 2px',
+                            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                            '&:hover': {
+                              backgroundColor: '#293145',
+                            },
+                            }}>
+                            <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                              Website
+                            </Typography>
+                        </Stack>
+                    </a>
+                 
+
+                  
+                    <a href="https://github.com/alexandsten/nostradamage/" target="_blank" rel="noopener noreferrer" 
+                    style={{ textDecoration: "none" }}>
+                      <Stack p={2} m={3} sx={{ 
+                            backgroundColor: 'black',  
+                            borderRadius: '15px', 
+                            border: 'solid white 2px',
+                            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                            '&:hover': {
+                              backgroundColor: '#293145',
+                            },
+                            }}>
+                            <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                              Github
+                            </Typography>
+                        </Stack>
+                    </a>
+                 
+                </Stack>
               </Stack>
             </Grid>
           </Grid>
@@ -200,19 +211,25 @@ const MyProjects = () => {
                     Product is in an early stage of development.
                   </Typography>
                 </Stack>
-                
-                <PulseDiv>
-                  <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
-                        borderRadius: '15px', 
-                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                      <a href="https://github.com/alexandsten/lightFestival/" target="_blank" rel="noopener noreferrer" 
-                      style={{ textDecoration: "none" }}>
-                        <Typography sx={{ fontFamily: "Gotu"}}>
-                          Github
-                        </Typography>
-                      </a>
-                  </Stack>
-                </PulseDiv>
+
+                  
+                    <a href="https://github.com/alexandsten/lightFestival/" target="_blank" rel="noopener noreferrer" 
+                    style={{ textDecoration: "none" }}>
+                      <Stack p={2} m={3} sx={{ 
+                            backgroundColor: 'black',  
+                            borderRadius: '15px', 
+                            border: 'solid white 2px',
+                            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                            '&:hover': {
+                              backgroundColor: '#293145',
+                            },
+                            }}>
+                            <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                              Github
+                            </Typography>
+                        </Stack>
+                    </a>
+                 
                 
               </Stack>
             </Grid>
@@ -277,19 +294,25 @@ const MyProjects = () => {
                     The new version of hitracts website is not yet live.
                   </Typography>
                 </Stack>
-                
-                <PulseDiv>
-                  <Stack p={2} m={3} sx={{ backgroundColor: 'white',  
-                        borderRadius: '15px', 
-                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',}}>
-                      <a href="https://hitract.se/" target="_blank" rel="noopener noreferrer" 
-                      style={{ textDecoration: "none" }}>
-                        <Typography sx={{ fontFamily: "Gotu"}}>
-                          Visit current website
-                        </Typography>
-                      </a>
-                  </Stack>
-                </PulseDiv>
+
+                  
+                    <a href="https://hitract.se/" target="_blank" rel="noopener noreferrer" 
+                    style={{ textDecoration: "none" }}>
+                      <Stack p={2} m={3} sx={{ 
+                            backgroundColor: 'black',  
+                            borderRadius: '15px', 
+                            border: 'solid white 2px',
+                            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+                            '&:hover': {
+                              backgroundColor: '#293145',
+                            },
+                            }}>
+                            <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                              Website
+                            </Typography>
+                        </Stack>
+                    </a>
+                 
                 
               </Stack>
             </Grid>
