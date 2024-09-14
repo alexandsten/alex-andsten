@@ -6,7 +6,7 @@ import AboutMe from './components/AboutMe';
 import MyProjects from './components/MyProjects';
 import fadeIn from 'react-animations/lib/fade-in';
 import styled, { keyframes } from 'styled-components';  
-import al3 from './img/alexTransparent.png';
+import al3 from './img/transpbackground2.png';
 import whiteBg from './img/whiteBg.jpg';
 import { Stack, Typography, GlobalStyles } from '@mui/material';
 import { styled as muiStyled } from '@mui/system'; 
