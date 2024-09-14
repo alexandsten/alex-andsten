@@ -68,7 +68,7 @@ function App() {
       />
       <Stack
         maxWidth={'100vw'}
-        minHeight={ isSmallScreen ? '50vh': '100vh'}
+        minHeight={ isSmallScreen ? '33vh': '100vh'}
         sx={{
           backgroundImage: `url(${whiteBg})`,
           backgroundSize: isSmallScreen ? 'stretch' : 'contain',
@@ -76,9 +76,9 @@ function App() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <Stack minHeight={ isSmallScreen ? '50vh': '100vh'}  width={'100%'} flexDirection={'column'} sx={{
+        <Stack minHeight={ isSmallScreen ? '33vh': '100vh'}  width={'100%'} flexDirection={'column'} sx={{
                     backgroundImage: `url(${al3})`,
-                    backgroundSize: isSmallScreen ? 'stretch' : 'contain',
+                    backgroundSize: 'contain',
                     backgroundPosition: 'center left',
                     backgroundRepeat: 'no-repeat',
                   }}  >
