@@ -221,6 +221,13 @@ function App() {
               </Link>
             </Grid>
             <Grid item>
+              <Link to="section2" smooth={true} duration={500} onClick={toggleDrawer(false)}>
+                <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px', color: 'white' }}>
+                  Work & projects
+                </Typography>
+              </Link>
+            </Grid>
+            <Grid item>
               <Link to="section3" smooth={true} duration={500} onClick={toggleDrawer(false)}>
                 <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px', color: 'white' }}>
                   Contact
