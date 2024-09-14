@@ -68,6 +68,7 @@ function App() {
       />
       <Stack
         maxWidth={'100vw'}
+        minHeight={'100vh'}
         justifyContent={'center'}
         alignItems={'center'}
         sx={{
@@ -77,63 +78,33 @@ function App() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <Stack minHeight={'100vh'}>
-          <Stack>
-            <Grid container>
-              <Grid item xs={12} md={6}>
-                <Stack flexDirection={'column'} ml={2} pt={3} width={'100%'} justifyContent={'center'} alignItems={'center'}>
-                  <SlideInLeftDiv>
-                    <Typography
-                      sx={{
-                        fontSize: isSmallScreen ? '1.5em' : '3em',
-                        fontFamily: 'Major Mono Display',
-                      }}
-                    >
-                      Alex
-                    </Typography>
-                  </SlideInLeftDiv>
-                  <SlideInRightDiv>
-                    <Typography
-                      sx={{
-                        fontSize: isSmallScreen ? '1.5em' : '3em',
-                        fontFamily: 'Major Mono Display',
-                      }}
-                    >
-                      Andstén
-                    </Typography>
-                  </SlideInRightDiv>
-                </Stack>
-              </Grid>
-              <Grid item sm={12} md={6}>
-                <Stack flexDirection={'row-reverse'}>
-                  <Stack flexDirection={'column'} m={4} gap={1}>
-                    <Link to="section1" smooth={true} duration={500}>
-                      <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
-                        Experience & skills
-                      </Typography>
-                    </Link>
-                    <Link to="section2" smooth={true} duration={500}>
-                      <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
-                        Work & projects
-                      </Typography>
-                    </Link>
-                    <Link to="section3" smooth={true} duration={500}>
-                      <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
-                        Contact
-                      </Typography>
-                    </Link>
-                    <a href={CV} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}>
-                      <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
-                        CV in Swedish
-                      </Typography>
-                    </a>
-                  </Stack>
-                </Stack>
-              </Grid>
-            </Grid>
+        <Stack minHeight={'100vh'} width={'100%'}>
+          <Stack width={'100%'} flexDirection={'row-reverse'} position={'absolute'}>
+            <Stack flexDirection={'column'} mt={4} gap={1}>
+              <Link to="section1" smooth={true} duration={500}>
+                <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
+                  Experience & skills
+                </Typography>
+              </Link>
+              <Link to="section2" smooth={true} duration={500}>
+                <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
+                  Work & projects
+                </Typography>
+              </Link>
+              <Link to="section3" smooth={true} duration={500}>
+                <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
+                  Contact
+                </Typography>
+              </Link>
+              <a href={CV} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}>
+                <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
+                  CV in Swedish
+                </Typography>
+              </a>
+            </Stack>
           </Stack>
 
-          <Stack className="para" width={'80%'} height={'100%'}>
+          <Stack className="para" width={'100%'} height={'100%'}>
             <Stack
               width={'100%'}
               height={'100%'}
@@ -141,58 +112,45 @@ function App() {
               alignItems={'flex-end'}
               justifyContent={'flex-end'}
             >
-              <Grid container>
-                <Grid item md={12} lg={5} gap={3} sx={{ zIndex: 5 }}>
-                  <Stack width={isLargeScreen ? '100%' : '140%'} spacing={1} pt={5}>
-                    <Typography
-                      sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold' }}
-                    >
-                      Frontend developer
-                    </Typography>
-                    <FadeDiv>
-                      <CustomTypography sx={{ fontFamily: 'Gotu' }}>
-                        I'm a frontend developer based in Stockholm, constantly exploring new
-                        projects and expanding my skill set.
-                      </CustomTypography>
-                      <CustomTypography sx={{ fontFamily: 'Gotu' }}>
-                        While I specialize in frontend development, particularly with
-                        frameworks like React, I'm also diving into backend technologies and
-                        database management.
-                      </CustomTypography>
-                      <CustomTypography sx={{ fontFamily: 'Gotu' }}>
-                        I’m passionate about creativity and problem-solving, always eager to
-                        learn and discover new ways to innovate through code.
-                      </CustomTypography>
-                      <CustomTypography sx={{ fontFamily: 'Gotu' }}>
-                        With a background in programming and hands-on experience in various
-                        projects, I’m excited to share my journey with you.
-                      </CustomTypography>
-                      <CustomTypography sx={{ fontFamily: 'Gotu' }}>
-                        Feel free to explore my work and learn more about what I do!
-                      </CustomTypography>
-                    </FadeDiv>
+              
+                  <Stack width={'100%'} height={'100%'} spacing={1} pt={5}>
+                    <Stack flexDirection={'column'} ml={5} pt={3} height={'100%'} width={'100%'} 
+                    justifyContent={'spread-evenly'} 
+                    alignItems={'center'}>
+                      <SlideInLeftDiv>
+                        <Typography
+                          sx={{
+                            fontSize: isSmallScreen ? '3em' : '10em',
+                            fontFamily: 'Major Mono Display',
+                          }}
+                        >
+                          Alex
+                        </Typography>
+                      </SlideInLeftDiv>
+                      <SlideInRightDiv>
+                        <Typography
+                          sx={{
+                            fontSize: isSmallScreen ? '3em' : '10em',
+                            fontFamily: 'Major Mono Display',
+                          }}
+                        >
+                          Andstén
+                        </Typography>
+                      </SlideInRightDiv>
+                    </Stack>
                   </Stack>
-                </Grid>
-                <Grid
-                  container
-                  item
-                  md={12}
-                  lg={7}
-                  justifyContent={'flex-end'}
-                  alignItems={'flex-end'}
-                  sx={{
-                    width: isSmallScreen ? '95%' : '100%',
-                    height: '100%',
-                    marginBottom: '-20px',
-                  }}
-                >
+                <Stack  height={'100%'} width={'100%'} justifyContent={'flex-end'} 
+                  alignItems={'center'} 
+                  position={'absolute'}
+                  flexDirection={'column'}
+                  >
                   <img
                     src={al3}
                     alt="Alex"
-                    style={{ width: '105%', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }}
+                    style={{ width: isSmallScreen ? '30%' : '30em', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }}
                   />
-                </Grid>
-              </Grid>
+                </Stack>
+                
             </Stack>
           </Stack>
         </Stack>
