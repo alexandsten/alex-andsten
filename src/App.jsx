@@ -48,6 +48,7 @@ function App() {
   });
 
   const isSmallScreen = useMediaQuery('(max-width:1200px)');
+  const isMiniScreen = useMediaQuery('(max-width:600px)');
   const isLargeScreen = useMediaQuery('(max-width:1400px)');
 
   return (
@@ -138,7 +139,7 @@ function App() {
                   <SlideInLeftDiv>
                     <Typography
                       sx={{
-                        fontSize: isSmallScreen ? '5em' : '10em',
+                        fontSize: isMiniScreen ? '2em' : isSmallScreen ? '5em' : '10em',
                         fontFamily: 'Major Mono Display',
                         fontWeight: 'bold',
                         color: 'white',
@@ -151,7 +152,7 @@ function App() {
                   <SlideInRightDiv>
                     <Typography
                       sx={{
-                        fontSize: isSmallScreen ? '3em' : '10em',
+                        fontSize: isMiniScreen ? '2em' : isSmallScreen ? '5em' : '10em',
                         fontFamily: 'Major Mono Display',
                         fontWeight: 'bold',
                         color: 'white',
