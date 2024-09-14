@@ -21,7 +21,7 @@ const ContactLinks = () => {
 
   return (
     <Stack
-      height={'75vh'}
+      height={'100vh'}
       width={'100vw'}
       justifyContent={'center'}
       alignItems={'center'}

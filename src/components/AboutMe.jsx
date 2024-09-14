@@ -6,8 +6,14 @@ import slideInLeft from 'react-animations/lib/slide-in-left';
 import { useInView } from 'react-intersection-observer';
 import styled, { keyframes, css } from 'styled-components';
 import { useMediaQuery } from '@mui/material';
+import fadeIn from 'react-animations/lib/fade-in';
+import { styled as muiStyled } from '@mui/system'; 
 
+const fadeAnimation = keyframes`${fadeIn}`;
 
+const FadeDiv = styled.div`
+  animation: 3s ${fadeAnimation};
+`;
 
 const pulseAnimation = keyframes`${pulse}`;
 
@@ -39,6 +45,8 @@ const AnimatedDivLeft = styled.div`
 `;
 
 const AboutMe = () => {
+
+
 
   const { ref, inView } = useInView({
     triggerOnce: true, 
@@ -73,6 +81,13 @@ const AboutMe = () => {
   const isSmallScreen = useMediaQuery('(max-width:1200px)');
   const isLargeScreen = useMediaQuery('(max-width:1400px)');
 
+  const CustomTypography = muiStyled(Typography)(({ theme }) => ({
+    '&::first-letter': {
+      fontSize: isSmallScreen ? '24px' : '30px',
+      fontWeight: 'bold',
+    },
+  }));
+
   return (
     <Stack
       id="aboutMe"
@@ -86,6 +101,35 @@ const AboutMe = () => {
     >
       <Stack justifyContent={'flex-start'} alignItems={'center'}>
         <h3>Experience & skills</h3>
+      </Stack>
+      <Stack width={'80%'} spacing={1} pt={5}>
+        {/* <Typography
+          sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
+        >
+          Frontend developer
+        </Typography> */}
+        {/* <FadeDiv> */}
+          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+            I'm a frontend developer based in Stockholm, constantly exploring new
+            projects and expanding my skill set.
+          </CustomTypography>
+          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+            While I specialize in frontend development, particularly with
+            frameworks like React, I'm also diving into backend technologies and
+            database management.
+          </CustomTypography>
+          {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+            I’m passionate about creativity and problem-solving, always eager to
+            learn and discover new ways to innovate through code.
+          </CustomTypography>
+          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+            With a background in programming and hands-on experience in various
+            projects, I’m excited to share my journey with you.
+          </CustomTypography> */}
+          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+            Feel free to explore my work and learn more about what I do!
+          </CustomTypography>
+        {/* </FadeDiv> */}
       </Stack>
       <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
         <Grid container>
@@ -201,6 +245,7 @@ const AboutMe = () => {
           </Grid>
         </Grid>
       </Stack>
+      
     </Stack>
   );
 };

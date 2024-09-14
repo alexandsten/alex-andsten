@@ -11,6 +11,20 @@ import whiteBg from './img/whiteBg.jpg';
 import { Stack, Typography, GlobalStyles, Grid, Fade } from '@mui/material';
 import { styled as muiStyled } from '@mui/system'; 
 import { useMediaQuery } from '@mui/material';
+import slideInRight from 'react-animations/lib/slide-in-right';
+import slideInLeft from 'react-animations/lib/slide-in-left';
+
+const SlideInRightAnimation = keyframes`${slideInRight}`;
+
+const SlideInRightDiv = styled.div`
+  animation: 1s ${SlideInRightAnimation};
+`;
+
+const SlideInLeftAnimation = keyframes`${slideInLeft}`;
+
+const SlideInLeftDiv = styled.div`
+  animation: 1s ${SlideInLeftAnimation};
+`;
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -67,15 +81,27 @@ function App() {
           <Stack>
             <Grid container>
               <Grid item xs={12} md={6}>
-                <Stack flexDirection={'column'} ml={2} pt={3}>
-                  <Typography
-                    sx={{
-                      fontSize: isSmallScreen ? '1.5em' : '3em',
-                      fontFamily: 'Major Mono Display',
-                    }}
-                  >
-                    Alex Andstén
-                  </Typography>
+                <Stack flexDirection={'column'} ml={2} pt={3} width={'100%'} justifyContent={'center'} alignItems={'center'}>
+                  <SlideInLeftDiv>
+                    <Typography
+                      sx={{
+                        fontSize: isSmallScreen ? '1.5em' : '3em',
+                        fontFamily: 'Major Mono Display',
+                      }}
+                    >
+                      Alex
+                    </Typography>
+                  </SlideInLeftDiv>
+                  <SlideInRightDiv>
+                    <Typography
+                      sx={{
+                        fontSize: isSmallScreen ? '1.5em' : '3em',
+                        fontFamily: 'Major Mono Display',
+                      }}
+                    >
+                      Andstén
+                    </Typography>
+                  </SlideInRightDiv>
                 </Stack>
               </Grid>
               <Grid item sm={12} md={6}>
