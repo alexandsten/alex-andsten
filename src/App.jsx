@@ -8,7 +8,7 @@ import fadeIn from 'react-animations/lib/fade-in';
 import styled, { keyframes } from 'styled-components';  
 import al3 from './img/alexTransparent.png';
 import whiteBg from './img/whiteBg.jpg';
-import { Stack, Typography, GlobalStyles, Grid, Fade } from '@mui/material';
+import { Stack, Typography, GlobalStyles } from '@mui/material';
 import { styled as muiStyled } from '@mui/system'; 
 import { useMediaQuery } from '@mui/material';
 import slideInRight from 'react-animations/lib/slide-in-right';
@@ -68,9 +68,7 @@ function App() {
       />
       <Stack
         maxWidth={'100vw'}
-        minHeight={'100vh'}
-        justifyContent={'center'}
-        alignItems={'center'}
+        minHeight={ isSmallScreen ? '0vh': '100vh'}
         sx={{
           backgroundImage: `url(${whiteBg})`,
           backgroundSize: isSmallScreen ? 'stretch' : 'contain',
@@ -78,7 +76,12 @@ function App() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <Stack minHeight={'100vh'} width={'100%'}>
+        <Stack minHeight={ isSmallScreen ? '0vh': '100vh'}  width={'100%'} flexDirection={'column'} sx={{
+                    backgroundImage: `url(${al3})`,
+                    backgroundSize: isSmallScreen ? 'stretch' : 'contain',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                  }}  >
           <Stack width={'100%'} flexDirection={'row-reverse'} position={'absolute'}>
             <Stack flexDirection={'column'} mt={4} gap={1}>
               <Link to="section1" smooth={true} duration={500}>
@@ -104,53 +107,73 @@ function App() {
             </Stack>
           </Stack>
 
-          <Stack className="para" width={'100%'} height={'100%'}>
+          <Stack className="para" width={'100%'} height={'100%'} >
             <Stack
               width={'100%'}
               height={'100%'}
               flexDirection={'column'}
-              alignItems={'flex-end'}
-              justifyContent={'flex-end'}
-            >
+              alignItems={'center'}   
+              justifyContent={'center'}  
+              position={'relative'}   
               
-                  <Stack width={'100%'} height={'100%'} spacing={1} pt={5}>
-                    <Stack flexDirection={'column'} ml={5} pt={3} height={'100%'} width={'100%'} 
-                    justifyContent={'spread-evenly'} 
-                    alignItems={'center'}>
-                      <SlideInLeftDiv>
-                        <Typography
-                          sx={{
-                            fontSize: isSmallScreen ? '3em' : '10em',
-                            fontFamily: 'Major Mono Display',
-                          }}
-                        >
-                          Alex
-                        </Typography>
-                      </SlideInLeftDiv>
-                      <SlideInRightDiv>
-                        <Typography
-                          sx={{
-                            fontSize: isSmallScreen ? '3em' : '10em',
-                            fontFamily: 'Major Mono Display',
-                          }}
-                        >
-                          Andstén
-                        </Typography>
-                      </SlideInRightDiv>
-                    </Stack>
-                  </Stack>
-                <Stack  height={'100%'} width={'100%'} justifyContent={'flex-end'} 
-                  alignItems={'center'} 
-                  position={'absolute'}
-                  flexDirection={'column'}
-                  >
-                  <img
-                    src={al3}
-                    alt="Alex"
-                    style={{ width: isSmallScreen ? '30%' : '30em', height: 'auto', maxWidth: '1080px', maxHeight: '950px' }}
-                  />
-                </Stack>
+            >
+              <Stack
+                width={'100%'}
+                height={'100%'}
                 
+                spacing={1}
+                pt={5}
+                position={'relative'}
+              >
+                <Stack
+                  flexDirection={'column'}
+                   
+                  ml={5}
+                  pt={3}
+                  height={'100%'}
+                  width={'100%'}
+                  justifyContent={'center'}  
+                  alignItems={'center'}
+                >
+                  <SlideInLeftDiv>
+                    <Typography
+                      sx={{
+                        fontSize: isSmallScreen ? '5em' : '10em',
+                        fontFamily: 'Major Mono Display',
+                      }}
+                    >
+                      Alex
+                    </Typography>
+                  </SlideInLeftDiv>
+                  <SlideInRightDiv>
+                    <Typography
+                      sx={{
+                        fontSize: isSmallScreen ? '3em' : '10em',
+                        fontFamily: 'Major Mono Display',
+                      }}
+                    >
+                      Andstén
+                    </Typography>
+                  </SlideInRightDiv>
+                </Stack>
+              </Stack>
+
+              {/* <Stack
+                width={'100%'}
+                justifyContent={'flex-end'}
+                alignItems={'center'}
+                bottom={0}
+                left={0}
+              >
+                <img
+                  src={al3}
+                  alt="Alex"
+                  style={{
+                    width: isSmallScreen ? '75%' : '50%',
+                    height: 'auto',
+                  }}
+                />
+              </Stack> */}
             </Stack>
           </Stack>
         </Stack>
