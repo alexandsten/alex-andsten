@@ -68,7 +68,7 @@ function App() {
       />
       <Stack
         maxWidth={'100vw'}
-        minHeight={ isSmallScreen ? '0vh': '100vh'}
+        minHeight={ isSmallScreen ? '50vh': '100vh'}
         sx={{
           backgroundImage: `url(${whiteBg})`,
           backgroundSize: isSmallScreen ? 'stretch' : 'contain',
@@ -76,13 +76,13 @@ function App() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <Stack minHeight={ isSmallScreen ? '0vh': '100vh'}  width={'100%'} flexDirection={'column'} sx={{
+        <Stack minHeight={ isSmallScreen ? '50vh': '100vh'}  width={'100%'} flexDirection={'column'} sx={{
                     backgroundImage: `url(${al3})`,
                     backgroundSize: isSmallScreen ? 'stretch' : 'contain',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                   }}  >
-          <Stack width={'100%'} flexDirection={'row-reverse'} position={'absolute'}>
+          <Stack width={'100%'} flexDirection={'row-reverse'} position={'absolute'} zIndex={10}>
             <Stack flexDirection={'column'} mt={4} gap={1}>
               <Link to="section1" smooth={true} duration={500}>
                 <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px' }}>
@@ -140,6 +140,9 @@ function App() {
                       sx={{
                         fontSize: isSmallScreen ? '5em' : '10em',
                         fontFamily: 'Major Mono Display',
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0 0 10px rgba(0, 0, 0, 0.8)' 
                       }}
                     >
                       Alex
@@ -150,6 +153,9 @@ function App() {
                       sx={{
                         fontSize: isSmallScreen ? '3em' : '10em',
                         fontFamily: 'Major Mono Display',
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0 0 10px rgba(0, 0, 0, 0.8)' 
                       }}
                     >
                       Andstén
