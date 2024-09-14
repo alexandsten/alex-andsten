@@ -17,13 +17,13 @@ import slideInLeft from 'react-animations/lib/slide-in-left';
 const SlideInRightAnimation = keyframes`${slideInRight}`;
 
 const SlideInRightDiv = styled.div`
-  animation: 1s ${SlideInRightAnimation};
+  animation: 2s ${SlideInRightAnimation};
 `;
 
 const SlideInLeftAnimation = keyframes`${slideInLeft}`;
 
 const SlideInLeftDiv = styled.div`
-  animation: 1s ${SlideInLeftAnimation};
+  animation: 2s ${SlideInLeftAnimation};
 `;
 
 const fadeAnimation = keyframes`${fadeIn}`;
@@ -79,7 +79,7 @@ function App() {
         <Stack minHeight={ isSmallScreen ? '50vh': '100vh'}  width={'100%'} flexDirection={'column'} sx={{
                     backgroundImage: `url(${al3})`,
                     backgroundSize: isSmallScreen ? 'stretch' : 'contain',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'center left',
                     backgroundRepeat: 'no-repeat',
                   }}  >
           <Stack width={'100%'} flexDirection={'row-reverse'} position={'absolute'} zIndex={10}>
@@ -133,7 +133,7 @@ function App() {
                   height={'100%'}
                   width={'100%'}
                   justifyContent={'center'}  
-                  alignItems={'center'}
+                  alignItems={'flex-end'}
                 >
                   <SlideInLeftDiv>
                     <Typography
