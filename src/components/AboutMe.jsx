@@ -134,9 +134,9 @@ const AboutMe = () => {
         {/* </FadeDiv> */}
       </Stack>
       <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
-        <Grid container>
-          <Grid item sm={12} md={4}>
-            <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
+        <Grid container width={'100%'}>
+          <Grid item sm={12} md={4} width={'100%'}>
+            <Stack justifyContent={'flex-start'} alignItems={'flex-start'} width={'100%'} p={5} gap={3}>
               
               {
                 isSmallScreen ?
@@ -147,7 +147,7 @@ const AboutMe = () => {
                         <Stack flexDirection={'column'} gap={2}>
                           {skillsColumn1.map((skill, index) => (
                             <Stack key={index} flexDirection={'row'} gap={2} width={'100%'} 
-                              justifyContent={'space-evenly'} alignItems="center">
+                              justifyContent={'space-between'} alignItems="center">
                               <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
                                 {skill}
                               </Typography>
@@ -169,10 +169,11 @@ const AboutMe = () => {
                   (
                     <AnimatedDivLeft ref={ref} isVisible={inView}> 
                       <h3>Skills</h3>
-                      <Stack flexDirection={'row'} gap={5} mt={7}>
-                        <Stack flexDirection={'column'} gap={2}>
+                      <Stack flexDirection={'row'} width={'100%'} gap={5} mt={7}>
+                        <Stack flexDirection={'column'} width={'100%'} gap={2}>
                             {skillsColumn1.map((skill, index) => (
-                              <Stack key={index} flexDirection={'row'} gap={2} width={'100%'} 
+                              <Stack key={index} flexDirection={'row'} gap={10} width={'100%'} 
+                              justifyContent={'space-between'} alignItems="center" 
                                 >
                                 <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
                                   {skill}
