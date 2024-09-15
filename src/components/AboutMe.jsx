@@ -60,17 +60,19 @@ const AboutMe = () => {
     'React Native',
     'HTML',
     'CSS',
-    'Tailwind',
-  ];
-  
-  const skillsColumn2 = [
-    'REST API',
-    'Axios',
-    'Node.js',
-    'Firebase',
     'Git',
-    'Jest',
   ];
+
+  const skillsColumn1Icons = [
+    <img width="20" height="20" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-color-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-color-tal-revivo"/>,
+    <img width="20" height="20" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>,
+    <img width="20" height="20" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
+    <img width="20" height="20" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
+    <img width="20" height="20" src="https://img.icons8.com/parakeet/48/html.png" alt="html"/>,
+    <img width="20" height="20" src="https://img.icons8.com/fluency/48/css3.png" alt="css3"/>,
+    <img width="20" height="20" src="https://img.icons8.com/color/48/git.png" alt="git"/>,
+  ];
+
 
   const educationColumn = [
     'Frontend Developer, JENSEN Vocational School. 2022 - 2024',
@@ -144,18 +146,22 @@ const AboutMe = () => {
                       <Stack flexDirection={'row'} gap={5} mt={7}>
                         <Stack flexDirection={'column'} gap={2}>
                           {skillsColumn1.map((skill, index) => (
-                            <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                              {skill}
-                            </Typography>
+                            <Stack key={index} flexDirection={'row'} gap={2} width={'100%'} 
+                              justifyContent={'space-evenly'} alignItems="center">
+                              <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                                {skill}
+                              </Typography>
+                                {skillsColumn1Icons[index]}
+                            </Stack>
                           ))}
                         </Stack>
-                        <Stack flexDirection={'column'} gap={2}>
+                        {/* <Stack flexDirection={'column'} gap={2}>
                           {skillsColumn2.map((skill, index) => (
                             <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
                               {skill}
                             </Typography>
                           ))}
-                        </Stack>
+                        </Stack> */}
                       </Stack>
                     </>
                   )
@@ -165,19 +171,23 @@ const AboutMe = () => {
                       <h3>Skills</h3>
                       <Stack flexDirection={'row'} gap={5} mt={7}>
                         <Stack flexDirection={'column'} gap={2}>
-                          {skillsColumn1.map((skill, index) => (
-                            <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                              {skill}
-                            </Typography>
-                          ))}
-                        </Stack>
-                        <Stack flexDirection={'column'} gap={2}>
+                            {skillsColumn1.map((skill, index) => (
+                              <Stack key={index} flexDirection={'row'} gap={2} width={'100%'} 
+                                >
+                                <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                                  {skill}
+                                </Typography>
+                                  {skillsColumn1Icons[index]}
+                              </Stack>
+                            ))}
+                          </Stack>
+                        {/* <Stack flexDirection={'column'} gap={2}>
                           {skillsColumn2.map((skill, index) => (
                             <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
                               {skill}
                             </Typography>
                           ))}
-                        </Stack>
+                        </Stack> */}
                       </Stack>
                     </AnimatedDivLeft>
                   )
