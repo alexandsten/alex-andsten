@@ -56,21 +56,19 @@ const AboutMe = () => {
   const skillsColumn1 = [
     'TypeScript',
     'JavaScript',
-    'React',
-    'React Native',
+    'React / React Native',
     'HTML',
     'CSS',
     'Git',
   ];
 
   const skillsColumn1Icons = [
-    <img width="20" height="20" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-color-tal-revivo.png" alt="external-typescript-an-open-source-programming-language-developed-and-maintained-by-microsoft-logo-color-tal-revivo"/>,
-    <img width="20" height="20" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>,
-    <img width="20" height="20" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
-    <img width="20" height="20" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
-    <img width="20" height="20" src="https://img.icons8.com/parakeet/48/html.png" alt="html"/>,
-    <img width="20" height="20" src="https://img.icons8.com/fluency/48/css3.png" alt="css3"/>,
-    <img width="20" height="20" src="https://img.icons8.com/color/48/git.png" alt="git"/>,
+    <img width="30" height="30" src="https://img.icons8.com/fluency/48/typescript--v2.png" alt="typescript--v2"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>,
+    <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/html-5--v2.png" alt="html-5--v2"/>,
+    <img width="30" height="30" src="https://img.icons8.com/fluency/48/css3.png" alt="css3"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/git.png" alt="git"/>,
   ];
 
 

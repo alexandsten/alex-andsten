@@ -47,27 +47,40 @@ const ContactLinks = () => {
 
         <Grid item xs={12} md={6} xl={3}  justifyContent={'center'} alignItems={'center'}>
           <a href="https://github.com/alexandsten" target="_blank">
-            <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>Github</Typography>
+            <Stack flexDirection={'row'} gap={1}>
+              <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="github-logo"/>
+              <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>Github</Typography>
+            </Stack>
           </a>
         </Grid>
         
         <Grid item xs={12} md={6} xl={3}>
-          <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>
-            +46 76 260 82 27
-          </Typography>
+          <Stack flexDirection={'row'} gap={1}>
+            <img width="30" height="30" src="https://img.icons8.com/external-flat-juicy-fish/60/external-phone-contact-us-flat-flat-juicy-fish-2.png" alt="external-phone-contact-us-flat-flat-juicy-fish-2"/>
+            <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>
+              +46 76 260 82 27
+            </Typography>
+          </Stack>
         </Grid>
+        
         
         <Grid item xs={12} md={6} xl={3}>
           <a href="https://linkedin.com/in/alex-andstén-47937116b" target="_blank">
-            <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>Linkedin</Typography>
+            <Stack flexDirection={'row'} gap={1}>
+              <img width="30" height="30" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
+              <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>Linkedin</Typography>
+            </Stack>
           </a>
         </Grid>
 
         <Grid item xs={12} md={6} xl={3}>
           <a href="mailto:alex.andsten@hotmail.com">
-            <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>
-              alex.andsten@hotmail.com
-            </Typography>
+            <Stack flexDirection={'row'} gap={1}>
+              <img width="30" height="30" src="https://img.icons8.com/color/48/secured-letter--v1.png" alt="secured-letter--v1"/>
+              <Typography sx={{ color: 'white', fontFamily: 'Gotu' }}>
+                alex.andsten@hotmail.com
+              </Typography>
+            </Stack>
           </a>
         </Grid>
 
