@@ -19,6 +19,8 @@ const ContactLinks = () => {
     threshold: 0.3,
   });
 
+  const isSmallScreen = useMediaQuery('(max-width:1200px)');
+
   return (
     <Stack
       height={'100vh'}
@@ -34,7 +36,7 @@ const ContactLinks = () => {
             color: 'white',
             fontFamily: 'Gotu',
             fontWeight: 'bold',
-            fontSize: '4em',
+            fontSize: isSmallScreen ? '2em' : '4em',
           }}
         >
           Lets get in touch!
