@@ -71,12 +71,30 @@ const AboutMe = () => {
     <img width="30" height="30" src="https://img.icons8.com/color/48/git.png" alt="git"/>,
   ];
 
-
-  const educationColumn = [
-    'Frontend Developer, JENSEN Vocational School. 2022 - 2024',
-    'Interactive Media and Web Technologies, Linnaeus University. 2020-2021',
-    '3-year IT/Media High School Education, John Bauer. 2008-2011',
+  const skillsColumn2 = [
+    'NodeJS',
+    'NoSQL / Firebase',
+    'Jest',
+    'Rest API',
+    'Figma',
+    'Wordpress',
   ];
+
+  const skillsColumn2Icons = [
+    <img width="30" height="30" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/>,
+    <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" alt="external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/api.png" alt="api"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>,
+    <img width="30" height="30" src="https://img.icons8.com/color/48/wordpress.png" alt="wordpress"/>,
+  ];
+
+
+  // const educationColumn = [
+  //   'Frontend Developer, JENSEN Vocational School. 2022 - 2024',
+  //   'Interactive Media and Web Technologies, Linnaeus University. 2020-2021',
+  //   '3-year IT/Media High School Education, John Bauer. 2008-2011',
+  // ];
 
   const isSmallScreen = useMediaQuery('(max-width:1200px)');
   const isLargeScreen = useMediaQuery('(max-width:1400px)');
@@ -102,7 +120,7 @@ const AboutMe = () => {
       <Stack justifyContent={'flex-start'} alignItems={'center'}>
         <h3>Experience & skills</h3>
       </Stack>
-      <Stack width={'80%'} spacing={1} pt={5}>
+      <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
         {/* <Typography
           sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
         >
@@ -142,7 +160,7 @@ const AboutMe = () => {
                     <>
                       <h3>Skills</h3>
                       <Stack flexDirection={'row'} gap={5} mt={7}>
-                        <Stack flexDirection={'column'} gap={2}>
+                        <Stack flexDirection={'column'} gap={2} width={'15em'}>
                           {skillsColumn1.map((skill, index) => (
                             <Stack key={index} flexDirection={'row'} gap={2}  
                               justifyContent={'space-between'} alignItems="center">
@@ -168,7 +186,7 @@ const AboutMe = () => {
                     <AnimatedDivLeft ref={ref} isVisible={inView}> 
                       <h3>Skills</h3>
                       <Stack flexDirection={'row'}  gap={5} mt={7}>
-                        <Stack flexDirection={'column'} gap={2}>
+                        <Stack flexDirection={'column'} gap={2}  width={'15em'}>
                             {skillsColumn1.map((skill, index) => (
                               <Stack key={index} flexDirection={'row'} gap={10}  
                               justifyContent={'space-between'} alignItems="center" 
@@ -195,33 +213,17 @@ const AboutMe = () => {
           </Grid>
           <Grid item sm={12} md={4}>
             <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-              
-                <h3>Experience</h3>
-                <Stack>
-                  <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>Nostra / Nostradamage. 2024 - ongoing</Typography>
-                  <Stack width={'80%'}>
-                    <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
-                      - React, JavaScript, MUI, Firebase, NoSQL Database
+            <h3>&nbsp;</h3>
+            <Stack flexDirection={'column'} gap={2} width={'15em'}>
+                {skillsColumn2.map((skill, index) => (
+                  <Stack  key={index} flexDirection={'row'} gap={2}  
+                    justifyContent={'space-between'} alignItems="center">
+                    <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                      {skill}
                     </Typography>
+                      {skillsColumn2Icons[index]}
                   </Stack>
-                </Stack>
-                <Stack>
-                  <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                    Nobel Week Lights mobilapplikation. 2024 - ongoing
-                  </Typography>
-                  <Stack width={'80%'}>
-                    <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
-                      - React Native, Wordpress Database, Mapbox
-                    </Typography>
-                  </Stack>
-                </Stack>
-              <Stack>
-                <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>hitRact internship. 2023 - 2024</Typography>
-                <Stack width={'80%'}>
-                  <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
-                    - React, TypeScript, MUI
-                  </Typography>
-                </Stack>
+                ))}
               </Stack>
             </Stack>
           </Grid>
@@ -230,23 +232,67 @@ const AboutMe = () => {
               
               {isSmallScreen ? 
               (
-                <Stack gap={3}>
-                  <h3>Education</h3>
-                  {educationColumn.map((skill, index) => (
-                      <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                        {skill}
-                      </Typography>
-                    ))}
+                <Stack flexDirection={'column'} gap={2}>
+                  <Stack gap={3}>
+                    <h3>Experience</h3>
+                      <Stack>
+                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>Nostra / Nostradamage. 2024 - ongoing</Typography>
+                        <Stack width={'80%'}>
+                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                            - React, JavaScript, MUI, Firebase, NoSQL Database
+                          </Typography>
+                        </Stack>
+                      </Stack>
+                      <Stack>
+                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                          Nobel Week Lights mobile app. 2024 - ongoing
+                        </Typography>
+                        <Stack width={'80%'}>
+                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                            - React Native, Wordpress Database, Mapbox
+                          </Typography>
+                        </Stack>
+                      </Stack>
+                    <Stack>
+                      <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>hitRact internship. 2023 - 2024</Typography>
+                      <Stack width={'80%'}>
+                        <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                          - React, TypeScript, MUI
+                        </Typography>
+                      </Stack>
+                    </Stack>
+                  </Stack>
                 </Stack>
               ) : 
                 <AnimatedDivRight ref={ref} isVisible={inView}>
                   <Stack gap={3}>
-                    <h3>Education</h3>
-                    {educationColumn.map((skill, index) => (
-                        <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                          {skill}
+                    <h3>Experience</h3>
+                      <Stack>
+                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>Nostra / Nostradamage. 2024 - ongoing</Typography>
+                        <Stack width={'80%'}>
+                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                            - React, JavaScript, MUI, Firebase, NoSQL Database
+                          </Typography>
+                        </Stack>
+                      </Stack>
+                      <Stack>
+                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                          Nobel Week Lights mobile app. 2024 - ongoing
                         </Typography>
-                      ))}
+                        <Stack width={'80%'}>
+                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                            - React Native, Wordpress Database, Mapbox
+                          </Typography>
+                        </Stack>
+                      </Stack>
+                    <Stack>
+                      <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>hitRact internship. 2023 - 2024</Typography>
+                      <Stack width={'80%'}>
+                        <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                          - React, TypeScript, MUI
+                        </Typography>
+                      </Stack>
+                    </Stack>
                   </Stack>
                 </AnimatedDivRight>
               }
