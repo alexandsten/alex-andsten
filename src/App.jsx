@@ -237,7 +237,7 @@ function App() {
             <Grid item>
               <a href={CV} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}} onClick={toggleDrawer(false)}>
                 <Typography sx={{ fontFamily: 'Gotu', fontSize: '18px', color: 'white' }}>
-                  CV in Swedish
+                  Curriculum Vitae
                 </Typography>
               </a>
             </Grid>
