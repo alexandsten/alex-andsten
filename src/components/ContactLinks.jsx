@@ -91,7 +91,7 @@ const ContactLinks = () => {
 
       <Stack width={'75%'} height={'20%'} justifyContent={'flex-end'} alignItems={'flex-end'}>
         <Typography sx={{ color: 'white', fontFamily: 'Gotu', fontSize: '10px' }}>
-            Background images Designed by Freepik, Icons by Icons8
+          Designed by Alex Andstén, Background images by Freepik, Icons by Icons8
         </Typography>
       </Stack>
 
