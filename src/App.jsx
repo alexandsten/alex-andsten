@@ -172,7 +172,7 @@ function App() {
                   alignItems={'flex-end'}
                 >
                   <SlideInRightDiv>
-                    <div style={{ color: 'black', fontFamily: 'Pixelify Sans', fontSize: '1.5em', marginRight: '2em' }}>
+                    <div style={{ color: 'grey', fontFamily: 'Pixelify Sans', fontSize: isMiniScreen ? '0.8em' : isSmallScreen ? '1em' : '2em', marginRight: '2em' }}>
                       I'm a {displayText}
                     </div>
                   </SlideInRightDiv>
