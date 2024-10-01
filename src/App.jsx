@@ -15,6 +15,9 @@ import { useMediaQuery } from '@mui/material';
 import slideInRight from 'react-animations/lib/slide-in-right';
 import slideInLeft from 'react-animations/lib/slide-in-left';
 
+
+const roles = ['web developer', 'programmer', 'UI designer', 'tech enthusiast'];
+
 const SlideInRightAnimation = keyframes`${slideInRight}`;
 
 const SlideInRightDiv = styled.div`
@@ -34,6 +37,30 @@ const FadeDiv = styled.div`
 `;
 
 function App() {
+
+  const [index, setIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setDisplayText(prev => 
+        isDeleting ? roles[index].substring(0, prev.length - 1) : roles[index].substring(0, prev.length + 1)
+      );
+      setCharIndex(isDeleting ? charIndex - 1 : charIndex + 1);
+
+      if (!isDeleting && displayText === roles[index]) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && displayText === '') {
+        setIsDeleting(false);
+        setIndex((prevIndex) => (prevIndex + 1) % roles.length);
+      }
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, index, charIndex]);
+  
   const CustomTypography = muiStyled(Typography)(({ theme }) => ({
     '&::first-letter': {
       fontSize: '24px',
@@ -144,6 +171,11 @@ function App() {
                   justifyContent={'center'}  
                   alignItems={'flex-end'}
                 >
+                  <SlideInRightDiv>
+                    <div style={{ color: 'black', fontFamily: 'Pixelify Sans', fontSize: '1.5em', marginRight: '2em' }}>
+                      I'm a {displayText}
+                    </div>
+                  </SlideInRightDiv>
                   <SlideInLeftDiv>
                     <Typography
                       sx={{
