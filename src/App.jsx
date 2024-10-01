@@ -14,7 +14,6 @@ import { styled as muiStyled } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
 import slideInRight from 'react-animations/lib/slide-in-right';
 import slideInLeft from 'react-animations/lib/slide-in-left';
-import Typical from 'react-typical';
 
 const SlideInRightAnimation = keyframes`${slideInRight}`;
 
@@ -60,7 +59,7 @@ function App() {
       return;
     }
     if (open === false) {
-      window.scrollTo(0, scrollPosition); // Restore scroll position when closing the drawer
+      window.scrollTo(0, scrollPosition); 
     }
     setDrawerOpen(open);
   };
@@ -145,30 +144,6 @@ function App() {
                   justifyContent={'center'}  
                   alignItems={'flex-end'}
                 >
-                  <SlideInRightDiv>
-                  <Typography
-                      sx={{
-                        color: 'black',
-                        fontFamily: 'Pixelify Sans', // Ensure the font is available
-                        fontSize: isMiniScreen ? '1em' : isSmallScreen ? '2em' : '3em',
-                        display: 'inline-flex',
-                        // textShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
-                      }}
-                    >
-                      <span style={{ fontFamily: 'inherit', fontSize: 'inherit' }}>
-                        <Typical
-                          loop={Infinity}
-                          wrapper="span"  // Change wrapper from 'b' to 'span' to avoid overriding styles
-                          steps={[
-                            'web developer', 3000,
-                            'programmer', 3000,
-                            'UI designer', 3000,
-                            'tech enthusiast', 3000,
-                          ]}
-                        />
-                      </span>
-                    </Typography>
-                  </SlideInRightDiv>
                   <SlideInLeftDiv>
                     <Typography
                       sx={{
@@ -194,7 +169,6 @@ function App() {
                     >
                       Andstén
                     </Typography>
-                   
                   </SlideInRightDiv>
                 </Stack>
               </Stack>
