@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack, Typography, styled as muiStyled } from '@mui/material'
 import React from 'react'
 import Slider from "react-slick";
 import styled, { keyframes } from 'styled-components';
@@ -13,6 +13,16 @@ import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from '@mui/material';
 
 const MyProjects = () => {
+
+  const Text = muiStyled(Typography)({
+    fontFamily: 'Gotu',
+    color: 'black',
+  });
+
+  const TextHeader = muiStyled(Typography)({
+    fontFamily: 'Gotu',
+    color: 'white',
+  });
 
   const isSmallScreen = useMediaQuery('(max-width:1200px)');
   const isMiniScreen = useMediaQuery('(max-width:600px)');
@@ -82,14 +92,14 @@ const MyProjects = () => {
                       borderRadius: isSmallScreen ? '15px' : '0px 15px 15px 0px' }}
                     >
                       <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                        <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold', color: 'white'}}>
+                        <TextHeader>
                           Nostra / Nostradamage
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                        <TextHeader>
                           React, JavaScript, Node.js, Express, SQL Database
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
                             backgroundColor: 'white',  
@@ -98,21 +108,27 @@ const MyProjects = () => {
                             maxHeight: '300px', 
                             overflowY: 'auto',  
                         }}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Since early 2024, together with a friend, I have started the production of a product that we plan to release preliminarily in Q4 2025.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage is a product that uses machine learning and algorithms to analyze past MMA match results and predict the most likely outcomes.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage will be part of Nostra, which will produce several similar products in other sports, serving the same purpose.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage is being developed daily, and its concept and results are making significant progress regularly.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>My role in this project is fullstack developer.
-                        </Typography>
+                          <Text>
+                            Since early 2024, together with a friend, I have started the production of a product that we plan to release preliminarily in Q4 2025.   
+                          </Text>
+                        
+                          <Text>Nostradamage is a product that uses machine learning and algorithms to analyze past MMA match results and predict the most likely outcomes.
+                          </Text>
+
+                        <Text>
+                        Nostradamage will be part of Nostra, which will produce several similar products in other sports, serving the same purpose.
+                        </Text>
+                        <Text>
+                        Nostradamage is being developed daily, and its concept and results are making significant progress regularly.
+                        </Text>
+                        <Text>
+                        My role in this project is fullstack developer.
+                        </Text>
                       </Stack>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                        <TextHeader>
                           Product is in an early stage of development.
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack flexDirection={'row'}>
                       
@@ -127,9 +143,9 @@ const MyProjects = () => {
                                     backgroundColor: '#293145',
                                   },
                                   }}>
-                                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                                  <TextHeader>
                                     Website
-                                  </Typography>
+                                  </TextHeader>
                               </Stack>
                           </a>
                       
@@ -146,9 +162,9 @@ const MyProjects = () => {
                                     backgroundColor: '#293145',
                                   },
                                   }}>
-                                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                                  <TextHeader>
                                     Github
-                                  </Typography>
+                                  </TextHeader>
                               </Stack>
                           </a>
                       
@@ -185,14 +201,14 @@ const MyProjects = () => {
                     }}
                     >
                       <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                        <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold', color: 'white'}}>
+                        <TextHeader>
                           Nobel Week Lights App
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                        <TextHeader>
                           React Native, Wordpress Database, Mapbox
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
                             backgroundColor: 'white',  
@@ -201,22 +217,27 @@ const MyProjects = () => {
                             maxHeight: '300px', 
                             overflowY: 'auto',  
                         }}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Early 2024 I was given the task to develop an app for Nobel Lights Week on IOS and android.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nobel Week Lights is a festival that occurs in Stockholm once per year. During this week there are light-based art works all around the town.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>The app I'm developing will show the user where all the art works are located on a map. The user will also be able to read about all the works and their creators.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>The first iteration of the app will be quite basic, but it will add additional features annually.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nobel Week Lights app is not yet in appstore or in google play, it will be released in december.
-                        </Typography>
+                        <Text>
+                        Early 2024 I was given the task to develop an app for Nobel Lights Week on IOS and android.
+                        </Text>
+                        <Text>
+                        Nobel Week Lights is a festival that occurs in Stockholm once per year. During this week there are light-based art works all around the town.
+                        </Text>
+                        <Text>
+                        The app I'm developing will show the user where all the art works are located on a map. The user will also be able to read about all the works and their creators.
+                        </Text>
+                        <Text>
+                        The first iteration of the app will be quite basic, but it will add additional features annually.
+                        </Text>
+                        <Text>
+                        Nobel Week Lights app is not yet in appstore or in google play, it will be released in december.
+                        </Text>
                         
                       </Stack>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                        <TextHeader>
                           Product is in an early stage of development.
-                        </Typography>
+                        </TextHeader>
                       </Stack>
 
                         
@@ -231,9 +252,9 @@ const MyProjects = () => {
                                     backgroundColor: '#293145',
                                   },
                                   }}>
-                                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                                  <TextHeader>
                                     Github
-                                  </Typography>
+                                  </TextHeader>
                               </Stack>
                           </a>
                       
@@ -270,14 +291,14 @@ const MyProjects = () => {
                       }}
                     >
                       <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                        <Typography sx={{ fontFamily: "Gotu", fontSize: '24px', fontWeight: 'bold', color: 'white'}}>
+                        <TextHeader>
                           hitRact
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                        <TextHeader>
                           React, TypeScript, MUI, Axios
-                        </Typography>
+                        </TextHeader>
                       </Stack>
                       <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
                             backgroundColor: 'white',  
@@ -286,22 +307,27 @@ const MyProjects = () => {
                             maxHeight: '300px', 
                             overflowY: 'auto',  
                         }}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>From late 2023 to early 2024 I was an frontend intern for the company hitRact.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>I was working with search functions, adding search filters and fetching data from backend.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>I was using React ,Next.js and MUI. During my time as an intern I was closely following a Figma prototype of the website we were creating.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>The website I was working on is not yet live. It will be live once everything is done.
-                        </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Until hitRact web 2.0 is done, there is a placeholder website that can be visited.
-                        </Typography>
+                        <Text>
+                        From late 2023 to early 2024 I was an frontend intern for the company hitRact.
+                        </Text>
+                        <Text>
+                        I was working with search functions, adding search filters and fetching data from backend.
+                        </Text>
+                        <Text>
+                        I was using React ,Next.js and MUI. During my time as an intern I was closely following a Figma prototype of the website we were creating.
+                        </Text>
+                        <Text>
+                        The website I was working on is not yet live. It will be live once everything is done.
+                        </Text>
+                        <Text>
+                        Until hitRact web 2.0 is done, there is a placeholder website that can be visited.
+                        </Text>
                         
                       </Stack>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                        <TextHeader>
                           The new version of hitracts website is not yet live.
-                        </Typography>
+                        </TextHeader>
                       </Stack>
 
                         
@@ -316,9 +342,9 @@ const MyProjects = () => {
                                     backgroundColor: '#293145',
                                   },
                                   }}>
-                                  <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
+                                  <TextHeader>
                                     Website
-                                  </Typography>
+                                  </TextHeader>
                               </Stack>
                           </a>
                       
