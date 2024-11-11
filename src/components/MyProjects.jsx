@@ -88,7 +88,7 @@ const MyProjects = () => {
                       </Stack>
                       <Stack width={'80%'}>
                         <Typography sx={{ fontFamily: "Gotu", color: 'white'}}>
-                          React, JavaScript, MUI, Firebase, NoSQL Database
+                          React, JavaScript, Node.js, Express, SQL Database
                         </Typography>
                       </Stack>
                       <Stack gap={2} p={3} m={3} height={'100%'} justifyContent={'space-between'} alignItems={'center'} sx={{ 
@@ -106,7 +106,7 @@ const MyProjects = () => {
                         </Typography>
                         <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage is being developed daily, and its concept and results are making significant progress regularly.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>My role in this project is both frontend and backend developer.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>My role in this project is fullstack developer.
                         </Typography>
                       </Stack>
                       <Stack width={'80%'}>
