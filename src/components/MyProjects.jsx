@@ -98,15 +98,15 @@ const MyProjects = () => {
                             maxHeight: '300px', 
                             overflowY: 'auto',  
                         }}>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Since early 2024, together with a friend, I have started the production of a product that we plan to release preliminarily in Q4 2025.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Since early 2024, together with a friend, I have started the production of a product that we plan to release preliminarily in Q4 2025.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage is a product that uses machine learning and algorithms to analyze past MMA match results and predict the most likely outcomes.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage is a product that uses machine learning and algorithms to analyze past MMA match results and predict the most likely outcomes.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage will be part of Nostra, which will produce several similar products in other sports, serving the same purpose.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage will be part of Nostra, which will produce several similar products in other sports, serving the same purpose.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Nostradamage is being developed daily, and its concept and results are making significant progress regularly.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nostradamage is being developed daily, and its concept and results are making significant progress regularly.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>My role in this project is both frontend and backend developer.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>My role in this project is both frontend and backend developer.
                         </Typography>
                       </Stack>
                       <Stack width={'80%'}>
@@ -201,15 +201,15 @@ const MyProjects = () => {
                             maxHeight: '300px', 
                             overflowY: 'auto',  
                         }}>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Early 2024 I was given the task to develop an app for Nobel Lights Week on IOS and android.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Early 2024 I was given the task to develop an app for Nobel Lights Week on IOS and android.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Nobel Week Lights is a festival that occurs in Stockholm once per year. During this week there are light-based art works all around the town.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nobel Week Lights is a festival that occurs in Stockholm once per year. During this week there are light-based art works all around the town.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>The app I'm developing will show the user where all the art works are located on a map. The user will also be able to read about all the works and their creators.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>The app I'm developing will show the user where all the art works are located on a map. The user will also be able to read about all the works and their creators.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>The first iteration of the app will be quite basic, but it will add additional features annually.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>The first iteration of the app will be quite basic, but it will add additional features annually.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Nobel Week Lights app is not yet in appstore or in google play, it will be released in december.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Nobel Week Lights app is not yet in appstore or in google play, it will be released in december.
                         </Typography>
                         
                       </Stack>
@@ -286,15 +286,15 @@ const MyProjects = () => {
                             maxHeight: '300px', 
                             overflowY: 'auto',  
                         }}>
-                        <Typography sx={{ fontFamily: "Gotu"}}>From late 2023 to early 2024 I was an frontend intern for the company hitRact.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>From late 2023 to early 2024 I was an frontend intern for the company hitRact.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>I was working with search functions, adding search filters and fetching data from backend.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>I was working with search functions, adding search filters and fetching data from backend.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>I was using React ,Next.js and MUI. During my time as an intern I was closely following a Figma prototype of the website we were creating.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>I was using React ,Next.js and MUI. During my time as an intern I was closely following a Figma prototype of the website we were creating.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>The website I was working on is not yet live. It will be live once everything is done.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>The website I was working on is not yet live. It will be live once everything is done.
                         </Typography>
-                        <Typography sx={{ fontFamily: "Gotu"}}>Until hitRact web 2.0 is done, there is a placeholder website that can be visited.
+                        <Typography sx={{ fontFamily: "Gotu", color: 'black'}}>Until hitRact web 2.0 is done, there is a placeholder website that can be visited.
                         </Typography>
                         
                       </Stack>

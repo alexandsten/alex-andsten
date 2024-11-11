@@ -118,6 +118,7 @@ function App() {
             position: 'sticky',
             top: 0,
             zIndex: 10, 
+            overflowX: 'hidden'
           }}>
           <Stack m={2} pb={2} sx={{ backgroundColor: 'white', width: '3em', height: '3em', borderRadius: '50%'}}>
             <IconButton onClick={toggleDrawer(true)} >
@@ -170,12 +171,13 @@ function App() {
                   width={'100%'}
                   justifyContent={'center'}  
                   alignItems={'flex-end'}
+                  
                 >
-                  <SlideInRightDiv>
+                  <SlideInLeftDiv>
                     <div style={{ color: 'grey', fontFamily: 'Pixelify Sans', fontSize: isMiniScreen ? '0.8em' : isSmallScreen ? '1em' : '2em', marginRight: '2em' }}>
                       I'm a {displayText}
                     </div>
-                  </SlideInRightDiv>
+                  </SlideInLeftDiv>
                   <SlideInLeftDiv>
                     <Typography
                       sx={{
@@ -189,7 +191,7 @@ function App() {
                       Alex
                     </Typography>
                   </SlideInLeftDiv>
-                  <SlideInRightDiv>
+                  <SlideInLeftDiv>
                     <Typography
                       sx={{
                         fontSize: isMiniScreen ? '2em' : isSmallScreen ? '5em' : '10em',
@@ -201,7 +203,7 @@ function App() {
                     >
                       Andstén
                     </Typography>
-                  </SlideInRightDiv>
+                  </SlideInLeftDiv>
                 </Stack>
               </Stack>
 
