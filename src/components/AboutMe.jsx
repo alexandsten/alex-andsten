@@ -52,18 +52,6 @@ const AboutMe = () => {
       fontSize: '0.9em'
   });
 
-  const TextPowerBIHeader = muiStyled(Typography)({
-      fontSize: '1.8em', 
-      fontFamily: 'VT323', 
-      color: 'white'
-  });
-
-  const TextPowerBI = muiStyled(Typography)({
-      fontSize: '1.3em', 
-      fontFamily: 'VT323',
-      color: 'white'
-  });
-
   const CustomTypography = muiStyled(Typography)(({ theme }) => ({
     fontFamily: 'Gotu', 
     color: 'white', 
