@@ -17,6 +17,15 @@ const MyProjects = () => {
   const Text = muiStyled(Typography)({
     fontFamily: 'Gotu',
     color: 'black',
+    fontSize: '0.9em'
+  });
+
+  const TextTitle = muiStyled(Typography)({
+    fontFamily: 'Gotu',
+    color: 'black',
+    fontSize: '1.3em',
+    fontWeight: 'bold',
+    color: 'white'
   });
 
   const TextHeader = muiStyled(Typography)({
@@ -92,9 +101,9 @@ const MyProjects = () => {
                       borderRadius: isSmallScreen ? '15px' : '0px 15px 15px 0px' }}
                     >
                       <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                        <TextHeader>
+                        <TextTitle>
                           Nostra / Nostradamage
-                        </TextHeader>
+                        </TextTitle>
                       </Stack>
                       <Stack width={'80%'}>
                         <TextHeader>
@@ -201,9 +210,9 @@ const MyProjects = () => {
                     }}
                     >
                       <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                        <TextHeader>
+                        <TextTitle>
                           Nobel Week Lights App
-                        </TextHeader>
+                        </TextTitle>
                       </Stack>
                       <Stack width={'80%'}>
                         <TextHeader>
@@ -291,9 +300,9 @@ const MyProjects = () => {
                       }}
                     >
                       <Stack p={3} m={3} justifyContent={'center'} alignItems={'center'} sx={{  height: '10%', padding: '3px', width: '75%', borderRadius: '15px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)'  }}>
-                        <TextHeader>
+                        <TextTitle>
                           hitRact
-                        </TextHeader>
+                        </TextTitle>
                       </Stack>
                       <Stack width={'80%'}>
                         <TextHeader>
