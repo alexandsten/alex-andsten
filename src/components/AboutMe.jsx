@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from '@mui/material';
+import { Grid, Stack, Typography, styled as muiStyled } from '@mui/material';
 import React from 'react';
 import pulse from 'react-animations/lib/pulse';
 import slideInRight from 'react-animations/lib/slide-in-right';
@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import styled, { keyframes, css } from 'styled-components';
 import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
-import { styled as muiStyled } from '@mui/system'; 
+import { styled as muiCustomStyled } from '@mui/system'; 
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -46,7 +46,33 @@ const AnimatedDivLeft = styled.div`
 
 const AboutMe = () => {
 
+  const Text = muiStyled(Typography)({
+      fontFamily: 'Gotu',
+      color: 'white',
+      fontSize: '0.9em'
+  });
 
+  const TextPowerBIHeader = muiStyled(Typography)({
+      fontSize: '1.8em', 
+      fontFamily: 'VT323', 
+      color: 'white'
+  });
+
+  const TextPowerBI = muiStyled(Typography)({
+      fontSize: '1.3em', 
+      fontFamily: 'VT323',
+      color: 'white'
+  });
+
+  const CustomTypography = muiStyled(Typography)(({ theme }) => ({
+    fontFamily: 'Gotu', 
+    color: 'white', 
+    fontSize: '14px',
+    '&::first-letter': {
+      fontSize: isSmallScreen ? '24px' : '30px',
+      fontWeight: 'bold',
+    },
+  }));
 
   const { ref, inView } = useInView({
     triggerOnce: true, 
@@ -99,12 +125,7 @@ const AboutMe = () => {
   const isSmallScreen = useMediaQuery('(max-width:1200px)');
   const isLargeScreen = useMediaQuery('(max-width:1400px)');
 
-  const CustomTypography = muiStyled(Typography)(({ theme }) => ({
-    '&::first-letter': {
-      fontSize: isSmallScreen ? '24px' : '30px',
-      fontWeight: 'bold',
-    },
-  }));
+
 
   return (
     <Stack
@@ -127,11 +148,11 @@ const AboutMe = () => {
           Frontend developer
         </Typography> */}
         {/* <FadeDiv> */}
-          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+          <CustomTypography>
             I'm a frontend developer based in Stockholm, constantly exploring new
             projects and expanding my skill set.
           </CustomTypography>
-          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+          <CustomTypography>
             While I specialize in frontend development, particularly with
             frameworks like React, I'm also diving into backend technologies and
             database management.
@@ -164,9 +185,9 @@ const AboutMe = () => {
                           {skillsColumn1.map((skill, index) => (
                             <Stack key={index} flexDirection={'row'} gap={2}  
                               justifyContent={'space-between'} alignItems="center">
-                              <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                              <Text>
                                 {skill}
-                              </Typography>
+                              </Text>
                                 {skillsColumn1Icons[index]}
                             </Stack>
                           ))}
@@ -191,9 +212,9 @@ const AboutMe = () => {
                               <Stack key={index} flexDirection={'row'} gap={10}  
                               justifyContent={'space-between'} alignItems="center" 
                                 >
-                                <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                                <Text>
                                   {skill}
-                                </Typography>
+                                </Text>
                                   {skillsColumn1Icons[index]}
                               </Stack>
                             ))}
@@ -218,9 +239,9 @@ const AboutMe = () => {
                 {skillsColumn2.map((skill, index) => (
                   <Stack  key={index} flexDirection={'row'} gap={2}  
                     justifyContent={'space-between'} alignItems="center">
-                    <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                    <Text>
                       {skill}
-                    </Typography>
+                    </Text>
                       {skillsColumn2Icons[index]}
                   </Stack>
                 ))}
@@ -236,29 +257,31 @@ const AboutMe = () => {
                   <Stack gap={3}>
                     <h3>Experience</h3>
                       <Stack>
-                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>Nostra / Nostradamage. 2024 - ongoing</Typography>
+                        <Text>
+                          Nostra / Nostradamage. 2024 - ongoing
+                        </Text>
                         <Stack width={'80%'}>
-                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                          <Text>
                             - React, JavaScript, MUI, Firebase, NoSQL Database
-                          </Typography>
+                          </Text>
                         </Stack>
                       </Stack>
                       <Stack>
-                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                        <Text>
                           Nobel Week Lights mobile app. 2024 - ongoing
-                        </Typography>
+                        </Text>
                         <Stack width={'80%'}>
-                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                          <Text>
                             - React Native, Wordpress Database, Mapbox
-                          </Typography>
+                          </Text>
                         </Stack>
                       </Stack>
                     <Stack>
-                      <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>hitRact internship. 2023 - 2024</Typography>
+                      <Text>hitRact internship. 2023 - 2024</Text>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                        <Text>
                           - React, TypeScript, MUI
-                        </Typography>
+                        </Text>
                       </Stack>
                     </Stack>
                   </Stack>
@@ -268,29 +291,29 @@ const AboutMe = () => {
                   <Stack gap={3}>
                     <h3>Experience</h3>
                       <Stack>
-                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>Nostra / Nostradamage. 2024 - ongoing</Typography>
+                        <Text>Nostra / Nostradamage. 2024 - ongoing</Text>
                         <Stack width={'80%'}>
-                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                          <Text>
                             - React, JavaScript, MUI, Firebase, NoSQL Database
-                          </Typography>
+                          </Text>
                         </Stack>
                       </Stack>
                       <Stack>
-                        <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>
+                        <Text>
                           Nobel Week Lights mobile app. 2024 - ongoing
-                        </Typography>
+                        </Text>
                         <Stack width={'80%'}>
-                          <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                          <Text>
                             - React Native, Wordpress Database, Mapbox
-                          </Typography>
+                          </Text>
                         </Stack>
                       </Stack>
                     <Stack>
-                      <Typography sx={{ fontFamily: 'Gotu', color: 'white' }}>hitRact internship. 2023 - 2024</Typography>
+                      <Text>hitRact internship. 2023 - 2024</Text>
                       <Stack width={'80%'}>
-                        <Typography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px' }}>
+                        <Text>
                           - React, TypeScript, MUI
-                        </Typography>
+                        </Text>
                       </Stack>
                     </Stack>
                   </Stack>
