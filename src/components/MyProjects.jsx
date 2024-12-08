@@ -151,10 +151,9 @@ const MyProjects = () => {
                                   '&:hover': {
                                     backgroundColor: '#293145',
                                   },
+                                  color: 'white'
                                   }}>
-                                  <TextHeader>
                                     Website
-                                  </TextHeader>
                               </Stack>
                           </a>
                       
@@ -170,10 +169,9 @@ const MyProjects = () => {
                                   '&:hover': {
                                     backgroundColor: '#293145',
                                   },
+                                  color:'white' 
                                   }}>
-                                  <TextHeader>
-                                    Github
-                                  </TextHeader>
+                                    Github 
                               </Stack>
                           </a>
                       
@@ -260,10 +258,9 @@ const MyProjects = () => {
                                   '&:hover': {
                                     backgroundColor: '#293145',
                                   },
+                                  color: 'white'
                                   }}>
-                                  <TextHeader>
                                     Github
-                                  </TextHeader>
                               </Stack>
                           </a>
                       
@@ -350,10 +347,9 @@ const MyProjects = () => {
                                   '&:hover': {
                                     backgroundColor: '#293145',
                                   },
+                                  color: 'white'
                                   }}>
-                                  <TextHeader>
                                     Website
-                                  </TextHeader>
                               </Stack>
                           </a>
                       
