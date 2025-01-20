@@ -70,9 +70,10 @@ const AboutMe = () => {
   const skillsColumn1 = [
     'TypeScript',
     'JavaScript',
-    'React / React Native',
+    'React & React Native',
     'HTML',
     'CSS',
+    'SQL',
     'Git',
   ];
 
@@ -82,6 +83,7 @@ const AboutMe = () => {
     <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
     <img width="30" height="30" src="https://img.icons8.com/color/48/html-5--v2.png" alt="html-5--v2"/>,
     <img width="30" height="30" src="https://img.icons8.com/fluency/48/css3.png" alt="css3"/>,
+    <img width="30" height="30" src="https://img.icons8.com/?size=100&id=6o3xw2TdxzCR&format=png&color=000000" alt="sql"/>,
     <img width="30" height="30" src="https://img.icons8.com/color/48/git.png" alt="git"/>,
   ];
 
@@ -91,6 +93,7 @@ const AboutMe = () => {
     'Jest',
     'Rest API',
     'Figma',
+    'DNS',
     'Wordpress',
   ];
 
@@ -100,6 +103,7 @@ const AboutMe = () => {
     <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" alt="external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo"/>,
     <img width="30" height="30" src="https://img.icons8.com/color/48/api.png" alt="api"/>,
     <img width="30" height="30" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>,
+    <img width="30" height="30" src="https://img.icons8.com/?size=100&id=hh0cnaxPHumh&format=png&color=000000" alt="figma--v1"/>,
     <img width="30" height="30" src="https://img.icons8.com/color/48/wordpress.png" alt="wordpress"/>,
   ];
 
