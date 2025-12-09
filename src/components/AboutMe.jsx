@@ -141,13 +141,12 @@ const AboutMe = () => {
         </Typography> */}
         {/* <FadeDiv> */}
           <CustomTypography>
-            I'm a frontend developer based in Stockholm, constantly exploring new
+            I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
             projects and expanding my skill set.
           </CustomTypography>
           <CustomTypography>
-            While I specialize in frontend development, particularly with
-            frameworks like React, I'm also diving into backend technologies and
-            database management.
+            While I specialize in M365, particularly with
+            skillsets like intune and AD.
           </CustomTypography>
           {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
             I’m passionate about creativity and problem-solving, always eager to
