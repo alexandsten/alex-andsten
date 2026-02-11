@@ -93,7 +93,7 @@ export default function MainMenu(props) {
               <Link to="/labb1" style={{ textDecoration: 'none' }}>
                 <Grid item onClick={() => props.setSelectedItem('Prototype')}>
                     <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Labb 1
+                      Tenant & Licenshantering
                     </MenuText>
                   </Grid>
                 </Link>
@@ -111,7 +111,7 @@ export default function MainMenu(props) {
                 <Link to="/labb2" style={{ textDecoration: 'none' }}>
                   <Grid item onClick={() => props.setSelectedItem('About')}>
                     <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'About' ? '#ed652b' : 'white' }}>
-                      Labb 2
+                      Identitet & Entra ID
                     </MenuText>
                   </Grid>
                 </Link>
@@ -134,7 +134,7 @@ export default function MainMenu(props) {
               <Link to="/labb3" style={{ textDecoration: 'none' }}>
                 <Grid item onClick={() => props.setSelectedItem('Prototype')}>
                     <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Labb 3
+                      MFA & Conditional Access
                     </MenuText>
                   </Grid>
                 </Link>
@@ -143,7 +143,7 @@ export default function MainMenu(props) {
               <Link to="/labb4" style={{ textDecoration: 'none' }}>
                 <Grid item onClick={() => props.setSelectedItem('Prototype')}>
                     <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Labb 4
+                      Intune & Device Compliance
                     </MenuText>
                   </Grid>
                 </Link>
@@ -152,7 +152,7 @@ export default function MainMenu(props) {
               <Link to="/labb5" style={{ textDecoration: 'none' }}>
                 <Grid item onClick={() => props.setSelectedItem('Prototype')}>
                     <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Labb 5
+                      Adminsäkerhet & Break Glass
                     </MenuText>
                   </Grid>
                 </Link>
@@ -161,7 +161,7 @@ export default function MainMenu(props) {
               <Link to="/labb6" style={{ textDecoration: 'none' }}>
                 <Grid item onClick={() => props.setSelectedItem('Prototype')}>
                     <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Labb 6
+                      Dataskydd – DLP & Retention
                     </MenuText>
                   </Grid>
                 </Link>
@@ -193,7 +193,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('Prototype')}
                     >
-                      Labb 1
+                      Tenant & Licenshantering
                     </MenuText>
                   </Link>
                 </Grid>
@@ -213,7 +213,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('About')}
                     >
-                      Labb 2
+                      Identitet & Entra ID
                     </MenuText>
                 </Link>
                 </Grid>
@@ -223,7 +223,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('About')}
                     >
-                      Labb 3
+                      MFA & Conditional Access
                     </MenuText>
                 </Link>
               </Grid>
@@ -233,7 +233,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('About')}
                     >
-                      Labb 4
+                      Intune & Device Compliance
                     </MenuText>
                 </Link>
               </Grid>
@@ -243,7 +243,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('About')}
                     >
-                      Labb 5
+                      Adminsäkerhet & Break Glass
                     </MenuText>
                 </Link>
               </Grid>
@@ -253,7 +253,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('About')}
                     >
-                      Labb 6
+                      Dataskydd – DLP & Retention
                     </MenuText>
                 </Link>
               </Grid>

@@ -132,7 +132,7 @@ const Labb2 = () => {
       alignItems={'center'}
     >
       <Stack justifyContent={'flex-start'} alignItems={'center'}>
-        <h3>Labb2</h3>
+        <h3>Identitet & Entra ID</h3>
       </Stack>
       <MainMenu />
       <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
