@@ -37,6 +37,7 @@ function App() {
           <Route path="/labb4" element={<Labb4 />} />
           <Route path="/labb5" element={<Labb5 />} />
           <Route path="/labb6" element={<Labb6 />} />
+          <Route path="/about" element={<AboutMe />} />
         </Routes>
       </Router>
     </>
