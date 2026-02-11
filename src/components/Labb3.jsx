@@ -123,7 +123,6 @@ const Labb3 = () => {
   return (
   <Stack
         id="aboutMe"
-        minWidth={'100vw'}
         sx={{
           background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
           minHeight: '100vh',
