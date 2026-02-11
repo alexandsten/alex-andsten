@@ -121,203 +121,60 @@ const Labb6 = () => {
 
 
   return (
-    <Stack
-      id="aboutMe"
-      minWidth={'100vw'}
-      sx={{
-        background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
-        minHeight: '100vh',
-      }}
-      justifyContent={'flex-start'}
-      alignItems={'center'}
-    >
-      <Stack justifyContent={'flex-start'} alignItems={'center'}>
-        <h3>Dataskydd – DLP & Retention</h3>
-      </Stack>
-      <MainMenu />
-      <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
-        {/* <Typography
-          sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
-        >
-          Frontend developer
-        </Typography> */}
-        {/* <FadeDiv> */}
-          <CustomTypography>
-            I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
-            projects and expanding my skill set.
-          </CustomTypography>
-          <CustomTypography>
-            While I specialize in M365, particularly with
-            skillsets like intune and AD.
-          </CustomTypography>
-          {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-            I’m passionate about creativity and problem-solving, always eager to
-            learn and discover new ways to innovate through code.
-          </CustomTypography>
-          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-            With a background in programming and hands-on experience in various
-            projects, I’m excited to share my journey with you.
-          </CustomTypography> */}
-          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-            Feel free to explore my work and learn more about what I do!
-          </CustomTypography>
-        {/* </FadeDiv> */}
-      </Stack>
-      <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
-        <Grid container width={'100%'}>
-          <Grid item sm={12} md={4} width={'100%'}>
-            <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
+  <Stack
+        id="aboutMe"
+        minWidth={'100vw'}
+        sx={{
+          background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
+          minHeight: '100vh',
+        }}
+        justifyContent={'flex-start'}
+        alignItems={'center'}
+      >
+        <Stack justifyContent={'flex-start'} alignItems={'center'}>
+          <h3>DLP & Retention</h3>
+        </Stack>
+         <MainMenu />
+        <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
+          {/* <Typography
+            sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
+          >
+            Frontend developer
+          </Typography> */}
+          {/* <FadeDiv> */}
+            <CustomTypography>
+              I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
+              projects and expanding my skill set.
+            </CustomTypography>
+            <CustomTypography>
+              While I specialize in M365, particularly with
+              skillsets like intune and AD.
+            </CustomTypography>
+            {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+              I’m passionate about creativity and problem-solving, always eager to
+              learn and discover new ways to innovate through code.
+            </CustomTypography>
+            <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+              With a background in programming and hands-on experience in various
+              projects, I’m excited to share my journey with you.
+            </CustomTypography> */}
+            <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
+              Feel free to explore my work and learn more about what I do!
+            </CustomTypography>
+          {/* </FadeDiv> */}
+        </Stack>
+        <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
+          <Grid container width={'100%'}>
+            <Grid item sm={12} md={4} width={'100%'}>
+              <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
+                
               
-              {
-                isSmallScreen ?
-                  (
-                    <>
-                      <h3>Skills</h3>
-                      <Stack flexDirection={'row'} gap={5} mt={7}>
-                        <Stack flexDirection={'column'} gap={2} width={'15em'}>
-                          {skillsColumn1.map((skill, index) => (
-                            <Stack key={index} flexDirection={'row'} gap={2}  
-                              justifyContent={'space-between'} alignItems="center">
-                              <Text>
-                                {skill}
-                              </Text>
-                                {skillsColumn1Icons[index]}
-                            </Stack>
-                          ))}
-                        </Stack>
-                        {/* <Stack flexDirection={'column'} gap={2}>
-                          {skillsColumn2.map((skill, index) => (
-                            <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                              {skill}
-                            </Typography>
-                          ))}
-                        </Stack> */}
-                      </Stack>
-                    </>
-                  )
-                  : 
-                  (
-                    <AnimatedDivLeft ref={ref} isVisible={inView}> 
-                      <h3>Skills</h3>
-                      <Stack flexDirection={'row'}  gap={5} mt={7}>
-                        <Stack flexDirection={'column'} gap={2}  width={'15em'}>
-                            {skillsColumn1.map((skill, index) => (
-                              <Stack key={index} flexDirection={'row'} gap={10}  
-                              justifyContent={'space-between'} alignItems="center" 
-                                >
-                                <Text>
-                                  {skill}
-                                </Text>
-                                  {skillsColumn1Icons[index]}
-                              </Stack>
-                            ))}
-                          </Stack>
-                        {/* <Stack flexDirection={'column'} gap={2}>
-                          {skillsColumn2.map((skill, index) => (
-                            <Typography key={index} sx={{ fontFamily: 'Gotu', color: 'white' }}>
-                              {skill}
-                            </Typography>
-                          ))}
-                        </Stack> */}
-                      </Stack>
-                    </AnimatedDivLeft>
-                  )
-              }
-            </Stack>
-          </Grid>
-          <Grid item sm={12} md={4}>
-            <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-            <h3>&nbsp;</h3>
-            <Stack flexDirection={'column'} gap={2} width={'15em'}>
-                {skillsColumn2.map((skill, index) => (
-                  <Stack  key={index} flexDirection={'row'} gap={2}  
-                    justifyContent={'space-between'} alignItems="center">
-                    <Text>
-                      {skill}
-                    </Text>
-                      {skillsColumn2Icons[index]}
-                  </Stack>
-                ))}
               </Stack>
-            </Stack>
+            </Grid>
           </Grid>
-          <Grid item sm={12} md={4}>
-            <Stack justifyContent={'flex-start'} alignItems={'flex-start'} p={5} gap={3}>
-              
-              {isSmallScreen ? 
-              (
-                <Stack flexDirection={'column'} gap={2}>
-                  <Stack gap={3}>
-                    <h3>Experience</h3>
-                      <Stack>
-                        <Text>
-                          Nostra / Nostradamage. 2024 - ongoing
-                        </Text>
-                        <Stack width={'80%'}>
-                          <Text>
-                            - React, JavaScript, MUI, Firebase, NoSQL Database
-                          </Text>
-                        </Stack>
-                      </Stack>
-                      <Stack>
-                        <Text>
-                          Nobel Week Lights mobile app. 2024 - ongoing
-                        </Text>
-                        <Stack width={'80%'}>
-                          <Text>
-                            - React Native, Wordpress Database, Mapbox
-                          </Text>
-                        </Stack>
-                      </Stack>
-                    <Stack>
-                      <Text>hitRact internship. 2023 - 2024</Text>
-                      <Stack width={'80%'}>
-                        <Text>
-                          - React, TypeScript, MUI
-                        </Text>
-                      </Stack>
-                    </Stack>
-                  </Stack>
-                </Stack>
-              ) : 
-                <AnimatedDivRight ref={ref} isVisible={inView}>
-                  <Stack gap={3}>
-                    <h3>Experience</h3>
-                      <Stack>
-                        <Text>Nostra / Nostradamage. 2024 - ongoing</Text>
-                        <Stack width={'80%'}>
-                          <Text>
-                            - React, JavaScript, MUI, Firebase, NoSQL Database
-                          </Text>
-                        </Stack>
-                      </Stack>
-                      <Stack>
-                        <Text>
-                          Nobel Week Lights mobile app. 2024 - ongoing
-                        </Text>
-                        <Stack width={'80%'}>
-                          <Text>
-                            - React Native, Wordpress Database, Mapbox
-                          </Text>
-                        </Stack>
-                      </Stack>
-                    <Stack>
-                      <Text>hitRact internship. 2023 - 2024</Text>
-                      <Stack width={'80%'}>
-                        <Text>
-                          - React, TypeScript, MUI
-                        </Text>
-                      </Stack>
-                    </Stack>
-                  </Stack>
-                </AnimatedDivRight>
-              }
-            </Stack>
-          </Grid>
-        </Grid>
+        </Stack>
+        
       </Stack>
-      
-    </Stack>
   );
 };
 
