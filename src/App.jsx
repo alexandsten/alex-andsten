@@ -15,12 +15,12 @@ import { styled as muiStyled } from '@mui/system';
 import { useMediaQuery } from '@mui/material';
 import slideInRight from 'react-animations/lib/slide-in-right';
 import slideInLeft from 'react-animations/lib/slide-in-left';
-import Labb1 from './components/labb1';
-import Labb2 from './components/labb2';
-import Labb3 from './components/labb3';
-import Labb4 from './components/labb4';
-import Labb5 from './components/labb5';
-import Labb6 from './components/labb6';
+import Labb1 from './components/Labb1';
+import Labb2 from './components/Labb2';
+import Labb3 from './components/Labb3';
+import Labb4 from './components/Labb4';
+import Labb5 from './components/Labb5';
+import Labb6 from './components/Labb6';
 
 
 function App() {
