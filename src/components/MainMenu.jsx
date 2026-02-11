@@ -77,7 +77,7 @@ export default function MainMenu(props) {
             <Link to="/" style={{ textDecoration: 'none' }}>
               <Grid item onClick={() => props.setSelectedItem('Home')}>
                 <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' },  color: props.selectedItem == 'Home' ? '#ed652b' : 'white' }}>
-                    Home
+                    Hem
                 </MenuText>
               </Grid>
             </Link>
@@ -185,7 +185,7 @@ export default function MainMenu(props) {
                       sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
                       onClick={() => props.setSelectedItem('Home')}
                     >
-                      Home
+                      Hem
                     </MenuText>
                   </Link>
                 </Grid>
