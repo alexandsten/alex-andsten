@@ -8,6 +8,7 @@ import styled, { keyframes, css } from 'styled-components';
 import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
+import MainMenu from './MainMenu';
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -133,6 +134,7 @@ const AboutMe = () => {
       <Stack justifyContent={'flex-start'} alignItems={'center'}>
         <h3>Experience & skills</h3>
       </Stack>
+       <MainMenu />
       <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
         {/* <Typography
           sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
