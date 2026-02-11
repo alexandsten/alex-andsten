@@ -9,11 +9,13 @@ import { Grid, Typography, Avatar, IconButton, Drawer, Stack, useMediaQuery, Glo
 
 
 export default function MainMenu(props) {
+  
+  
 
   const MenuText = muiStyled(Typography)({
-    fontSize: '20px',
-    fontWeight: 'semiBold',
-    fontFamily: "Pixelify Sans",
+      fontFamily: 'Gotu', 
+      color: 'white', 
+      fontSize: '14px',
   });
 
   const isSmallScreen = useMediaQuery('(max-width:800px)');
@@ -50,35 +52,26 @@ export default function MainMenu(props) {
           // width: '100vw', // Set a maximum width
           maxWidth: '100vw',
           padding: '10px',
-          paddingBottom: '0px',
+          paddingBottom: '2em',
           margin: '0px',
-          borderBottom: '3px solid #ed652b',
+          // borderBottom: '3px solid #ed652b',
           paddingRight: '50px',
           zIndex: 5000,
           overflowX: 'hidden',
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.7)',
-          backgroundColor: 'black'
+          // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.7)',
           // '@media (min-width: 1100px)': {
           //   maxWidth: 'calc(100% - 50px)', // Adjust width for larger screens
           // },
         }}
       >
-        
-        <Grid item xs={12} sm={1} p={0.2} onClick={() => props.setSelectedItem('Home')} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'row', cursor: "pointer", marginTop: '-1em' }}>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            Hem
-          </Link>
-            {!isSmallScreen && ( 
-              <Grid onClick={() => props.setSelectedItem('Home')} sx={{  cursor: "pointer", zIndex: 99 }}>
-                 <Link to="/" style={{ textDecoration: 'none' }}>
-                  <p className='logo' >
-                    Nostradamage
-                  </p>
-                </Link>
-              </Grid>
-            )}  
-        </Grid>
-        
+         {/* {isSmallScreen && (
+          <Grid item xs={12} sm={1} p={0.2} onClick={() => props.setSelectedItem('Home')} sx={{ textAlign: 'center', display: 'flex', flexDirection: 'row', cursor: "pointer", marginTop: '-1em' }}>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              Hem
+            </Link>
+            
+          </Grid>
+        )} */}
         <Grid container item xs={12} sm={11} spacing={2} justifyContent={'flex-end'} gap={3}>
           {!isSmallScreen && (
             <Link to="/" style={{ textDecoration: 'none' }}>
@@ -125,8 +118,8 @@ export default function MainMenu(props) {
                 marginRight: '20px', // Adjust margin as needed
                 overflowX: 'hidden',
               }} item>
-                <IconButton onClick={toggleDrawer(true)} sx={{ paddingRight: '1em'}} >
-                <svg xmlns="http://www.w3.org/2000/svg" style={{ marginTop: '-1.5em' }} width="1em" height="1em" viewBox="0 0 512 512"><path fill="white" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"/></svg>
+                <IconButton onClick={toggleDrawer(true)} sx={{ paddingRight: '1em', marginTop: '-1.5em'}} >
+                <svg xmlns="http://www.w3.org/2000/svg"  width="1em" height="1em" viewBox="0 0 512 512"><path fill="white" d="M80 96h352v32H80zm0 144h352v32H80zm0 144h352v32H80z"/></svg>
                 </IconButton>
               </Grid>
               )}
