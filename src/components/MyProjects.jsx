@@ -11,6 +11,7 @@ import paperBgPic1 from '../img/paperbackground1.jpg'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from '@mui/material';
+import MainMenu from './MainMenu';
 
 const MyProjects = () => {
 
@@ -70,7 +71,7 @@ const MyProjects = () => {
           justifyContent={'center'} alignItems={'center'}
       >
         <h2>Work & projects</h2>
-
+      <MainMenu />
         <Stack width={'75%'} sx={{ backgroundImage: `url(${whiteBg})`,
                 backgroundSize: 'contain',
                 backgroundPosition: 'center top',
