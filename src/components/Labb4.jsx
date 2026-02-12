@@ -122,7 +122,6 @@ const Labb4 = () => {
 
   return (
   <Stack
-        id="aboutMe"
         sx={{
           background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
           minHeight: '100vh',
@@ -131,36 +130,168 @@ const Labb4 = () => {
         alignItems={'center'}
       >
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-          <h3>Intune & Compliance</h3>
+          <h1>Intune & Compliance</h1>
         </Stack>
          <MainMenu />
         <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
-          {/* <Typography
-            sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
-          >
-            Frontend developer
-          </Typography> */}
-          {/* <FadeDiv> */}
-            <CustomTypography>
-              I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
-              projects and expanding my skill set.
-            </CustomTypography>
-            <CustomTypography>
-              While I specialize in M365, particularly with
-              skillsets like intune and AD.
-            </CustomTypography>
-            {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-              I’m passionate about creativity and problem-solving, always eager to
-              learn and discover new ways to innovate through code.
-            </CustomTypography>
-            <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-              With a background in programming and hands-on experience in various
-              projects, I’m excited to share my journey with you.
-            </CustomTypography> */}
-            <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-              Feel free to explore my work and learn more about what I do!
-            </CustomTypography>
-          {/* </FadeDiv> */}
+        <h2>Labb 4 – Intune Compliance och Conditional Access</h2>
+        <div class="lab-section">
+          <h3>Översikt</h3>
+          <p>
+            I den här labben arbetar jag med Microsoft Intune och Conditional Access
+            för att visa hur åtkomst till Microsoft 365 kan styras baserat på en enhets säkerhetsstatus.
+          </p>
+          <p>Fokus ligger på att:</p>
+          <ul>
+            <li>Definiera tydliga compliance-krav</li>
+            <li>Koppla compliance till åtkomstkontroll</li>
+            <li>Förstå hur Entra ID utvärderar enhetens status vid inloggning</li>
+            <li>Visa hur hela flödet hänger ihop från policy till åtkomstbeslut</li>
+          </ul>
+          <p>
+            Detta är en central del av modern identitets- och enhetssäkerhet i Microsoft 365.
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Scenario</h3>
+          <p>Utgångspunkt:</p>
+          <ul>
+            <li>Endast enheter som uppfyller säkerhetskrav ska få åtkomst till M365</li>
+            <li>Åtkomst ska kunna differentieras baserat på enhetens status</li>
+            <li>Policys ska konfigureras strukturerat och kunna testas kontrollerat</li>
+          </ul>
+          <p>
+            Målet är att visa helhetsförståelse för hur compliance och Conditional Access samverkar.
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Steg-för-steg</h3>
+
+          <div class="lab-subsection">
+            <h4>1. Skapade en Compliance Policy</h4>
+            <p>Navigering: <strong>Intune Admin Center → Devices → Compliance policies → Create Policy → Windows 10 and later</strong></p>
+            <p>Exempel på krav i policyn:</p>
+            <ul>
+              <li>Lösenord/PIN</li>
+              <li>Kryptering (BitLocker)</li>
+              <li>Minsta OS-version</li>
+            </ul>
+            <p><em>Screenshot 1: Compliance policy – konfigurerade säkerhetskrav</em></p>
+            <p>
+              Syfte: Här definieras vilka tekniska säkerhetskrav en enhet måste uppfylla
+              för att klassas som compliant. Compliance är grunden för åtkomstbeslut längre fram.
+            </p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>2. Kopplade policyn till en säkerhetsgrupp</h4>
+            <p>Navigering: <strong>Assignments → Select groups to include</strong></p>
+            <p>Policyn tilldelades en testgrupp (t.ex. LABB-GRUPP)</p>
+            <p><em>Screenshot 2: Grupp kopplad till compliance policy</em></p>
+            <p>
+              Syfte: Genom gruppbaserad tilldelning säkerställs skalbarhet och struktur.
+              Policyn följer användarens gruppmedlemskap, vilket gör modellen konsekvent och enkel att förvalta.
+            </p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>3. Conditional Access-policy – Require compliant device</h4>
+            <p>Navigering: <strong>Entra ID → Protection → Conditional Access → Create Policy</strong></p>
+            <p>Konfiguration:</p>
+            <ul>
+              <li>Assignments → Testgruppen</li>
+              <li>Cloud apps → All cloud apps</li>
+              <li>Grant control → Require compliant device</li>
+              <li>Policy mode → Report-only</li>
+            </ul>
+            <p><em>Screenshot 3: Grant control – Require compliant device + Report-only</em></p>
+            <p>
+              Syfte: Här kopplas enhetens compliance-status till åtkomstbeslutet.
+              Conditional Access utvärderar om enheten uppfyller Intunes krav innan åtkomst beviljas.
+              Report-only används för att analysera policyns effekt innan enforcement.
+            </p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>4. Scope och Assignments</h4>
+            <p>I Assignments-vyn definierades:</p>
+            <ul>
+              <li>Users/Groups → Testgruppen</li>
+              <li>Cloud apps → All cloud apps</li>
+            </ul>
+            <p><em>Screenshot 4: Assignments-översikt</em></p>
+            <p>
+              Syfte: Detta steg definierar policyns räckvidd.
+              Scope är avgörande – felaktigt definierad scope kan lämna säkerhetshål eller orsaka oavsiktlig blockering.
+            </p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>5. Monitorering – Compliance och Sign-in logs</h4>
+            <p>Navigering:</p>
+            <ul>
+              <li>Intune → Devices → Monitor → Compliance status</li>
+              <li>Entra ID → Sign-in logs → Conditional Access-fliken</li>
+            </ul>
+            <p><em>Screenshot 5: Compliance status + Conditional Access-resultat</em></p>
+            <p>Här analyseras:</p>
+            <ul>
+              <li>Device compliance status</li>
+              <li>Hur Conditional Access utvärderar inloggningen</li>
+              <li>Vilka policys som matchar</li>
+              <li>Resultat (Success / Failure / Report-only impact)</li>
+            </ul>
+            <p>
+              Syfte: Detta är den operativa delen – här verifieras hur policyn fungerar i praktiken
+              och hur åtkomstbeslut fattas.
+            </p>
+          </div>
+        </div>
+
+        <div class="lab-section">
+          <h3>Tekniskt flöde</h3>
+          <ul>
+            <li>Användare initierar inloggning</li>
+            <li>Enhetens compliance-status skickas till Entra ID</li>
+            <li>Conditional Access utvärderar användare, applikation och device state</li>
+            <li>Grant control kontrollerar om kraven uppfylls</li>
+            <li>Åtkomst beviljas eller blockeras</li>
+          </ul>
+          <p>
+            Detta visar sambandet mellan: <strong>User → Device → Compliance → Conditional Access → Access Decision</strong>
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Riskanalys</h3>
+          <ul>
+            <li>Att kräva compliant device utan korrekt gruppstruktur</li>
+            <li>Att applicera policyn på “All users” utan testning</li>
+            <li>Att inte analysera effekten i sign-in logs</li>
+            <li>Att kombinera flera CA-policys utan tydlig prioritering</li>
+          </ul>
+          <p>
+            Conditional Access i kombination med Intune är kraftfullt, men kräver noggrann design och testning.
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Reflektion</h3>
+          <p>
+            Den här labben visar hur Intune och Entra ID samverkar för att skapa en modern Zero Trust-modell
+            där åtkomst baseras på både identitet och enhetens säkerhetsstatus.
+          </p>
+          <p>
+            Genom att definiera tydliga compliance-krav, arbeta gruppbaserat, koppla compliance till Conditional Access
+            och analysera resultat i sign-in logs skapas en strukturerad och säker åtkomstmodell.
+          </p>
+          <p>
+            Detta är en central del av Modern Workplace-arkitektur och en viktig komponent i Microsoft 365-säkerhet.
+          </p>
+        </div>
+
         </Stack>
         <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
           <Grid container width={'100%'}>

@@ -122,7 +122,6 @@ const Labb2 = () => {
 
   return (
    <Stack
-         id="aboutMe"
          sx={{
            background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
            minHeight: '100vh',
@@ -130,37 +129,145 @@ const Labb2 = () => {
          justifyContent={'flex-start'}
          alignItems={'center'}
        >
+          
          <Stack justifyContent={'flex-start'} alignItems={'center'}>
-           <h3>Identitet & Entra ID</h3>
+           <h1>Identitet & Entra ID</h1>
          </Stack>
           <MainMenu />
          <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
-           {/* <Typography
-             sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
-           >
-             Frontend developer
-           </Typography> */}
-           {/* <FadeDiv> */}
-             <CustomTypography>
-               I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
-               projects and expanding my skill set.
-             </CustomTypography>
-             <CustomTypography>
-               While I specialize in M365, particularly with
-               skillsets like intune and AD.
-             </CustomTypography>
-             {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-               I’m passionate about creativity and problem-solving, always eager to
-               learn and discover new ways to innovate through code.
-             </CustomTypography>
-             <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-               With a background in programming and hands-on experience in various
-               projects, I’m excited to share my journey with you.
-             </CustomTypography> */}
-             <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-               Feel free to explore my work and learn more about what I do!
-             </CustomTypography>
-           {/* </FadeDiv> */}
+          <h2>Labb 2 – Användare, grupper och admin-konton</h2>
+           <div class="lab-section">
+            <h3>Översikt</h3>
+            <p>
+              I den här labben har jag arbetat med användarhantering, gruppstruktur och separering
+              av administrativa konton i Entra ID.
+            </p>
+            <p>
+              Fokus har varit att förstå hur identiteter bör struktureras i en Microsoft 365-miljö
+              för att skapa tydlighet, säkerhet och en hållbar modell för både drift och åtkomststyrning.
+            </p>
+            <p>
+              Detta är grunden för nästan allt dagligt arbete i Entra ID – onboarding, behörigheter,
+              felsökning och säkerhet.
+            </p>
+          </div>
+
+          <div class="lab-section">
+            <h3>Scenario</h3>
+            <p>Jag utgick från ett vanligt scenario:</p>
+            <ul>
+              <li>Nya användare ska skapas och placeras rätt direkt</li>
+              <li>Åtkomst ska styras via grupper – inte manuellt</li>
+              <li>Administrativa konton ska vara separerade från vanliga användarkonton</li>
+              <li>Strukturen ska fungera även när organisationen växer</li>
+            </ul>
+            <p>
+              Målet var att säkerställa att identitetsmodellen är tydlig och säker från början.
+            </p>
+          </div>
+
+          <div class="lab-section">
+            <h3>Så här gjorde jag</h3>
+
+            <div class="lab-subsection">
+              <h4>1. Användarkonton</h4>
+              <p>
+                Jag gick in i <strong>Entra ID → Users</strong> och granskade hur användarkonton var uppsatta.
+              </p>
+              <p>Jag kontrollerade:</p>
+              <ul>
+                <li>Namnstandard (UPN-format och visningsnamn)</li>
+                <li>Om roller var direkt tilldelade på användare</li>
+                <li>Om användare hade separata admin-konton</li>
+              </ul>
+              <p>
+                För att testa strukturen skapade jag en testanvändare enligt en tydlig namnstandard
+                och verifierade att kontot hamnade i rätt grupper för att automatiskt få korrekt åtkomst.
+              </p>
+              <p><em>Screenshot 1: Entra ID → Users (översikt)</em></p>
+              <p><em>Screenshot 2: Användaregenskaper (roller + gruppmedlemskap)</em></p>
+            </div>
+
+            <div class="lab-subsection">
+              <h4>2. Gruppstruktur</h4>
+              <p>
+                Jag analyserade hur grupper användes i <strong>Entra ID → Groups</strong>
+                för att styra åtkomst.
+              </p>
+              <p>Fokus låg på:</p>
+              <ul>
+                <li>Skillnaden mellan Security Groups och Microsoft 365 Groups</li>
+                <li>Om grupper användes för behörighet eller endast för kommunikation</li>
+                <li>Tydlig och konsekvent namnsättning</li>
+              </ul>
+              <p>
+                För att tydliggöra modellen skapade jag:
+              </p>
+              <ul>
+                <li>En säkerhetsgrupp för rollbaserad åtkomst</li>
+                <li>En testgrupp kopplad till en specifik funktion</li>
+              </ul>
+              <p>
+                Jag lade till och tog bort användare för att verifiera hur åtkomsten förändrades
+                via gruppmedlemskap.
+              </p>
+              <p><em>Screenshot 3: Lista över grupper</em></p>
+              <p><em>Screenshot 4: Medlemskap i säkerhetsgrupp</em></p>
+            </div>
+
+            <div class="lab-subsection">
+              <h4>3. Separering av admin-konton</h4>
+              <p>
+                En viktig del av labben var att säkerställa att administrativa konton inte används
+                för dagligt arbete.
+              </p>
+              <p>Jag granskade:</p>
+              <ul>
+                <li>Om adminroller låg direkt på vanliga användarkonton</li>
+                <li>Om separata administrativa identiteter fanns</li>
+                <li>Hur roller var fördelade</li>
+              </ul>
+              <p>
+                Syftet är att minska risken vid phishing, malware eller kompromettering av ett standardkonto.
+              </p>
+              <p>
+                Jag verifierade att dedikerade konton (t.ex. Break-Glass-Admin) användes för administration.
+                Jag noterade även att vissa vanliga användare hade Global Admin-roller,
+                vilket överstiger rekommenderat antal och innebär en säkerhetsrisk.
+              </p>
+              <p><em>Screenshot 5: Admin-roll kopplad till separat administrativt konto</em></p>
+            </div>
+          </div>
+
+          <div class="lab-section">
+            <h3>Risker jag identifierade</h3>
+            <ul>
+              <li>Adminroller kopplade till vanliga användarkonton</li>
+              <li>Direkt tilldelade rättigheter istället för gruppbaserade</li>
+              <li>Otydlig namnsättning av grupper</li>
+              <li>Svåröverskådlig gruppstruktur</li>
+            </ul>
+            <p>
+              Det är ofta här åtkomstproblem och säkerhetsrisker uppstår i praktiken.
+            </p>
+          </div>
+
+          <div class="lab-section">
+            <h3>Reflektion</h3>
+            <p>
+              Den här labben tydliggjorde hur central identitetsmodellen är i Microsoft 365.
+              Om användare och grupper inte är strukturerade från början blir både felsökning
+              och säkerhetsarbete betydligt svårare.
+            </p>
+            <p>
+              Att arbeta konsekvent med gruppbaserad åtkomst, tydlig namnsättning och separata
+              admin-konton skapar en miljö som är både säkrare och enklare att förvalta.
+            </p>
+            <p>
+              Detta är den typ av genomgång jag skulle göra innan jag implementerar Conditional Access,
+              MFA eller andra säkerhetskontroller – eftersom allt bygger på att identiteten är korrekt strukturerad från början.
+            </p>
+          </div>
          </Stack>
          <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
            <Grid container width={'100%'}>

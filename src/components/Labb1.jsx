@@ -130,7 +130,7 @@ const Labb1 = () => {
          alignItems={'center'}
        >
          <Stack justifyContent={'flex-start'} alignItems={'center'}>
-           <h3>Tenant & licensstruktur</h3>
+           <h1>Tenant & licensstruktur</h1>
          </Stack>
           <MainMenu />
          <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
@@ -140,7 +140,7 @@ const Labb1 = () => {
              Frontend developer
            </Typography> */}
            {/* <FadeDiv> */}
-
+            <h2>Labb 1 – Tenant, licenser och admin-struktur</h2>
            <div class="lab-section">
             <h3>Översikt</h3>
             <p>

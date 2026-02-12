@@ -122,7 +122,6 @@ const Labb3 = () => {
 
   return (
   <Stack
-        id="aboutMe"
         sx={{
           background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
           minHeight: '100vh',
@@ -131,36 +130,158 @@ const Labb3 = () => {
         alignItems={'center'}
       >
         <Stack justifyContent={'flex-start'} alignItems={'center'}>
-          <h3>MFA & Conditional Access</h3>
+          <h1>MFA & Conditional Access</h1>
         </Stack>
          <MainMenu />
         <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
-          {/* <Typography
-            sx={{ fontFamily: 'Gotu', fontSize: '28px', fontWeight: 'bold', color: 'white' }}
-          >
-            Frontend developer
-          </Typography> */}
-          {/* <FadeDiv> */}
-            <CustomTypography>
-              I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
-              projects and expanding my skill set.
-            </CustomTypography>
-            <CustomTypography>
-              While I specialize in M365, particularly with
-              skillsets like intune and AD.
-            </CustomTypography>
-            {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-              I’m passionate about creativity and problem-solving, always eager to
-              learn and discover new ways to innovate through code.
-            </CustomTypography>
-            <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-              With a background in programming and hands-on experience in various
-              projects, I’m excited to share my journey with you.
-            </CustomTypography> */}
-            <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-              Feel free to explore my work and learn more about what I do!
-            </CustomTypography>
-          {/* </FadeDiv> */}
+        <h2>Labb 3 – MFA och Conditional Access</h2>
+        <div class="lab-section">
+          <h3>Översikt</h3>
+          <p>
+            I den här labben har jag arbetat med MFA och Conditional Access i Entra ID.
+          </p>
+          <p>
+            Fokus har varit att förstå hur åtkomst kan styras baserat på användare,
+            applikation, enhet och risk.
+          </p>
+          <ul>
+            <li>Användare</li>
+            <li>Applikation</li>
+            <li>Enhet</li>
+            <li>Risk</li>
+          </ul>
+          <p>
+            Policys har satts i <strong>Report-only-läge</strong>, vilket speglar hur man ofta arbetar i produktion – testa först, aktivera sedan.
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Scenario</h3>
+          <p>Utgångspunkt:</p>
+          <ul>
+            <li>Alla användare ska kräva MFA vid inloggning</li>
+            <li>Administratörer ska ha förstärkt skydd</li>
+            <li>Åtkomst ska kunna begränsas baserat på risk eller enhet</li>
+          </ul>
+          <p>
+            Målet var att designa policies som är säkra utan att påverka användare negativt.
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Så här gjorde jag</h3>
+
+          <div class="lab-subsection">
+            <h4>1. Conditional Access-policy (Report-only)</h4>
+            <p>
+              Jag navigerade till <strong>Entra ID → Protection → Conditional Access</strong>
+              och skapade en ny policy.
+            </p>
+            <p>Policyn konfigurerades med:</p>
+            <ul>
+              <li>Testgrupp</li>
+              <li>Alla Cloud Apps</li>
+              <li>Grant control: <strong>Require MFA</strong></li>
+              <li>Policy mode: Report-only</li>
+            </ul>
+            <p>
+              Syftet var att analysera policyns effekt utan att påverka faktiska inloggningar.
+            </p>
+            <p><em>Screenshot 1: Policyöversikt (namn, assignments, grant control)</em></p>
+            <p><em>Screenshot 2: Grant control – Require MFA</em></p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>2. Sign-in logs och policyeffekt</h4>
+            <p>
+              Jag analyserade inloggningar via <strong>Entra ID → Sign-in logs</strong>.
+            </p>
+            <p>I denna vy kan man se:</p>
+            <ul>
+              <li>Vilka Conditional Access-policys som matchade</li>
+              <li>Om MFA skulle ha krävts</li>
+              <li>Om flera policys påverkade samma inloggning</li>
+            </ul>
+            <p>
+              Eftersom policyn var i Report-only-läge kunde jag se hur den skulle ha träffat
+              utan att blockera eller kräva MFA i praktiken.
+            </p>
+            <p>
+              Kolumnerna <strong>Conditional Access</strong> och <strong>Result</strong>
+              användes för att utvärdera policyns effekt.
+            </p>
+            <p><em>Screenshot 3: Sign-in log → Conditional Access-flik</em></p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>3. Assignments och scope</h4>
+            <p>
+              I <strong>Assignments</strong>-vyn definierade jag exakt vilka användare,
+              grupper och appar som skulle omfattas.
+            </p>
+            <p>
+              Jag markerade testgruppen och visade hur scope kan begränsas
+              för att minska risk vid utrullning.
+            </p>
+            <p>
+              Möjligheten att specificera devices och appar visar flexibiliteten
+              i hur policyn appliceras.
+            </p>
+            <p><em>Screenshot 4: Assignments – Users, Groups och Devices</em></p>
+          </div>
+
+          <div class="lab-subsection">
+            <h4>4. Conditions (exempel)</h4>
+            <p>
+              I policyvyn konfigurerade jag även <strong>Conditions</strong> som
+              utvärderas innan policyn träder i kraft.
+            </p>
+            <ul>
+              <li>Device state</li>
+              <li>Location</li>
+              <li>Client apps</li>
+            </ul>
+            <p>
+              Detta visar hur åtkomst kan differentieras baserat på miljö,
+              risknivå och enhetsstatus.
+            </p>
+            <p><em>Screenshot 5: Conditional Access → Conditions</em></p>
+          </div>
+        </div>
+
+        <div class="lab-section">
+          <h3>Risker jag identifierade</h3>
+          <ul>
+            <li>Glömma exkludera break-glass-konto</li>
+            <li>Applicera policy på “All users” för tidigt</li>
+            <li>Konflikt mellan flera Conditional Access-policys</li>
+            <li>Oavsiktligt blockera legacy authentication</li>
+          </ul>
+          <p>
+            Conditional Access är kraftfullt – men kräver noggrann analys och testning innan aktivering.
+          </p>
+        </div>
+
+        <div class="lab-section">
+          <h3>Reflektion</h3>
+          <p>
+            Den här labben visar hur central Conditional Access är i Microsoft 365-säkerhet.
+          </p>
+          <p>
+            Att arbeta i Report-only-läge gör det möjligt att analysera effekten
+            innan enforcement aktiveras.
+          </p>
+          <p>
+            Genom att använda Sign-in logs, Assignments och Conditions kan man
+            förstå exakt hur en policy påverkar åtkomst.
+          </p>
+          <p>
+            Detta är den typ av analys jag skulle genomföra innan jag aktiverar
+            en ny åtkomstpolicy i en produktionsmiljö, särskilt för MFA
+            och administratörskonton.
+          </p>
+        </div>
+
         </Stack>
         <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
           <Grid container width={'100%'}>
