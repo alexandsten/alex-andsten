@@ -122,7 +122,6 @@ const Labb1 = () => {
 
   return (
    <Stack
-         id="aboutMe"
          sx={{
            background: 'radial-gradient(circle, #012c2c 0%, #000000 60%)',
            minHeight: '100vh',
@@ -142,172 +141,121 @@ const Labb1 = () => {
            </Typography> */}
            {/* <FadeDiv> */}
 
-            <h3>
-              Översikt
-            </h3>
-             <CustomTypography>
-              I den här labben har jag gått igenom grunden i Microsoft 365-tenanten: hur den är uppbyggd, hur licenser hanteras och hur adminroller är fördelade i Entra ID.
-             </CustomTypography>
-             <CustomTypography>
-                Fokus har varit att säkerställa att strukturen är hållbar från början – eftersom allt annat (MFA, Conditional Access, Intune osv.) bygger på att tenant, licenser och roller är rätt uppsatta.
-             </CustomTypography>
+           <div class="lab-section">
+            <h3>Översikt</h3>
+            <p>
+              I den här labben har jag gått igenom grunden i Microsoft 365-tenanten: hur den är uppbyggd,
+              hur licenser hanteras och hur adminroller är fördelade i Entra ID.
+            </p>
+            <p>
+              Fokus har varit att säkerställa att strukturen är hållbar från början – eftersom allt annat
+              (MFA, Conditional Access, Intune osv.) bygger på att tenant, licenser och roller är rätt uppsatta.
+            </p>
+          </div>
 
+          <div class="lab-section">
+            <h3>Scenario</h3>
+            <p>Jag utgick från ett vanligt driftläge:</p>
+            <ul>
+              <li>Nya användare ska onboardas löpande</li>
+              <li>Licenser ska tilldelas strukturerat</li>
+              <li>Adminbehörigheter ska vara kontrollerade</li>
+              <li>Strukturen ska fungera även när miljön växer</li>
+            </ul>
+            <p>
+              Målet var att bedöma om grunden är stabil nog för vidare säkerhetsarbete.
+            </p>
+          </div>
 
-               <h3>
-                Scenario
-              </h3>
+          <div class="lab-section">
+            <h3>Så här gjorde jag</h3>
 
-              <CustomTypography>
-                
-                  Jag utgick från ett vanligt driftläge:
-                  Nya användare ska onboardas löpande
+            <div class="lab-subsection">
+              <h4>1. Gick igenom tenant och licensöversikt</h4>
+              <p>
+                Jag började med att gå in i <strong>Billing → Licenses</strong> i Microsoft 365 Admin Center
+                för att få en tydlig överblick över vilka licenser som fanns, hur många som var tilldelade
+                och hur många som var lediga.
+              </p>
+              <p>Här ville jag snabbt förstå:</p>
+              <ul>
+                <li>Vilka SKU:er används i miljön?</li>
+                <li>Finns det oanvända eller överflödiga licenser?</li>
+                <li>Ser tilldelningen strukturerad ut?</li>
+              </ul>
+              <p><em>Screenshot 1: Billing → Licenses (översikt)</em></p>
+            </div>
 
+            <div class="lab-subsection">
+              <h4>2. Gruppbaserad licenstilldelning</h4>
+              <p>
+                Därefter gick jag in i <strong>Entra ID → Groups</strong> och kontrollerade om licenser
+                tilldelades direkt på användare eller via grupper.
+              </p>
+              <p>
+                För att testa flödet skapade jag en testgrupp med tilldelad licens och lade till en användare
+                för att verifiera att licensen automatiskt tilldelades via gruppmedlemskap.
+              </p>
+              <p>Jag föredrar gruppbaserad licensiering eftersom det:</p>
+              <ul>
+                <li>Automatiserar onboarding</li>
+                <li>Minskar manuella fel</li>
+                <li>Skapar tydlig koppling mellan roll och funktion</li>
+              </ul>
+              <p><em>Screenshot 2: Entra ID → Groups → Grupp med licenstilldelning</em></p>
+              <p><em>Screenshot 3: License assignment-vyn för gruppen</em></p>
+            </div>
 
-                  Licenser ska tilldelas strukturerat
-
-
-                  Adminbehörigheter ska vara kontrollerade
-
-
-                  Strukturen ska fungera även när miljön växer
-
-
-                  Målet var att bedöma om grunden är stabil nog för vidare säkerhetsarbete.
-             </CustomTypography>
-
-             <h3>
-                Så här gjorde jag
-             </h3>
-            
-            <CustomTypography>
-                🔹 1. Gick igenom tenant och licensöversikt
-                  Jag började med att gå in i Billing → Licenses i Microsoft 365 Admin Center för att få en tydlig överblick över vilka licenser som fanns, hur många som var tilldelade och hur många som var lediga.
-                  Här ville jag snabbt förstå:
-                  Vilka SKU:er används i miljön? Finns det oanvända eller överflödiga licenser? Ser tilldelningen strukturerad ut?
-             </CustomTypography>
-
-            📸 Screenshot 1:
- Billing → Licenses (översikt)
-
-            <CustomTypography>
-                🔹 2. Arbetade med gruppbaserad licenstilldelning
-             </CustomTypography>
-
-              <CustomTypography>
-                Därefter gick jag in i Entra ID → Groups och kontrollerade om licenser tilldelades direkt på användare eller via grupper.
-
-             </CustomTypography>
-
-             <CustomTypography>
-                För att testa flödet skapade jag en testgrupp med tilldelad licens och lade till en användare för att verifiera att licensen automatiskt tilldelades via gruppmedlemskap.
-                Det gav en tydlig bild av hur onboarding kan förenklas och standardiseras.
-                Jag föredrar gruppbaserad licensiering eftersom det:
-                
-             </CustomTypography>
-
-             <CustomTypography>
-                Automatiserar onboarding
-             </CustomTypography>
-
-
-              <CustomTypography>
-                Minskar manuella fel
-             </CustomTypography>
-             
-              <CustomTypography>
-                Skapar tydlig koppling mellan roll och funktion
-             </CustomTypography>
-
-
-              📸 Screenshot 2:
-              Entra ID → Groups → Grupp med licenstilldelning
-              📸 Screenshot 3:
-              License assignment-vyn för gruppen
-
-
-              <CustomTypography>
-                🔹 3. Granskade och analyserade adminroller
-             </CustomTypography>
-
-             <CustomTypography>
-                Sedan gick jag in i Entra ID → Roles and administrators för att se hur administrativa roller var fördelade.
-             </CustomTypography>
-
-             <CustomTypography>
-                Jag kontrollerade särskilt:
-             </CustomTypography>
-
-             <CustomTypography>
-                Antal Global Administrators
-             </CustomTypography>
-
-
-<             CustomTypography>
-                Om mer avgränsade roller används (User Admin, Exchange Admin, etc.)
-             </CustomTypography>
-             
-
-              <CustomTypography>
-                Om strukturen följer principen om least privilege
-             </CustomTypography>
-
-             <CustomTypography>
+            <div class="lab-subsection">
+              <h4>3. Granskade och analyserade adminroller</h4>
+              <p>
+                Jag gick in i <strong>Entra ID → Roles and administrators</strong> för att se hur
+                administrativa roller var fördelade.
+              </p>
+              <p>Jag kontrollerade särskilt:</p>
+              <ul>
+                <li>Antal Global Administrators</li>
+                <li>Om mer avgränsade roller används (User Admin, Exchange Admin, etc.)</li>
+                <li>Om strukturen följer principen om least privilege</li>
+              </ul>
+              <p>
                 Min utgångspunkt här var att Global Admin ska vara undantag, inte standard.
-             </CustomTypography>
+              </p>
+              <p><em>Screenshot 4: Global Administrator-rollen</em></p>
+              <p><em>Screenshot 5: Exempel på mer avgränsad adminroll</em></p>
+            </div>
+          </div>
 
-             
-              📸 Screenshot 4:
-              Global Administrator-rollen
-              📸 Screenshot 5:
-              Exempel på mer avgränsad adminroll
+          <div class="lab-section">
+            <h3>Risker jag identifierade</h3>
+            <ul>
+              <li>För många globala administratörer</li>
+              <li>Manuell licenstilldelning utan struktur</li>
+              <li>Otydlig rollfördelning</li>
+              <li>Risk för överlicensiering</li>
+            </ul>
+            <p>
+              Det är ofta här problem uppstår längre fram – både säkerhetsmässigt och kostnadsmässigt.
+            </p>
+          </div>
 
-
-              <CustomTypography>
-                Risker jag identifierade
-             </CustomTypography>
-
-             <CustomTypography>
-                Under genomgången hade jag särskilt fokus på:
-             </CustomTypography>
-
-
-             <CustomTypography>
-                För många globala administratörer
-             </CustomTypography>
-              
-              <CustomTypography>
-                Manuell licenstilldelning utan struktur
-             </CustomTypography>
-
-              
-              <CustomTypography>
-                Otydlig rollfördelning
-             </CustomTypography>
-
-               <CustomTypography>
-                 Risk för överlicensiering
-             </CustomTypography>             
-
-              <CustomTypography>
-                Det är ofta här problem uppstår längre fram – både säkerhetsmässigt och kostnadsmässigt.
-             </CustomTypography>    
-
-             <h3>
-                Reflektion
-             </h3>
-              
-              <CustomTypography>
-                Den här labben är grundläggande, men också avgörande.
-             </CustomTypography>
-
-             <CustomTypography>
-                Om tenantstruktur, licenshantering och adminroller inte är genomtänkta från början blir allt annat mer komplext och svårare att säkra. Många säkerhetsproblem i M365-miljöer handlar egentligen om för breda rättigheter eller otydlig struktur.
-             </CustomTypography>
-              
-              <CustomTypography>
-                Det här är exakt den typen av genomgång jag skulle vilja göra i en ny miljö innan jag börjar arbeta med säkerhet, MFA eller Conditional Access.
-             </CustomTypography>
-              
+          <div class="lab-section">
+            <h3>Reflektion</h3>
+            <p>
+              Den här labben är grundläggande, men också avgörande.
+              Om tenantstruktur, licenshantering och adminroller inte är genomtänkta från början
+              blir allt annat mer komplext och svårare att säkra.
+            </p>
+            <p>
+              Många säkerhetsproblem i M365-miljöer handlar egentligen om för breda rättigheter
+              eller otydlig struktur.
+            </p>
+            <p>
+              Det här är exakt den typen av genomgång jag skulle vilja göra i en ny miljö innan
+              jag börjar arbeta med säkerhet, MFA eller Conditional Access.
+            </p>
+          </div>
+                        
                             
 
 
