@@ -141,24 +141,7 @@ export default function MainMenu(props) {
                   </Grid>
                 </Link>
              )}
-             {!isSmallScreen && (
-              <Link to="/labb5" style={{ textDecoration: 'none' }}>
-                <Grid item onClick={() => props.setSelectedItem('Prototype')}>
-                    <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Adminsäkerhet
-                    </MenuText>
-                  </Grid>
-                </Link>
-             )}
-             {!isSmallScreen && (
-              <Link to="/labb6" style={{ textDecoration: 'none' }}>
-                <Grid item onClick={() => props.setSelectedItem('Prototype')}>
-                    <MenuText sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: props.selectedItem == 'Prototype' ? '#ed652b' : 'white' }}>
-                      Dataskydd
-                    </MenuText>
-                  </Grid>
-                </Link>
-             )}
+
               {!isSmallScreen && (
               <Link to="/about" style={{ textDecoration: 'none' }}>
                 <Grid item onClick={() => props.setSelectedItem('Prototype')}>
@@ -236,26 +219,6 @@ export default function MainMenu(props) {
                       onClick={() => props.setSelectedItem('About')}
                     >
                       Intune
-                    </MenuText>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link to="/labb5" style={{ textDecoration: 'none' }}>
-                    <MenuText
-                      sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
-                      onClick={() => props.setSelectedItem('About')}
-                    >
-                      Adminsäkerhet
-                    </MenuText>
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link to="/labb6" style={{ textDecoration: 'none' }}>
-                    <MenuText
-                      sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' }, color: 'white' }}
-                      onClick={() => props.setSelectedItem('About')}
-                    >
-                      Dataskydd
                     </MenuText>
                 </Link>
               </Grid>

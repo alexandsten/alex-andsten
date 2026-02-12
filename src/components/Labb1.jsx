@@ -141,22 +141,176 @@ const Labb1 = () => {
              Frontend developer
            </Typography> */}
            {/* <FadeDiv> */}
+
+            <h3>
+              Översikt
+            </h3>
              <CustomTypography>
-               I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
-               projects and expanding my skill set.
+              I den här labben har jag gått igenom grunden i Microsoft 365-tenanten: hur den är uppbyggd, hur licenser hanteras och hur adminroller är fördelade i Entra ID.
              </CustomTypography>
              <CustomTypography>
-               While I specialize in M365, particularly with
-               skillsets like intune and AD.
+                Fokus har varit att säkerställa att strukturen är hållbar från början – eftersom allt annat (MFA, Conditional Access, Intune osv.) bygger på att tenant, licenser och roller är rätt uppsatta.
              </CustomTypography>
-             {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-               I’m passionate about creativity and problem-solving, always eager to
-               learn and discover new ways to innovate through code.
+
+
+               <h3>
+                Scenario
+              </h3>
+
+              <CustomTypography>
+                
+                  Jag utgick från ett vanligt driftläge:
+                  Nya användare ska onboardas löpande
+
+
+                  Licenser ska tilldelas strukturerat
+
+
+                  Adminbehörigheter ska vara kontrollerade
+
+
+                  Strukturen ska fungera även när miljön växer
+
+
+                  Målet var att bedöma om grunden är stabil nog för vidare säkerhetsarbete.
              </CustomTypography>
-             <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-               With a background in programming and hands-on experience in various
-               projects, I’m excited to share my journey with you.
-             </CustomTypography> */}
+
+             <h3>
+                Så här gjorde jag
+             </h3>
+            
+            <CustomTypography>
+                🔹 1. Gick igenom tenant och licensöversikt
+                  Jag började med att gå in i Billing → Licenses i Microsoft 365 Admin Center för att få en tydlig överblick över vilka licenser som fanns, hur många som var tilldelade och hur många som var lediga.
+                  Här ville jag snabbt förstå:
+                  Vilka SKU:er används i miljön? Finns det oanvända eller överflödiga licenser? Ser tilldelningen strukturerad ut?
+             </CustomTypography>
+
+            📸 Screenshot 1:
+ Billing → Licenses (översikt)
+
+            <CustomTypography>
+                🔹 2. Arbetade med gruppbaserad licenstilldelning
+             </CustomTypography>
+
+              <CustomTypography>
+                Därefter gick jag in i Entra ID → Groups och kontrollerade om licenser tilldelades direkt på användare eller via grupper.
+
+             </CustomTypography>
+
+             <CustomTypography>
+                För att testa flödet skapade jag en testgrupp med tilldelad licens och lade till en användare för att verifiera att licensen automatiskt tilldelades via gruppmedlemskap.
+                Det gav en tydlig bild av hur onboarding kan förenklas och standardiseras.
+                Jag föredrar gruppbaserad licensiering eftersom det:
+                
+             </CustomTypography>
+
+             <CustomTypography>
+                Automatiserar onboarding
+             </CustomTypography>
+
+
+              <CustomTypography>
+                Minskar manuella fel
+             </CustomTypography>
+             
+              <CustomTypography>
+                Skapar tydlig koppling mellan roll och funktion
+             </CustomTypography>
+
+
+              📸 Screenshot 2:
+              Entra ID → Groups → Grupp med licenstilldelning
+              📸 Screenshot 3:
+              License assignment-vyn för gruppen
+
+
+              <CustomTypography>
+                🔹 3. Granskade och analyserade adminroller
+             </CustomTypography>
+
+             <CustomTypography>
+                Sedan gick jag in i Entra ID → Roles and administrators för att se hur administrativa roller var fördelade.
+             </CustomTypography>
+
+             <CustomTypography>
+                Jag kontrollerade särskilt:
+             </CustomTypography>
+
+             <CustomTypography>
+                Antal Global Administrators
+             </CustomTypography>
+
+
+<             CustomTypography>
+                Om mer avgränsade roller används (User Admin, Exchange Admin, etc.)
+             </CustomTypography>
+             
+
+              <CustomTypography>
+                Om strukturen följer principen om least privilege
+             </CustomTypography>
+
+             <CustomTypography>
+                Min utgångspunkt här var att Global Admin ska vara undantag, inte standard.
+             </CustomTypography>
+
+             
+              📸 Screenshot 4:
+              Global Administrator-rollen
+              📸 Screenshot 5:
+              Exempel på mer avgränsad adminroll
+
+
+              <CustomTypography>
+                Risker jag identifierade
+             </CustomTypography>
+
+             <CustomTypography>
+                Under genomgången hade jag särskilt fokus på:
+             </CustomTypography>
+
+
+             <CustomTypography>
+                För många globala administratörer
+             </CustomTypography>
+              
+              <CustomTypography>
+                Manuell licenstilldelning utan struktur
+             </CustomTypography>
+
+              
+              <CustomTypography>
+                Otydlig rollfördelning
+             </CustomTypography>
+
+               <CustomTypography>
+                 Risk för överlicensiering
+             </CustomTypography>             
+
+              <CustomTypography>
+                Det är ofta här problem uppstår längre fram – både säkerhetsmässigt och kostnadsmässigt.
+             </CustomTypography>    
+
+             <h3>
+                Reflektion
+             </h3>
+              
+              <CustomTypography>
+                Den här labben är grundläggande, men också avgörande.
+             </CustomTypography>
+
+             <CustomTypography>
+                Om tenantstruktur, licenshantering och adminroller inte är genomtänkta från början blir allt annat mer komplext och svårare att säkra. Många säkerhetsproblem i M365-miljöer handlar egentligen om för breda rättigheter eller otydlig struktur.
+             </CustomTypography>
+              
+              <CustomTypography>
+                Det här är exakt den typen av genomgång jag skulle vilja göra i en ny miljö innan jag börjar arbeta med säkerhet, MFA eller Conditional Access.
+             </CustomTypography>
+              
+                            
+
+
              <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
                Feel free to explore my work and learn more about what I do!
              </CustomTypography>
