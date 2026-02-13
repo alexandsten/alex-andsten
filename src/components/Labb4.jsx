@@ -14,7 +14,7 @@ import labPic2 from '../img/labb4/labb4-bild7.png'
 import labPic3 from '../img/labb4/labb4-bild10.png'
 import labPic4 from '../img/labb4/labb4-bild11.png'
 import labPic5 from '../img/labb4/labb4-bild23.png'
-import labPic6 from '../img/labb4/labb4-bild20.png'
+import labPic6 from '../img/labb4/labb4-bild22.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
