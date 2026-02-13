@@ -9,6 +9,11 @@ import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
 import MainMenu from './MainMenu';
+import labPic1 from '../img/labb2/labb2-bild2.png'
+import labPic2 from '../img/labb2/labb2-bild6.png'
+import labPic3 from '../img/labb2/labb2-bild10.png'
+import labPic4 from '../img/labb2/labb2-bild9.png'
+import labPic5 from '../img/labb2/labb2-bild11.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -184,7 +189,9 @@ const Labb2 = () => {
                 För att testa strukturen skapade jag en testanvändare enligt en tydlig namnstandard
                 och verifierade att kontot hamnade i rätt grupper för att automatiskt få korrekt åtkomst.
               </p>
+              <img src={labPic1} width="75%" />
               <p><em>Screenshot 1: Entra ID → Users (översikt)</em></p>
+              <img src={labPic2} width="75%" />
               <p><em>Screenshot 2: Användaregenskaper (roller + gruppmedlemskap)</em></p>
             </div>
 
@@ -211,7 +218,9 @@ const Labb2 = () => {
                 Jag lade till och tog bort användare för att verifiera hur åtkomsten förändrades
                 via gruppmedlemskap.
               </p>
+              <img src={labPic3} width="75%" />
               <p><em>Screenshot 3: Lista över grupper</em></p>
+              <img src={labPic4} width="75%" />
               <p><em>Screenshot 4: Medlemskap i säkerhetsgrupp</em></p>
             </div>
 
@@ -231,10 +240,11 @@ const Labb2 = () => {
                 Syftet är att minska risken vid phishing, malware eller kompromettering av ett standardkonto.
               </p>
               <p>
-                Jag verifierade att dedikerade konton (t.ex. Break-Glass-Admin) användes för administration.
+                Jag identifierade ett separat administrativt konto (Break-Glass-Admin) och granskade dess rolltilldelning för att säkerställa att administrativa rättigheter inte låg på dagliga användarkonton.
                 Jag noterade även att vissa vanliga användare hade Global Admin-roller,
                 vilket överstiger rekommenderat antal och innebär en säkerhetsrisk.
               </p>
+              <img src={labPic5} width="75%" />
               <p><em>Screenshot 5: Admin-roll kopplad till separat administrativt konto</em></p>
             </div>
           </div>

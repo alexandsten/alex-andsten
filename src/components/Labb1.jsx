@@ -44,11 +44,7 @@ const AnimatedDivRight = styled.div`
   opacity: ${({ isVisible }) => isVisible ? 1 : 0};
   transition: opacity 0.5s ease-in-out;
 `;
-const AnimatedDivLeft = styled.div`
-  animation: ${({ isVisible }) => isVisible ? css`1s ${SlideInLeftAnimation}` : 'none'};
-  opacity: ${({ isVisible }) => isVisible ? 1 : 0};
-  transition: opacity 0.5s ease-in-out;
-`;
+
 
 const Labb1 = () => {
 
@@ -68,50 +64,7 @@ const Labb1 = () => {
     },
   }));
 
-  const { ref, inView } = useInView({
-    triggerOnce: true, 
-    threshold: 0.3,  
-  });
 
-  const skillsColumn1 = [
-    'TypeScript',
-    'JavaScript',
-    'React & React Native',
-    'HTML',
-    'CSS',
-    'SQL',
-    'Git',
-  ];
-
-  const skillsColumn1Icons = [
-    <img width="30" height="30" src="https://img.icons8.com/fluency/48/typescript--v2.png" alt="typescript--v2"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>,
-    <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/html-5--v2.png" alt="html-5--v2"/>,
-    <img width="30" height="30" src="https://img.icons8.com/fluency/48/css3.png" alt="css3"/>,
-    <img width="30" height="30" src="https://img.icons8.com/?size=100&id=6o3xw2TdxzCR&format=png&color=000000" alt="sql"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/git.png" alt="git"/>,
-  ];
-
-  const skillsColumn2 = [
-    'NodeJS',
-    'NoSQL / Firebase',
-    'Jest',
-    'Rest API',
-    'Figma',
-    'DNS',
-    'Wordpress',
-  ];
-
-  const skillsColumn2Icons = [
-    <img width="30" height="30" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/>,
-    <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo.png" alt="external-jest-can-collect-code-coverage-information-from-entire-projects-logo-color-tal-revivo"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/api.png" alt="api"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/figma--v1.png" alt="figma--v1"/>,
-    <img width="30" height="30" src="https://img.icons8.com/?size=100&id=hh0cnaxPHumh&format=png&color=000000" alt="figma--v1"/>,
-    <img width="30" height="30" src="https://img.icons8.com/color/48/wordpress.png" alt="wordpress"/>,
-  ];
 
 
   // const educationColumn = [
