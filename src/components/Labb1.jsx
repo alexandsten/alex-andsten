@@ -9,6 +9,7 @@ import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
 import MainMenu from './MainMenu';
+import labPic1 from '../img/labb1/labb1-bild1.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -183,7 +184,7 @@ const Labb1 = () => {
                 <li>Finns det oanvända eller överflödiga licenser?</li>
                 <li>Ser tilldelningen strukturerad ut?</li>
               </ul>
-              <img src="../img/labb1/labb1-bild1.png" width="75%" />
+              <img src="../img/labb1/labb1-bild1" width="75%" />
               <p><em>Screenshot 1: Billing → Licenses (översikt)</em></p>
             </div>
 
