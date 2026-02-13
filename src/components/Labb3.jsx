@@ -9,11 +9,11 @@ import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
 import MainMenu from './MainMenu';
-import labPic1 from '../img/labb3/labb3-bild1.png'
-import labPic2 from '../img/labb3/labb3-bild2.png'
-import labPic3 from '../img/labb3/labb3-bild3.png'
-import labPic4 from '../img/labb3/labb3-bild4.png'
-import labPic5 from '../img/labb3/labb3-bild5.png'
+import labPic1 from '../img/labb3/labb3-bild2.png'
+import labPic2 from '../img/labb3/labb3-bild3.png'
+import labPic3 from '../img/labb4/labb4-bild20.png'
+import labPic4 from '../img/labb3/labb3-bild9.png'
+import labPic5 from '../img/labb3/labb3-bild8.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
