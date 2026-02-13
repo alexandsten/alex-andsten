@@ -183,6 +183,7 @@ const Labb1 = () => {
                 <li>Finns det oanvända eller överflödiga licenser?</li>
                 <li>Ser tilldelningen strukturerad ut?</li>
               </ul>
+              <img src="/src/img/labb1/labb1-bild1.png" width="75%" />
               <p><em>Screenshot 1: Billing → Licenses (översikt)</em></p>
             </div>
 
@@ -202,7 +203,9 @@ const Labb1 = () => {
                 <li>Minskar manuella fel</li>
                 <li>Skapar tydlig koppling mellan roll och funktion</li>
               </ul>
+              <img src="/src/img/labb1/labb1-bild2.png" width="75%" />
               <p><em>Screenshot 2: Entra ID → Groups → Grupp med licenstilldelning</em></p>
+              <img src="/src/img/labb1/labb1-bild6.png" width="75%" />
               <p><em>Screenshot 3: License assignment-vyn för gruppen</em></p>
             </div>
 
@@ -221,7 +224,9 @@ const Labb1 = () => {
               <p>
                 Min utgångspunkt här var att Global Admin ska vara undantag, inte standard.
               </p>
+              <img src="/src/img/labb2/labb2-bild7.png" width="75%" />
               <p><em>Screenshot 4: Global Administrator-rollen</em></p>
+              <img src="/src/img/labb1/labb1-bild16.png" width="75%" />
               <p><em>Screenshot 5: Exempel på mer avgränsad adminroll</em></p>
             </div>
           </div>
