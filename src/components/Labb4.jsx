@@ -9,6 +9,11 @@ import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
 import MainMenu from './MainMenu';
+import labPic1 from '../img/labb4/labb4-bild1.png'
+import labPic2 from '../img/labb4/labb4-bild7.png'
+import labPic3 from '../img/labb4/labb4-bild10.png'
+import labPic4 from '../img/labb4/labb4-bild11.png'
+import labPic5 from '../img/labb4/labb4-bild23.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -178,6 +183,7 @@ const Labb4 = () => {
               <li>Kryptering (BitLocker)</li>
               <li>Minsta OS-version</li>
             </ul>
+            <img src={labPic1} width="75%" />
             <p><em>Screenshot 1: Compliance policy – konfigurerade säkerhetskrav</em></p>
             <p>
               Syfte: Här definieras vilka tekniska säkerhetskrav en enhet måste uppfylla
@@ -189,6 +195,7 @@ const Labb4 = () => {
             <h4>2. Kopplade policyn till en säkerhetsgrupp</h4>
             <p>Navigering: <strong>Assignments → Select groups to include</strong></p>
             <p>Policyn tilldelades en testgrupp (t.ex. LABB-GRUPP)</p>
+            <img src={labPic2} width="75%" />
             <p><em>Screenshot 2: Grupp kopplad till compliance policy</em></p>
             <p>
               Syfte: Genom gruppbaserad tilldelning säkerställs skalbarhet och struktur.
@@ -206,6 +213,7 @@ const Labb4 = () => {
               <li>Grant control → Require compliant device</li>
               <li>Policy mode → Report-only</li>
             </ul>
+            <img src={labPic3} width="75%" />
             <p><em>Screenshot 3: Grant control – Require compliant device + Report-only</em></p>
             <p>
               Syfte: Här kopplas enhetens compliance-status till åtkomstbeslutet.
@@ -221,6 +229,7 @@ const Labb4 = () => {
               <li>Users/Groups → Testgruppen</li>
               <li>Cloud apps → All cloud apps</li>
             </ul>
+            <img src={labPic4} width="75%" />
             <p><em>Screenshot 4: Assignments-översikt</em></p>
             <p>
               Syfte: Detta steg definierar policyns räckvidd.
@@ -235,6 +244,7 @@ const Labb4 = () => {
               <li>Intune → Devices → Monitor → Compliance status</li>
               <li>Entra ID → Sign-in logs → Conditional Access-fliken</li>
             </ul>
+            <img src={labPic5} width="75%" />
             <p><em>Screenshot 5: Compliance status + Conditional Access-resultat</em></p>
             <p>Här analyseras:</p>
             <ul>
