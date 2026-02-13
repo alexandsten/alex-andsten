@@ -14,6 +14,7 @@ import labPic2 from '../img/labb4/labb4-bild7.png'
 import labPic3 from '../img/labb4/labb4-bild10.png'
 import labPic4 from '../img/labb4/labb4-bild11.png'
 import labPic5 from '../img/labb4/labb4-bild23.png'
+import labPic5 from '../img/labb4/labb4-bild20.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -245,6 +246,7 @@ const Labb4 = () => {
               <li>Entra ID → Sign-in logs → Conditional Access-fliken</li>
             </ul>
             <img src={labPic5} width="75%" />
+            <img src={labPic6} width="75%" />
             <p><em>Screenshot 5: Compliance status + Conditional Access-resultat</em></p>
             <p>Här analyseras:</p>
             <ul>
