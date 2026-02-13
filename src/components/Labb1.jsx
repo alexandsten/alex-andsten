@@ -9,7 +9,7 @@ import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
 import MainMenu from './MainMenu';
-import labPic1 from '../img/labb1/bild1.png'
+import labPic1 from '../img/labb1/labb1-bild1.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
