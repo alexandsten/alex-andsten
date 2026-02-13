@@ -14,6 +14,7 @@ import labPic2 from '../img/labb3/labb3-bild3.png'
 import labPic3 from '../img/labb4/labb4-bild20.png'
 import labPic4 from '../img/labb3/labb3-bild9.png'
 import labPic5 from '../img/labb3/labb3-bild8.png'
+import ImageZoom from './ImageZoom';
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -192,9 +193,10 @@ const Labb3 = () => {
             <p>
               Syftet var att analysera policyns effekt utan att påverka faktiska inloggningar.
             </p>
-            <img src={labPic1} width="75%" />
+            <ImageZoom src={labPic1} />
+            
             <p><em>Screenshot 1: Policyöversikt (namn, assignments, grant control)</em></p>
-            <img src={labPic2} width="75%" />
+            <ImageZoom src={labPic2} />
             <p><em>Screenshot 2: Grant control – Require MFA</em></p>
           </div>
 
@@ -217,7 +219,7 @@ const Labb3 = () => {
               Kolumnerna <strong>Conditional Access</strong> och <strong>Result</strong>
               användes för att utvärdera policyns effekt.
             </p>
-            <img src={labPic3} width="75%" />
+            <ImageZoom src={labPic3} />
             <p><em>Screenshot 3: Sign-in log → Conditional Access-flik</em></p>
           </div>
 
@@ -235,7 +237,7 @@ const Labb3 = () => {
               Möjligheten att specificera devices och appar visar flexibiliteten
               i hur policyn appliceras.
             </p>
-            <img src={labPic4} width="75%" />
+           <ImageZoom src={labPic4} />
             <p><em>Screenshot 4: Assignments – Users, Groups och Devices</em></p>
           </div>
 
@@ -254,7 +256,7 @@ const Labb3 = () => {
               Detta visar hur åtkomst kan differentieras baserat på miljö,
               risknivå och enhetsstatus.
             </p>
-            <img src={labPic5} width="75%" />
+            <ImageZoom src={labPic5} />
             <p><em>Screenshot 5: Conditional Access → Conditions</em></p>
           </div>
         </div>

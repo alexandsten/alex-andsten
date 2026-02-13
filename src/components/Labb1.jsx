@@ -14,6 +14,7 @@ import labPic2 from '../img/labb1/labb1-bild2.png'
 import labPic3 from '../img/labb1/labb1-bild6.png'
 import labPic4 from '../img/labb2/labb2-bild7.png'
 import labPic5 from '../img/labb1/labb1-bild16.png'
+import ImageZoom from './ImageZoom';
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -141,7 +142,8 @@ const Labb1 = () => {
                 <li>Finns det oanvända eller överflödiga licenser?</li>
                 <li>Ser tilldelningen strukturerad ut?</li>
               </ul>
-              <img src={labPic1} width="75%" />
+              <ImageZoom src={labPic1} />
+            
               <p><em>Screenshot 1: Billing → Licenses (översikt)</em></p>
             </div>
 
@@ -161,9 +163,10 @@ const Labb1 = () => {
                 <li>Minskar manuella fel</li>
                 <li>Skapar tydlig koppling mellan roll och funktion</li>
               </ul>
-              <img src={labPic2} width="75%" />
+              <ImageZoom src={labPic2} />
+              
               <p><em>Screenshot 2: Entra ID → Groups → Grupp med licenstilldelning</em></p>
-              <img src={labPic3} width="75%" />
+              <ImageZoom src={labPic3} />
               <p><em>Screenshot 3: License assignment-vyn för gruppen</em></p>
             </div>
 
@@ -182,9 +185,9 @@ const Labb1 = () => {
               <p>
                 Min utgångspunkt här var att Global Admin ska vara undantag, inte standard.
               </p>
-              <img src={labPic4} width="75%" />
+              <ImageZoom src={labPic4} />
               <p><em>Screenshot 4: Global Administrator-rollen</em></p>
-              <img src={labPic5} width="75%" />
+              <ImageZoom src={labPic5} />
               <p><em>Screenshot 5: Exempel på mer avgränsad adminroll</em></p>
             </div>
           </div>
