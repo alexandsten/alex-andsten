@@ -143,9 +143,9 @@ const AboutMe = () => {
         {/* <FadeDiv> */}
          <div>
           <div className="profile-container">
-            <h2>Kort om mig</h2>
             <img src={alex1} width="30%" />
             <div>
+              <h2>Kort om mig</h2>
               <p>
               Jag bygger och dokumenterar egna labbmiljöer i Microsoft 365 för att utveckla praktisk kompetens inom Entra ID, Conditional Access, Intune och säkerhetskonfiguration.
             </p>
