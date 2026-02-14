@@ -9,6 +9,7 @@ import { useMediaQuery } from '@mui/material';
 import fadeIn from 'react-animations/lib/fade-in';
 import { styled as muiCustomStyled } from '@mui/system'; 
 import MainMenu from './MainMenu';
+import alex1 from '../img/alex1.png'
 
 const fadeAnimation = keyframes`${fadeIn}`;
 
@@ -131,7 +132,7 @@ const AboutMe = () => {
       alignItems={'center'}
     >
       <Stack justifyContent={'flex-start'} alignItems={'center'}>
-        <h3>Om mig</h3>
+        <h1>Om mig</h1>
       </Stack>
        <MainMenu />
       <Stack width={'66%'} spacing={1} pt={5}  justifyContent={'flex-start'} alignItems={'flex-start'}>
@@ -141,25 +142,21 @@ const AboutMe = () => {
           Frontend developer
         </Typography> */}
         {/* <FadeDiv> */}
-          <CustomTypography>
-            I'm a Technical Operations Specialist based in Stockholm, constantly exploring new
-            projects and expanding my skill set.
-          </CustomTypography>
-          <CustomTypography>
-            While I specialize in M365, particularly with
-            skillsets like intune and AD.
-          </CustomTypography>
-          {/* <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-            I’m passionate about creativity and problem-solving, always eager to
-            learn and discover new ways to innovate through code.
-          </CustomTypography>
-          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-            With a background in programming and hands-on experience in various
-            projects, I’m excited to share my journey with you.
-          </CustomTypography> */}
-          <CustomTypography sx={{ fontFamily: 'Gotu', color: 'white', fontSize: '14px'  }}>
-            Feel free to explore my work and learn more about what I do!
-          </CustomTypography>
+         <div>
+          <h2>Kort om mig</h2>
+          <div className="profile-container">
+            <img src={alex1} width="30%" />
+            <div>
+              <p>
+              Jag bygger och dokumenterar egna labbmiljöer i Microsoft 365 för att utveckla praktisk kompetens inom Entra ID, Conditional Access, Intune och säkerhetskonfiguration.
+            </p>
+            <p>
+              Mitt mål är att arbeta praktiskt med användarhantering, felsökning och
+              M365-administration i en organisation där jag kan fortsätta utvecklas.
+            </p>
+            </div>
+          </div>
+        </div>
         {/* </FadeDiv> */}
       </Stack>
       <Stack width={'80%'} height={'100%'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
