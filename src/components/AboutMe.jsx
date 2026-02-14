@@ -143,8 +143,8 @@ const AboutMe = () => {
         </Typography> */}
         {/* <FadeDiv> */}
          <div>
-          <h2>Kort om mig</h2>
           <div className="profile-container">
+            <h2>Kort om mig</h2>
             <img src={alex1} width="30%" />
             <div>
               <p>

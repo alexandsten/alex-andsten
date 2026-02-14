@@ -95,8 +95,8 @@ const MyProjects = () => {
               </Typography> */}
               {/* <FadeDiv> */}
                 <div>
-                  <h2>Labbar</h2>
                     <div className="profile-container">
+                      <h2>Labbar</h2>
                       <img src={alex1} width="30%" />
                       <div>
                         <p>
